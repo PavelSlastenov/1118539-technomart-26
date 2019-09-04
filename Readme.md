@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Сластенов](https://up.htmlacademy.ru/htmlcss/26/user/1118539).
-* Наставник: [Александр Уразаев] (https://htmlacademy.ru/profile/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
