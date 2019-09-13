@@ -37,14 +37,12 @@
           </ul>
             <ul class="user-navigation">
               <li>
-                <a class="login-link" href="login.html">
+                <a class="login-link" href="">
                   Войти
                 </a>
               </li>
               <li>
-                <!--Тут вопрос какую ссылку указывать? Это как я понял на случай если JS не
-                загрузится и была возможность открыть в новой вкладке страницу-->
-                <a class="login-link" href="login.html">
+                <a class="register-link" href="">
                   Регистрация
                 </a>
               </li>
@@ -67,7 +65,7 @@
 
   <main>
       <section>
-        <h2>Ассортимент</h2>
+        <h2 class="visually-hidden">Ассортимент</h2>
          <ul>
            <li>
              <h3>Материалы</h3>
@@ -105,22 +103,22 @@
           <li>
             <h3><a href="">"Перфоратор BOSH BFG 9000"</a></h3>
               <img src="img/index-product-1.jpg" alt="32500 Р." width="218" height="170">
-            <p>25500 Р.</p>
+            <p><a href="">25500 Р.</a></p>
           </li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 3000</a></h3>
               <img src="img/index-product-2.jpg" alt="22500 Р." width="218" height="170">
-              <p>15500 Р.</p>
+              <p><a href="">15500 Р.</a></p>
           </li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 6000</a></h3>
               <img src="img/index-product-3.jpg" alt="30500 Р." width="218" height="170">
-              <p>15500 Р.</p>
+              <p><a href="">15500 Р.</a></p>
           </li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 2000</a></h3>
               <img src="img/index-product-4.jpg" alt="" width="218" height="170">
-              <p>12500 Р.</p>
+              <p><a href="">12500 Р.</a></p>
           </li>
         </ul>
       </section>
@@ -198,61 +196,38 @@
 
       <section class="contacts">
         <h2>КОНТАКТЫ</h2>
-        <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
         <a href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-        <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts-item">
-            <label for="contacts-name">Ваше имя:</label>
-            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="contacts-item">
-            <label for="contacts-email">Ваш e-mail:</label>
-            <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
-          </p>
-          <p class="contacts-item">
-            <label for="contacts-text">Текст письма:</label>
-            <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">Закрыть</button>
-        </form>
       </section>
 
   </main>
+
   <footer>
-    <--! В учебном проекте сделали личный кабинет в подвале сайта, он там отсутствовал в макете,
-    как я понял это пригодится в дальнейшем?-->
-    <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль</p>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-login">Логин</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <label class="login-checkxbox">
-            <input type="checkbox" name="remember">
-            Запомни меня
-          </label>
-          <a class="restore" href="#">Я забыл пароль!</a>
-        </p>
-        <p>
-          <button class="button" type="submit">
-            Войти
-          </button>
-        </p>
-      </form>
+    <section class="contacts">
+      <h2 class="visually-hidden">КОНТАКТЫ</h2>
+      <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
       <button class="modal-close" type="button">Закрыть</button>
+      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contacts-item">
+          <label for="contacts-name">Ваше имя:</label>
+          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contacts-item">
+          <label for="contacts-email">Ваш e-mail:</label>
+          <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
+        </p>
+        <p class="contacts-item">
+          <label for="contacts-text">Текст письма:</label>
+          <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
     </section>
 
     <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
-      <p>г.Санкт-Петербург ул. Б.Конюшенная, д.19/8
+      <p>г. Санкт-Петербург ул. Б.Конюшенная, д.19/8
         +7 (812) 555-05-55</p>
       <ul>
         <li><a href="">Компания</a></li>
