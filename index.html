@@ -34,9 +34,21 @@
               <p>+7 (812) 555-05-55
                 г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
             </li>
-            <li><a href="">Войти</a></li>
-            <li><a href="">Регистрация</a></li>
           </ul>
+            <ul class="user-navigation">
+              <li>
+                <a class="login-link" href="login.html">
+                  Войти
+                </a>
+              </li>
+              <li>
+                <!--Тут вопрос какую ссылку указывать? Это как я понял на случай если JS не
+                загрузится и была возможность открыть в новой вкладке страницу-->
+                <a class="login-link" href="login.html">
+                  Регистрация
+                </a>
+              </li>
+            </ul>
         </section>
 
    <header>
@@ -190,6 +202,34 @@
 
   </main>
   <footer>
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkxbox">
+            <input type="checkbox" name="remember">
+            Запомни меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <p>
+          <button class="button" type="submit">
+            Войти
+          </button>
+        </p>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
     <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
       <p>г.Санкт-Петербург ул. Б.Конюшенная, д.19/8
         +7 (812) 555-05-55</p>
