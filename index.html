@@ -10,10 +10,10 @@
     <nav>
       <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
       <ul>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="appointment-item">
-            <label for="appointment-form">Поиск</label>
-          <input id="appointment-form" type="text" name="search" value="" placeholder="Текст">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="search-item">
+            <label for="search">Поиск</label>
+          <input id="search" type="text" name="search" value="" placeholder="Текст">
           </p>
         </form>
         <li><a href="">Закладки</a></li>
@@ -194,14 +194,35 @@
           <li>ЖелдорЭкспедиция</li>
         </ul>
         <a href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
+      </section>
+
+      <section class="contacts">
         <h2>КОНТАКТЫ</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
+        <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
         <a href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts-item">
+            <label for="contacts-name">Ваше имя:</label>
+            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-email">Ваш e-mail:</label>
+            <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-text">Текст письма:</label>
+            <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
+        </form>
       </section>
 
   </main>
   <footer>
+    <--! В учебном проекте сделали личный кабинет в подвале сайта, он там отсутствовал в макете,
+    как я понял это пригодится в дальнейшем?-->
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
