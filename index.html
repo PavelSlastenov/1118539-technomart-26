@@ -10,12 +10,14 @@
     <nav>
       <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
       <ul>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <li>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="search-item">
             <label for="search">Поиск</label>
           <input id="search" type="text" name="search" value="" placeholder="Текст">
           </p>
         </form>
+        </li>
         <li><a href="">Закладки</a></li>
         <li><a href="">Корзина</a></li>
         <li><a href="">Оформить заказ</a></li>
@@ -100,25 +102,33 @@
         <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         <a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         <ul>
+          <li><p><a href="">КУПИТЬ</a></p></li>
+          <li><p><a href="">В ЗАКЛАДКИ</a></p></li>
           <li>
-            <h3><a href="">"Перфоратор BOSH BFG 9000"</a></h3>
+            <h3><a href="">Перфоратор BOSH BFG 9000</a></h3>
               <img src="img/index-product-1.jpg" alt="32500 Р." width="218" height="170">
-            <p><a href="">25500 Р.</a></p>
+            <p>25500 Р.</p>
           </li>
+          <li><p><a href="">КУПИТЬ</a></p></li>
+          <li><p><a href="">В ЗАКЛАДКИ</a></p></li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 3000</a></h3>
               <img src="img/index-product-2.jpg" alt="22500 Р." width="218" height="170">
-              <p><a href="">15500 Р.</a></p>
+              <p>15500 Р.</p>
           </li>
+          <li><p><a href="">КУПИТЬ</a></p></li>
+          <li><p><a href="">В ЗАКЛАДКИ</a></p></li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 6000</a></h3>
               <img src="img/index-product-3.jpg" alt="30500 Р." width="218" height="170">
-              <p><a href="">15500 Р.</a></p>
+              <p>15500 Р.</p>
           </li>
+          <li><p><a href="">КУПИТЬ</a></p></li>
+          <li><p><a href="">В ЗАКЛАДКИ</a></p></li>
           <li>
               <h3><a href="">Перфоратор BOSH BFG 2000</a></h3>
               <img src="img/index-product-4.jpg" alt="" width="218" height="170">
-              <p><a href="">12500 Р.</a></p>
+              <p>12500 Р.</p>
           </li>
         </ul>
       </section>
@@ -187,9 +197,9 @@
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!
               Техномаркт работает со многими транспортными компаниями:</p>
         <ul>
-          <li><a href="">Деловые линии</a></li>
-          <li><a href="">Автотрейдинг</a></li>
-          <li><a href="">ЖелдорЭкспедиция</a></li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелдорЭкспедиция</li>
         </ul>
         <a href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </section>
@@ -197,35 +207,12 @@
       <section class="contacts">
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
+        <p><a href=""><img src="img/map.png" alt="Map" width="300" height="158"></a></p>
         <a href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </section>
-
   </main>
 
   <footer>
-    <section class="contacts">
-      <h2 class="visually-hidden">КОНТАКТЫ</h2>
-      <p><a href=""></a><img src="img/map.png" alt="Map" width="300" height="158"></p>
-      <button class="modal-close" type="button">Закрыть</button>
-      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="contacts-item">
-          <label for="contacts-name">Ваше имя:</label>
-          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="contacts-item">
-          <label for="contacts-email">Ваш e-mail:</label>
-          <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
-        </p>
-        <p class="contacts-item">
-          <label for="contacts-text">Текст письма:</label>
-          <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
-      </form>
-    </section>
-
     <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
       <p>г. Санкт-Петербург ул. Б.Конюшенная, д.19/8
         +7 (812) 555-05-55</p>
@@ -252,5 +239,29 @@
       <p>Разработано -
          <a href="https://up.htmlacademy.ru/htmlcss/26">htmlacademy.ru</a></p>
   </footer>
+
+  <section class="contacts">
+    <h2 class="visually-hidden">КОНТАКТЫ</h2>
+    <p><img src="img/map.png" alt="Map" width="300" height="158"></p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <div>
+    <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="contacts-item">
+        <label for="contacts-name">Ваше имя:</label>
+        <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-email">Ваш e-mail:</label>
+        <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-text">Текст письма:</label>
+        <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
+  </div>
   </body>
 </html>
