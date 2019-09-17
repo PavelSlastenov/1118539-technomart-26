@@ -8,11 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <h1>ТЕХНОМАРКТ</h1>
-  <header>
-    <nav>
-      <a href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
-      <ul>
+  <h1 class="visually-hidden">ТЕХНОМАРТ</h1>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
+      <ul class="site-navigation">
         <li>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="search-item">
@@ -31,16 +31,16 @@
         <section>
           <ul>
             <li>
-              <p>Интернет-магазин
-                строительных материалов
-                и инструментов для ремонта</p>
+              <p class="description"><em>Интернет-магазин
+                <br>строительных материалов
+                <br>и инструментов для ремонта</em></p>
             </li>
             <li>
-              <p>+7 (812) 555-05-55
-                г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
+              <p class="phone">+7 (812) 555-05-55</p>
+              <p class="address"> г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
             </li>
           </ul>
-            <ul class="user-navigation">
+            <ul>
               <li>
                 <a class="login-link" href="">
                   Войти
@@ -56,7 +56,7 @@
 
    <header>
      <nav>
-       <ul>
+       <ul class="user-navigation">
          <li><a href="index.html">Главная</a></li>
          <li><a href="">Компания</a></li>
          <li><a href="catalog.html">Каталог</a></li>

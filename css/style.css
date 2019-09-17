@@ -24,16 +24,16 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: ffffff;
-  background-color: #32425c;
+  background-color: #293449;
 }
 
 .site-navigation,
-.user-navigation {
+.user-navigation a{
   list-style: none;
 }
 
 .site-navigation a,
-.user-navigation a {
+.user-navigation a{
   color: #ffffff;
 }
 
@@ -44,9 +44,69 @@ a {
   background-color: #1d2739;
 }
 
-.features-list {
+.description {
   list-style: none;
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: none;
+  font-weight: normal;
 }
+
+.phone {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.address {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.login-link,
+.register-link {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: none;
+  font-weight: normal;
+
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
+.site-navigation{
+  font-size: 17px;
+  line-height: 18px;
+  color: ffffff;
+  background-color: #293449;
+  font-weight: normal;
+}
+
+.user-navigation {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  font-weight: normal;
+}
+
+
+
+
 
 /*под вопросом!*/
 .feature-item {
@@ -57,3 +117,6 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
+
+
+
