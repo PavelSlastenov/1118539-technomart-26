@@ -33,7 +33,7 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a{
+.user-navigation a {
   color: #ffffff;
 }
 
@@ -45,20 +45,19 @@ a {
 }
 
 .description {
-  list-style: none;
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
   text-transform: none;
   font-weight: normal;
-  list-style: none;
+  list-style: none; /* не работает*/
 }
 
 .phone {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
-  font-weight: normal;
+
   list-style: none; /*не работает*/
 }
 
@@ -89,7 +88,7 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
+  font-weight: normal;
 }
 
 .site-navigation{
@@ -110,18 +109,41 @@ a {
   list-style: none;
 }
 
-
-
-
-/*под вопросом!*/
-.feature-item {
-  text-align: center;
+.assortment {
+  color: #000000; /*временно вместо белых*/
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: repeat;
+  list-style: none;
 }
 
-.feature-item h3 {
+.assortment h3 {
   font-size: 24px;
   line-height: 30px;
+
+.assortment a {
+  font-size: 14px;
+  line-height: 18px;
 }
+
+.contacts {
+  display: &nbsp;none;
+}
+
+.footer-navigation { /*'эти свойства пока не работают, не меняется цвет ссылок*/
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  font-weight: normal;
+  list-style: none;
+}
+
+
+
+
+
+
 
 
 
