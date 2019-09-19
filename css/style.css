@@ -1,15 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 36px;
-  /*Не понял как определить значение ниже, font-weight?*/
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-
   background-color: #008080;
   background-image: url("img/bg.jpg");
   background-position: top center;
@@ -70,15 +67,13 @@ a {
   list-style: none; /* не работает*/
 }
 
-.login-link,
-.register-link {
+.login-link {
   color: #000000;
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
   font-weight: normal;
   list-style: none; /*не работает*/
-
 
 }
 
@@ -94,7 +89,7 @@ a {
 .site-navigation{
   font-size: 17px;
   line-height: 18px;
-  color: ffffff;
+  color: #ffffff;
   background-color: #293449;
   font-weight: normal;
   list-style: none;
@@ -126,8 +121,9 @@ a {
   line-height: 18px;
 }
 
-.contacts {
-  display: &nbsp;none;
+.contacts,      /*разобраться как скрыть*/
+.contacts-form {
+  display: none;
 }
 
 .footer-navigation { /*'эти свойства пока не работают, не меняется цвет ссылок*/
@@ -138,7 +134,6 @@ a {
   font-weight: normal;
   list-style: none;
 }
-
 
 
 
