@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #008080;
+  background-color: #ffffff;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -22,6 +22,8 @@ a {
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
+  text-transform: none;
+
 }
 
 .site-navigation,
@@ -47,7 +49,8 @@ a {
   line-height: 23px;
   text-transform: none;
   font-weight: normal;
-  list-style: none; /* не работает*/
+  list-style: none;
+  background-color: #f3f7f8;
 }
 
 .phone {
@@ -102,24 +105,58 @@ a {
   background-color: #32425c;
   font-weight: normal;
   list-style: none;
+  text-transform: none;
 }
 
 .assortment {
-  color: #000000; /*временно вместо белых*/
-  background-color: #ffffff;
-  background-position: 0 0;
-  background-repeat: repeat;
   list-style: none;
+  font-weight: normal;
 }
 
 .assortment h3 {
   font-size: 24px;
   line-height: 30px;
+  color: #ffffff;
+  text-transform: none;
+  font-weight: normal;
+}
 
 .assortment a {
   font-size: 14px;
   line-height: 18px;
 }
+
+.slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.tooling {
+  background-color: #3bbce3;
+}
+
+.technique {
+  background-color: #dc91d8;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
 
 .contacts,      /*разобраться как скрыть*/
 .contacts-form {
