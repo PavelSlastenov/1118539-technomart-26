@@ -17,6 +17,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-weight: normal;
+}
+
+.main-header-logo {
+  background-color: #ee3643;
+}
+
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
@@ -78,15 +91,6 @@ a {
   font-weight: normal;
   list-style: none; /*не работает*/
 
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  font-weight: normal;
 }
 
 .site-navigation{
