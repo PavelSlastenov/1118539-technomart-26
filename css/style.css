@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 36px;
   /*Не понял как определить значение ниже, font-weight?*/
@@ -23,7 +23,7 @@ a {
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
-  color: ffffff;
+  color: #ffffff;
   background-color: #293449;
 }
 
