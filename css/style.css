@@ -87,7 +87,16 @@ a {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
-  list-style: none; /*не работает*/
+  list-style: none;
+  width: 264px;
+  height: 39px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 72px;
+  padding-right: 38px;
+
+
+
 }
 
 .description-address {
@@ -135,6 +144,11 @@ a {
   margin-left: 150px; /*Временно отодвинул*/
 }
 
+.navigation-container {
+  width: 940px;
+  height: 60px;
+  margin-left: 350px; /*Временно отодвинул*/
+}
 .user-navigation{
   font-size: 17px;
   line-height: 18px;
@@ -196,20 +210,18 @@ a {
 .materials {
   width: 300px;
   height: 123px;
-  padding-top: px;
-  padding-bottom: px;
-  padding-left: px;
-  padding-right: px;
   background-color: #ffbf47;
 }
 
+.materials-link {
+  width: 135px;
+  height: 38px;
+  background-color: #e5ac40;
+
+}
 .tooling {
   width: 300px;
   height: 123px;
-  padding-top: px;
-  padding-bottom: px;
-  padding-left: px;
-  padding-right: px;
   background-color: #3bbce3;
 }
 
