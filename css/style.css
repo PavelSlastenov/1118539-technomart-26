@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -146,13 +146,13 @@ a {
   padding-left: 25px;
   padding-right: 12px;
   background-color: #ffffff;
-  margin-left: 150px; /*Временно отодвинул*/
+  margin-left: 100px; /*Временно отодвинул*/
 }
 
 .navigation-container {
   width: 940px;
   height: 60px;
-  margin-left: 350px; /*Временно отодвинул*/
+  margin-bottom: 100px; /*Временно отодвинул*/
 }
 .user-navigation{
   font-size: 17px;
@@ -256,7 +256,7 @@ a {
 .slider {
   width: 620px;
   height: 266px;
-  margin-left: 350px; /*временно отодвинул*/
+  margin-bottom: 200px; /*временно отодвинул*/
   background-image: url("img/slider-1.jpg"); /*не понял убрать из разметки картинку и вставить
                                               или нет, это свойство пока не работает*/
 }
@@ -331,6 +331,39 @@ a {
 .goods-list {
   list-style: none;
 }
+
+.goods h3 {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.index-product-1 {
+  width: 220px;
+  height: 318px;
+  border-width: 1px;
+  color: #eaeaea;
+  margin-bottom: 200px; /* Временно отодвинул*/
+}
+
+.link-price {
+  width: 141px;
+  height: 38px;
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.index-product-2 {
+  width: 220px;
+  height: 318px;
+  border-width: 1px;
+  color: #eaeaea;
+}
+
+.link-name {
+  color: #000000;
+
+}
 .link-buy {
   width: 135px;
   height: 38px;
@@ -353,6 +386,7 @@ a {
   border-style: solid;
   border-color: #63a63e;
 }
+
 
 .contacts,
 .contacts-form {
