@@ -70,7 +70,7 @@ a {
 .discounts-link a,
 .delivery-link a,
 .goods-link a,
-.link-buy a {
+.link-buy a, {
   color: #ffffff;
 }
 
@@ -391,6 +391,20 @@ a {
   border-color: #63a63e;
 }
 
+.manufacturers-container {
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+}
+
+.manufacturers-link {
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  font-weight: normal;
+  text-align: center;
+}
 
 .contacts,
 .contacts-form {
