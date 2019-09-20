@@ -338,12 +338,12 @@ a {
   text-transform: none;
 }
 
-.index-product-1 {
-  width: 220px;
-  height: 318px;
-  border-width: 1px;
-  color: #eaeaea;
-  margin-bottom: 200px; /* Временно отодвинул*/
+.old-price {
+  text-decoration: line-through;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .link-price {
@@ -353,11 +353,15 @@ a {
   text-align: center;
 }
 
-.index-product-2 {
+.index-product-1,
+.index-product-2,
+.index-product-3,
+.index-product-4 {
   width: 220px;
   height: 318px;
   border-width: 1px;
   color: #eaeaea;
+  margin-bottom: 200px; /* Временно отодвинул*/
 }
 
 .link-name {
