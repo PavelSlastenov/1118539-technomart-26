@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #000000;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -27,9 +27,26 @@ a {
 }
 
 .main-header-logo {
+  width: 220px;
+  height: 47px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom 16px;
+  padding-left: 55px;
+  padding-right: 56px;
   background-color: #ee3643;
 }
 
+.formalize {
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom 13px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: #63a63e;
+}
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
@@ -66,14 +83,14 @@ a {
   background-color: #f3f7f8;
 }
 
-.phone {
+.description-phone {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
   list-style: none; /*не работает*/
 }
 
-.address {
+.description-address {
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
@@ -93,6 +110,29 @@ a {
 
 .login-link a {
   color: #000000;
+}
+
+.login-link-enter {
+  width: 121px;
+  height: 45px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  padding-right: 20px;
+  background-color: #ffffff;
+}
+
+.login-link-registration {
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 12px;
+  background-color: #ffffff;
+  margin-left: 150px; /*Временно отодвинул*/
 }
 
 .user-navigation{
@@ -131,6 +171,16 @@ a {
   font-size: 14px;
   line-height: 18px;
 }
+  /*
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: #35a9cc;
+*/
 
 .slider h3 {
   font-size: 36px;
@@ -144,22 +194,52 @@ a {
 }
 
 .materials {
+  width: 300px;
+  height: 123px;
+  padding-top: px;
+  padding-bottom: px;
+  padding-left: px;
+  padding-right: px;
   background-color: #ffbf47;
 }
 
 .tooling {
+  width: 300px;
+  height: 123px;
+  padding-top: px;
+  padding-bottom: px;
+  padding-left: px;
+  padding-right: px;
   background-color: #3bbce3;
 }
 
 .technique {
+  width: 300px;
+  height: 123px;
+  padding-top: px;
+  padding-bottom: px;
+  padding-left: px;
+  padding-right: px;
   background-color: #dc91d8;
 }
 
 .discounts {
+  width: 300px;
+  height: 123px;
+  padding-top: px;
+  padding-bottom: px;
+  padding-left: px;
+  padding-right: px;
   background-color: #8ed78f;
 }
 
 .delivery {
+  width: 300px;
+  height: 123px;
+  padding-top: px;
+  padding-bottom: px;
+  padding-left: px;
+  padding-right: px;
   background-color: #ffc047;
 }
 
