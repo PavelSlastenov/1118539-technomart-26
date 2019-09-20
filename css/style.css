@@ -338,6 +338,7 @@ a {
   border-radius: 3px;
   text-align: center;
   font-weight: normal;
+  margin-bottom: 8px;
 }
 
 .link-bookmarks { /*Контейнер все время вытягивается, не могу задать размеры*/
