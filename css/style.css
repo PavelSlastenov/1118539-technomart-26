@@ -62,7 +62,15 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a {
+.user-navigation a,
+.materials-link a,
+.tooling-link a,
+.technique-link a,
+.slider-link a,
+.discounts-link a,
+.delivery-link a,
+.goods-link a,
+.link-buy a {
   color: #ffffff;
 }
 
@@ -94,9 +102,6 @@ a {
   padding-bottom: 12px;
   padding-left: 72px;
   padding-right: 38px;
-
-
-
 }
 
 .description-address {
@@ -217,42 +222,80 @@ a {
   width: 135px;
   height: 38px;
   background-color: #e5ac40;
-
+  border-radius: 3px;
+  text-align: center;
 }
+
 .tooling {
   width: 300px;
   height: 123px;
   background-color: #3bbce3;
 }
 
+.tooling-link {
+  width: 135px;
+  height: 38px;
+  background-color: #35a9cc;
+  border-radius: 3px;
+  text-align: center;
+}
 .technique {
   width: 300px;
   height: 123px;
-  padding-top: px;
-  padding-bottom: px;
-  padding-left: px;
-  padding-right: px;
   background-color: #dc91d8;
+}
+
+.technique-link {
+  width: 135px;
+  height: 38px;
+  background-color: #c682c2;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.slider {
+  width: 620px;
+  height: 266px;
+  margin-left: 350px; /*временно отодвинул*/
+  background-image: url("img/slider-1.jpg"); /*не понял убрать из разметки картинку и вставить
+                                              или нет, это свойство пока не работает*/
+}
+
+.slider-link {
+  width: 198px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+
 }
 
 .discounts {
   width: 300px;
   height: 123px;
-  padding-top: px;
-  padding-bottom: px;
-  padding-left: px;
-  padding-right: px;
   background-color: #8ed78f;
+}
+
+.discounts-link {
+  width: 135px;
+  height: 38px;
+  background-color: #80c180;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .delivery {
   width: 300px;
   height: 123px;
-  padding-top: px;
-  padding-bottom: px;
-  padding-left: px;
-  padding-right: px;
   background-color: #ffc047;
+}
+
+.delivery-link {
+  width: 135px;
+  height: 38px;
+  background-color: #e5ac40;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .goods h2 {
@@ -262,18 +305,53 @@ a {
   font-weight: normal;
 }
 
-.all-goods {
+/*.all-goods {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: normal;
   background-color: #ee3643;
 }
+*/
 
+.goods-container {
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+}
 
+.goods-link {
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  font-weight: normal;
+  text-align: center;
+}
 
+.goods-list {
+  list-style: none;
+}
+.link-buy {
+  width: 135px;
+  height: 38px;
+  background-color: #63a63e;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+}
 
-
+.link-bookmarks { /*Контейнер все время вытягивается, не могу задать размеры*/
+  width: 129px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+  color: #32425c;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #63a63e;
+}
 
 .contacts,
 .contacts-form {
