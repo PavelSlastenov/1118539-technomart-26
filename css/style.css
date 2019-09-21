@@ -70,7 +70,8 @@ a {
 .discounts-link a,
 .delivery-link a,
 .goods-link a,
-.link-buy a, {
+.link-buy a,
+.manufacturers-link a{
   color: #ffffff;
 }
 
@@ -359,8 +360,9 @@ a {
 .index-product-4 {
   width: 220px;
   height: 318px;
-  border-width: 1px;
-  color: #eaeaea;
+  border-width: 1px; /*рамка не задается*/
+  border-style: solid;
+  border-color: #eaeaea;
   margin-bottom: 200px; /* Временно отодвинул*/
 }
 
@@ -405,6 +407,81 @@ a {
   font-weight: normal;
   text-align: center;
 }
+
+.manufacturers h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+}
+
+.manufacturers-logo {
+  width: 220px;
+  height: 145px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-delivery-container {  /*растянуть на всю ширину*/
+  width: 1200px;
+  height: 522px;
+  background-color: #f4f7f9;
+  margin-top: 200px;
+  margin-left: 350px;
+}
+
+.service h2 {
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  color: #000000;
+}
+
+.service ul {
+  list-style: none;
+}
+.service-description {
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  font-weight: normal; /*не работает свойство*/
+  color: #000000;
+}
+
+.button-delivery {   /*доделать*/
+
+  text-align: center;
+  color: #font: inherit;;
+  vertical-align: middle;
+  text-transform: ;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+
+
+.delivery-container h3 {
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  color: #32425c;
+}
+
+.delivery-container p {
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  font-weight: normal; /*не работает свойство*/
+  color: #000000;
+}
+
+
+
+
+
+
+
+
 
 .contacts,
 .contacts-form {
