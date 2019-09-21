@@ -106,12 +106,16 @@ a {
   text-transform: none;
   font-weight: normal;
   text-align: center;
+
 }
 
 .description-phone {
   border-width: 3px;
   border-style: solid;
   border-color: #ffffff;
+  box-sizing: border-box;
+  padding-top: 14px;
+
 }
 
 
@@ -194,15 +198,15 @@ a {
   font-size: 14px;
   line-height: 18px;
 }
-  /*
-  width: 135px;
-  height: 38px;
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 10px;
-  background-color: #35a9cc;
+/*
+width: 135px;
+height: 38px;
+text-align: center;
+padding-top: 14px;
+padding-bottom: 14px;
+padding-left: 20px;
+padding-right: 10px;
+background-color: #35a9cc;
 */
 
 .slider h3 {
@@ -606,12 +610,3 @@ a {
 .contacts-form {
   display: none;
 }
-
-
-
-
-
-
-
-
-
