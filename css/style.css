@@ -71,7 +71,9 @@ a {
 .delivery-link a,
 .goods-link a,
 .link-buy a,
-.manufacturers-link a{
+.manufacturers-link a,
+.company-link a,
+.contacts-map-link a{
   color: #ffffff;
 }
 
@@ -445,17 +447,15 @@ a {
 .service-description {
   font-size: 12px;  /*не определен шрифт*/
   line-height: 21px;
-  font-weight: normal; /*не работает свойство*/
+  text-transform: none;
   color: #000000;
 }
 
 .button-delivery {   /*доделать*/
 
   text-align: center;
-  color: #font: inherit;;
+  color: #32425c;
   vertical-align: middle;
-  text-transform: ;
-
   background-color: #ffffff;
   border: none;
 }
@@ -471,10 +471,71 @@ a {
 .delivery-container p {
   font-size: 12px;  /*не определен шрифт*/
   line-height: 21px;
-  font-weight: normal; /*не работает свойство*/
+  text-transform: none;
   color: #000000;
 }
 
+
+.company h2 {
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  color: #000000;
+}
+
+.company p, li {
+  text-transform: none;
+  list-style: none;
+  color: #000000;
+}
+
+.company-container {
+  margin-bottom: 200px; /* Временно отодвинул*/
+  margin-left: 350px;
+}
+
+.company-link {
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contacts-map h2{
+  font-size: 12px;  /*не определен шрифт*/
+  line-height: 21px;
+  color: #000000;
+}
+
+.contacts-map p {
+  text-transform: none;
+  list-style: none;
+  color: #000000;
+}
+
+.contacts-map-link {
+  width: 300px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.logo-footer {
+  width: 220px;
+  height: 68px;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom 26px;
+  padding-left: 42px;
+  padding-right: 41px;
+  background-color: #ee3643;
+
+  margin-bottom: 140px; /* Временно отодвинул*/
+  margin-left: 300px;
+}
 
 
 
