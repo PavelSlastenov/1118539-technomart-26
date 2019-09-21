@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #000000;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -48,6 +48,7 @@ a {
   background-color: #63a63e;
 }
 .main-navigation {
+  height: 42px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -73,7 +74,8 @@ a {
 .link-buy a,
 .manufacturers-link a,
 .company-link a,
-.contacts-map-link a{
+.contacts-map-link a,
+.navigation-footer-1 a{
   color: #ffffff;
 }
 
@@ -85,6 +87,7 @@ a {
 }
 
 .description-item {
+  height: 278px;
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
@@ -428,7 +431,6 @@ a {
 }
 
 .service-delivery-container {  /*растянуть на всю ширину*/
-  width: 1200px;
   height: 522px;
   background-color: #f4f7f9;
   margin-top: 200px;
@@ -534,14 +536,44 @@ a {
   background-color: #ee3643;
 
   margin-bottom: 140px; /* Временно отодвинул*/
-  margin-left: 300px;
+
 }
 
+.footer-container-1 {
+  height: 193px;
+  color: #ffffff;
+  background-color: #32425c;
 
+}
 
+.adress-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: none;
+}
 
+.navigation-footer-1 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  list-style: none;
 
+}
 
+.navigation-footer-2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  list-style: none;
+}
+
+.navigation-footer-2 a{
+  color: #ffd180;
+}
+
+.footer-container-2
 
 
 .contacts,
@@ -549,14 +581,6 @@ a {
   display: none;
 }
 
-.footer-navigation { /*'эти свойства пока не работают, не меняется цвет ссылок*/
-  color: #ffffff;
-  font-size: 17px;
-  line-height: 17px;
-  background-color: #32425c;
-  font-weight: normal;
-  list-style: none;
-}
 
 
 
