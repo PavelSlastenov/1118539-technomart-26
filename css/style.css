@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -26,36 +26,33 @@ a {
   font-weight: normal;
 }
 
+.main-navigation {
+  height: 42px;
+  background-color: #293449;
+}
+
 .main-header-logo {
   width: 220px;
   height: 47px;
   text-align: center;
-  padding-top: 13px;
-  padding-bottom 16px;
-  padding-left: 55px;
-  padding-right: 56px;
   background-color: #ee3643;
+}
+
+.user-navigation{
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+  list-style: none;
 }
 
 .formalize {
   width: 150px;
   height: 42px;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom 13px;
-  padding-left: 20px;
-  padding-right: 10px;
   background-color: #63a63e;
 }
-.main-navigation {
-  height: 42px;
-  font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
-  background-color: #293449;
-  text-transform: none;
 
-}
 
 .site-navigation,
 .user-navigation a {
@@ -86,29 +83,39 @@ a {
   background-color: #1d2739;
 }
 
-.description-item {
+.description {
   height: 278px;
-  color: #ee3643;
+  background-color: #f3f7f8;
+}
+
+.description-item {
   font-size: 16px;
   line-height: 23px;
   text-transform: none;
   font-weight: normal;
   list-style: none;
-  background-color: #f3f7f8;
+  color: #ee3643;
+}
+.description-phone {
+  width: 264px;
+  height: 39px;
+  color: #ee3643;
+  background-color: #f4f7f9;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: none;
+  font-weight: normal;
+  text-align: center;
 }
 
 .description-phone {
-  color: #ee3643;
-  font-size: 21px;
-  line-height: 21px;
-  list-style: none;
-  width: 264px;
-  height: 39px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 72px;
-  padding-right: 38px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffffff;
 }
+
+
+
 
 .description-address {
   color: #32425c;
@@ -116,7 +123,6 @@ a {
   line-height: 24px;
   text-transform: none;
   font-weight: normal;
-  list-style: none; /* не работает*/
 }
 
 .login-link {
@@ -159,14 +165,6 @@ a {
   width: 940px;
   height: 60px;
   margin-bottom: 100px; /*Временно отодвинул*/
-}
-.user-navigation{
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #293449;
-  font-weight: normal;
-  list-style: none;
 }
 
 .site-navigation {
@@ -541,7 +539,6 @@ a {
 
 .footer-container-1 {
   height: 193px;
-  color: #ffffff;
   background-color: #32425c;
 
 }
@@ -573,7 +570,36 @@ a {
   color: #ffd180;
 }
 
-.footer-container-2
+.footer-container-2 {
+  height: 107px;
+  background-color: #293449;
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.feedback-footer,
+.developed-footer {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.feedback-footer-link,
+.developer-footer-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #d4b275;
+  font-weight: normal;
+  text-transform: none;
+}
 
 
 .contacts,
