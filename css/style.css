@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #000000;
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -41,7 +41,6 @@ a {
 .user-navigation{
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
   font-weight: normal;
   list-style: none;
 }
@@ -49,6 +48,7 @@ a {
 .formalize {
   width: 150px;
   padding-top: 14px;
+  padding-bottom: 13px;
   padding-left: 20px;
   background-color: #63a63e;
 }
@@ -72,7 +72,9 @@ a {
 .manufacturers-link a,
 .company-link a,
 .contacts-map-link a,
-.navigation-footer-1 a{
+.navigation-footer-1 a,
+.search-item label
+{
   color: #ffffff;
 }
 
@@ -96,16 +98,20 @@ a {
   list-style: none;
   color: #ee3643;
 }
+
 .description-phone {
-  width: 264px;
-  height: 39px;
+  width: 310px; /*Временно задал это значение, вместо 264px как в макете,
+                  иначе текст переносится на 2 строку. Задавал разные отступы,
+                  никак не выравнивается..*/
   color: #ee3643;
   background-color: #f4f7f9;
+  padding-bottom: 8px;
+  padding-left: 71px;
+  padding-right: 49px;
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
   font-weight: normal;
-  text-align: center;
 
 }
 
@@ -118,9 +124,6 @@ a {
 
 }
 
-
-
-
 .description-address {
   color: #32425c;
   font-size: 14px;
@@ -129,40 +132,41 @@ a {
   font-weight: normal;
 }
 
+.login {
+  list-style: none;
+}
+
+.login-link a,
+.login-link-registration a {
+  color: #000000;
+}
+
 .login-link {
+  width: 121px;
+  padding-top: 14px;
+  padding-left: 48px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
   color: #000000;
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
   font-weight: normal;
-  list-style: none;
-}
-
-.login-link a {
-  color: #000000;
-}
-
-.login-link-enter {
-  width: 121px;
-  height: 45px;
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 15px;
-  padding-left: 48px;
-  padding-right: 20px;
-  background-color: #ffffff;
 }
 
 .login-link-registration {
   width: 150px;
-  height: 45px;
-  text-align: center;
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 25px;
-  padding-right: 12px;
+  padding-right: 25px;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: none;
+  font-weight: normal;
   background-color: #ffffff;
-  margin-left: 100px; /*Временно отодвинул*/
+  margin-left: 160px; /*Временно отодвинул*/
 }
 
 .navigation-container {
