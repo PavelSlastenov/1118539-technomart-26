@@ -75,8 +75,9 @@ a {
 .company-link a,
 .contacts-map-link a,
 .navigation-footer-1 a,
-.search-item label
-{
+.search-item label,
+.social-network a {
+
   color: #ffffff;
 }
 
@@ -454,7 +455,7 @@ a {
   margin-bottom: 20px;
 }
 
-.service-delivery-container {
+.service {
   background-color: #f4f7f9;
   margin-top: 1700px; /*временно отодвинул*/
 }
@@ -470,9 +471,7 @@ a {
   list-style: none;
 }
 
-.service {
-  margin-left: 131px;
-}
+
 .service-description {
   font-size: 13px;
   line-height: 24px;
@@ -556,9 +555,8 @@ a {
   margin-bottom: 31px;
 }
 
-.company-container {
-  margin-bottom: 200px; /* Временно отодвинул*/
-  margin-left: 350px;
+.company {
+  margin-left: 132px;
 }
 
 .company-link {
@@ -570,6 +568,9 @@ a {
   font-weight: normal;
 }
 
+.contacts-map {
+  margin-bottom: 86px;
+}
 .contacts-map h2{
   font-size: 30px;
   line-height: 30px;
@@ -596,19 +597,17 @@ a {
 .logo-footer {
   width: 220px;
   height: 68px;
-  text-align: center;
   padding-top: 21px;
-  padding-bottom 26px;
-  padding-left: 42px;
   padding-right: 41px;
+  padding-left: 42px;
+  padding-bottom 26px;
   background-color: #ee3643;
-
-  margin-bottom: 140px; /* Временно отодвинул*/
-
+  margin-left: 130px;
+  text-align: center;
 }
 
+
 .footer-container-1 {
-  height: 193px;
   background-color: #32425c;
 
 }
@@ -619,20 +618,24 @@ a {
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
+  padding-top: 32px;
+  padding-left: 131px;
+  padding-bottom: 53px;
 }
 
 .navigation-footer-1 {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+  text-transform: none;
   list-style: none;
-
 }
 
 .navigation-footer-2 {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+  text-transform: none;
   list-style: none;
 }
 
@@ -641,18 +644,27 @@ a {
 }
 
 .footer-container-2 {
-  height: 107px;
   background-color: #293449;
 }
 
 .footer-description {
   font-size: 16px;
   line-height: 18px;
+  padding-top: 39px;
+  padding-left: 131px;
+  padding-bottom: 35px;
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
 }
 
+.social-network li {
+  list-style: none;
+}
+.social-network a {
+  font-weight: normal;
+  text-transform: none;
+}
 .feedback-footer,
 .developed-footer {
   font-size: 16px;
