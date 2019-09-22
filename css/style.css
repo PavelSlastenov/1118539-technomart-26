@@ -29,7 +29,6 @@ a {
 }
 
 .main-navigation {
-
   background-color: #293449;
 }
 
@@ -44,6 +43,7 @@ a {
   font-size: 17px;
   line-height: 18px;
   font-weight: normal;
+  text-transform: none;
   list-style: none;
 }
 
@@ -211,7 +211,6 @@ a {
                        вытягивается именно правый блок*/
   width: 300px;
   padding-top: 5px;
-  padding-right: auto;
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffbf47;
@@ -229,7 +228,6 @@ a {
 .tooling {
   width: 300px;
   padding-top: 5px;
-  padding-right: auto;
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #3bbce3;
@@ -246,7 +244,6 @@ a {
 .technique {
   width: 300px;
   padding-top: 5px;
-  padding-right: auto;
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #dc91d8;
@@ -292,7 +289,6 @@ a {
 .discounts {
   width: 300px;
   padding-top: 5px;
-  padding-right: auto;
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #8ed78f;
@@ -310,7 +306,6 @@ a {
 .delivery {
   width: 300px;
   padding-top: 5px;
-  padding-right: auto;
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffc047;
@@ -450,7 +445,8 @@ a {
 
 .manufacturers-logo {
   width: 220px;
-  height: 145px;
+  padding-top: 54px;
+  padding-bottom: 58px;
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
@@ -458,64 +454,106 @@ a {
   margin-bottom: 20px;
 }
 
-.service-delivery-container {  /*растянуть на всю ширину*/
-  height: 522px;
+.service-delivery-container {
   background-color: #f4f7f9;
-  margin-top: 200px;
-  margin-left: 350px;
+  margin-top: 1700px; /*временно отодвинул*/
 }
 
 .service h2 {
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
+  margin-bottom: 39px;
 }
 
 .service ul {
   list-style: none;
 }
+
+.service {
+  margin-left: 131px;
+}
 .service-description {
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 24px;
   text-transform: none;
+  font-weight: normal;
   color: #000000;
+  margin-bottom: 74px;
 }
 
-.button-delivery {   /*доделать*/
-
-  text-align: center;
+.button-delivery {
+  width: 240px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
   color: #32425c;
   vertical-align: middle;
+  text-transform: none;
   background-color: #ffffff;
   border: none;
+  font-weight: bold;
 }
 
-
+.button-guarantee,
+.button-loan {
+  width: 240px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: none;
+  background-color: #32425c;
+  border: none;
+  font-weight: bold;
+}
 
 .delivery-container h3 {
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 36px;
+  line-height: 36px;
   color: #32425c;
+  margin-bottom: 34px;
 }
 
 .delivery-container p {
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 24px;
   text-transform: none;
+  font-weight: normal;
   color: #000000;
 }
 
+.delivery-container {
+  margin-left: 450px;
+}
 
 .company h2 {
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
 }
 
-.company p, li {
+.company p  {
+  font-size: 13px;
+  line-height: 24px;
   text-transform: none;
+  font-weight: normal;
   list-style: none;
   color: #000000;
+  margin-bottom: 41px;
+}
+
+.company li {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: normal;
+  list-style: none;
+  color: #000000;
+  margin-bottom: 31px;
 }
 
 .company-container {
@@ -533,12 +571,14 @@ a {
 }
 
 .contacts-map h2{
-  font-size: 12px;  /*не определен шрифт*/
-  line-height: 21px;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
 }
 
 .contacts-map p {
+  font-size: 13px;
+  line-height: 24px;
   text-transform: none;
   list-style: none;
   color: #000000;
