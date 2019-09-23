@@ -832,11 +832,21 @@ a {
    border-color: #e5e5e5;
  }
 
-.manufacturers-filters {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: normal;
+.description-perforators h2 {
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
+  background-color: #f2f6f8;
+  text-transform: none;
+  font-weight: normal;
+}
+/*Разбираюсь, что то они в один контейнер не входят*/
+.perforators-paragraph {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
+  font-weight: normal;
 }
 
 .manufacturers-color {
