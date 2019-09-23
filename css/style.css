@@ -56,7 +56,6 @@ a {
   background-color: #63a63e;
 }
 
-
 .site-navigation,
 .user-navigation a {
   list-style: none;
@@ -331,14 +330,6 @@ a {
   font-weight: normal;
 }
 
-/*.all-goods {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-*/
-
 .goods-container {
   width: 940px;
   height: 89px;
@@ -612,7 +603,6 @@ a {
 
 .footer-container-1 {
   background-color: #32425c;
-
 }
 
 .adress-footer {
@@ -686,7 +676,6 @@ a {
   text-transform: none;
 }
 
-
 .contacts,
 .contacts-form {
   display: none;
@@ -734,7 +723,6 @@ a {
   line-height: 30px;
   padding-bottom: 35px;
   padding-left: 30px;
-
 }
 
 .catalog-product-1,
