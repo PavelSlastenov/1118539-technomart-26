@@ -19,7 +19,7 @@ a {
 
 .visually-hidden,
 .link-buy,
-.link-bookmarks{  /*Скрыл "Купить" и "В закладки" из карточки товаров*/
+.link-bookmarks {  /*Скрыл "Купить" и "В закладки" из карточки товаров*/
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -117,6 +117,9 @@ a {
   font-weight: normal;
 
 }
+.description-list {
+  list-style: none;
+}
 
 .description-phone {
   border-width: 3px;
@@ -171,13 +174,12 @@ a {
   text-transform: none;
   font-weight: normal;
   background-color: #ffffff;
-  margin-left: 160px; /*Временно отодвинул*/
+  margin-left: 160px;
 }
 
 .navigation-container {
   width: 940px;
-
-  margin-bottom: 100px; /*Временно отодвинул*/
+  margin-bottom: 100px;
 }
 
 .site-navigation {
@@ -689,3 +691,93 @@ a {
   display: none;
 }
 
+/*Страница каталога*/
+
+.user-name {  /*Делаю шрифт как в макете 21px и размеры формы, в итоге текст не влезает*/
+  width: 300px;
+  height: 44px;
+  /*font-size: 21px;
+  line-height: 21px;*/
+  background-color: #ffffff;
+  color: #000000;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.order,
+.account {
+  font-size: 16px;
+  line-height: 18px;
+  color: #3f4e66;
+  text-transform: none;
+  font-weight: normal;
+  text-decoration:underline
+}
+
+.tabs {
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.tabs a {
+  color: #000000;
+}
+
+.perforators-header {
+  width: 940px;
+  background-color: #f2f6f8;
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+
+}
+
+.catalog-product-1,
+.catalog-product-2,
+.catalog-product-3,
+.catalog-product-4,
+.catalog-product-5,
+.catalog-product-6,
+.catalog-product-7,
+.catalog-product-8,
+.catalog-product-9 {
+  width: 220px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  margin-bottom: 20px; /* Временно отодвинул*/
+}
+
+.catalog-product-1 h3,
+.catalog-product-2 h3,
+.catalog-product-3 h3,
+.catalog-product-4 h3,
+.catalog-product-5 h3,
+.catalog-product-6 h3,
+.catalog-product-7 h3,
+.catalog-product-8 h3,
+.catalog-product-9 {
+  text-align: center;
+}
+
+.sort h3{
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: normal;
+  color: #000000;
+}
+.sort {
+  width:700px;
+  height: 38px;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.sort-price {
+
+}
