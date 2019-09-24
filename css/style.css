@@ -682,7 +682,6 @@ a {
 
 .user-name {  /*Делаю шрифт как в макете 21px и размеры формы, в итоге текст не влезает*/
   width: 300px;
-  height: 44px;
   /*font-size: 21px;
   line-height: 21px;*/
   background-color: #ffffff;
