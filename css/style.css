@@ -19,8 +19,7 @@ a {
 
 .visually-hidden,
 .link-buy,
-.link-bookmarks,
-.basket {  /*Скрыл "Купить" и "В закладки" из карточки товаров*/
+.link-bookmarks{  /*Скрыл "Купить" и "В закладки" из карточки товаров*/
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -147,9 +146,7 @@ a {
   color: #000000;
 }
 
-.login-link {  /*В макете видно что слева будет иконка и текст немного отодвинут вправо,
-                 проблема как и выше, задаю паддинги с разных сторон все уезжает,
-                 преимущественно увеличивается правй край, никак не могу выровнить..*/
+.login-link {
   width: 121px;
   padding-top: 14px;
   padding-left: 48px;
@@ -391,7 +388,7 @@ a {
 
 .link-name {
   color: #000000;
-
+  font-family: PTSans;
 }
 .link-buy {
   width: 135px;
