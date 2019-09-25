@@ -250,8 +250,7 @@ a {
   line-height: 18px;
 }
 
-.materials {         /*Проблемма просматривается и дальше, что-то делаю не так,
-                       вытягивается именно правый блок*/
+.materials {
   width: 300px;
   padding-top: 5px;
   padding-left: 23px;
@@ -268,6 +267,7 @@ a {
   text-align: center;
 }
 
+.materials-link a:
 .tooling {
   width: 300px;
   padding-top: 5px;
@@ -305,8 +305,7 @@ a {
   width: 620px;
   height: 266px;
   margin-bottom: 200px; /*временно отодвинул*/
-  background-image: url("img/slider-1.jpg"); /*не понял убрать из разметки картинку и вставить
-                                              или нет, это свойство пока не работает*/
+  background-image: url("img/slider-1.jpg");
 }
 
 .slider-link {
@@ -327,6 +326,14 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+}
+
+.slider-link:hover {
+  background-color: #ca2c37;
+}
+
+.slider-link:active {
+  background-color: #ba2732;
 }
 
 .discounts {
@@ -361,6 +368,22 @@ a {
   background-color: #e5ac40;
   border-radius: 3px;
   text-align: center;
+}
+
+.materials-link:hover,
+.tooling-link:hover,
+.technique-link:hover,
+.discounts-link:hover,
+.delivery-link:hover {
+  background-color: #cccccc;
+}
+
+.materials-link:active,
+.tooling-link:active,
+.technique-link:active,
+.discounts-link:active,
+.delivery-link:active {
+  background-color: #b2b2b2;
 }
 
 .goods h2 {
@@ -515,20 +538,7 @@ a {
   margin-bottom: 74px;
 }
 
-.button-delivery {
-  width: 240px;
-  height: 62px;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: #32425c;
-  vertical-align: middle;
-  text-transform: none;
-  background-color: #ffffff;
-  border: none;
-  font-weight: bold;
-}
-
+.button-delivery,
 .button-guarantee,
 .button-loan {
   width: 240px;
@@ -543,6 +553,23 @@ a {
   border: none;
   font-weight: bold;
 }
+
+.button-delivery:hover,
+.button-guarantee:hover,
+.button-loan:hover {
+  background-color: #293449;
+}
+
+.button-delivery:active,
+.button-guarantee:active,
+.button-loan:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+
+
+
 
 .delivery-container h3 {
   font-size: 36px;
@@ -723,7 +750,7 @@ a {
 
 /*Страница каталога*/
 
-.user-name {  /*Делаю шрифт как в макете 21px и размеры формы, в итоге текст не влезает*/
+.user-name {
   width: 299px;
   height: 45px;
   font-size: 21px;
@@ -767,8 +794,24 @@ a {
   color: #000000;
 }
 
-.perforators-header {
+.sort-price a,   /*Завис.....*/
+.sort-type a,
+.sort-functional a {
+  color: #b2b2b2;
+  text-decoration: none;
+  border-bottom: 1px dashed #ee3643;
+}
 
+.sort-price a:hover,
+.sort-type a:hover,
+.sort-functional a:hover {
+  color: #000000;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ee3643;
+}
+
+.perforators-header {
   padding-top: 33px;width: 940px;
   background-color: #f2f6f8;
   color: #32425c;
@@ -776,6 +819,12 @@ a {
   line-height: 30px;
   padding-bottom: 35px;
   padding-left: 30px;
+}
+
+.perforators h3 {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
 }
 
 .catalog-product-1,
