@@ -207,6 +207,16 @@ a {
   margin-left: 160px;
 }
 
+.login-link a:hover,
+.login-link-registration a:hover {
+  color: #ee3643;
+}
+
+.login-link a:active,
+.login-link-registration a:active {
+  color: #b2b2b2;
+}
+
 .navigation-container {
   width: 940px;
   margin-bottom: 100px;
@@ -714,25 +724,39 @@ a {
 /*Страница каталога*/
 
 .user-name {  /*Делаю шрифт как в макете 21px и размеры формы, в итоге текст не влезает*/
-  width: 300px;
-  /*font-size: 21px;
-  line-height: 21px;*/
+  width: 299px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 21px;
   background-color: #ffffff;
   color: #000000;
-  padding-left: 48px;
-  box-sizing: border-box;
+  text-transform: none;
+
 }
 
 .order,
 .account {
   font-size: 16px;
   line-height: 18px;
-  color: #3f4e66;
+  color: #32425c; /*ПРОВЕРИТ ЬПО ОРИГИНАЛУ ЦВЕТ */
   text-transform: none;
   font-weight: normal;
   text-decoration:underline
 }
 
+.order a:hover,
+.account a:hover {
+  color: #ee3643;
+}
+
+.order a:active,
+.account a:active {
+  color: #bfc6ce;
+}
+
+.user-name:active {
+  color: #b2b2b2;
+}
 .tabs {
   font-size: 13px;
   line-height: 18px;
