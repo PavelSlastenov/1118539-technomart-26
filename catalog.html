@@ -173,10 +173,11 @@
       </ul>
   </section>
 
-  <section>
+  <section class="filters">
     <form method="get" action="https://echo.htmlacademy.ru">
+      <div class="manufacturers-filters">
       <fieldset>
-        <legend class="manufacturers-filters">Производители:</legend>
+        <legend>Производители:</legend>
         <ul>
           <li>
             <input type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -200,8 +201,10 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter">
-        <legend class="food-catalog">ПИТАНИЕ:</legend>
+      </div>
+      <div class="food-filter">
+      <fieldset>
+        <legend>ПИТАНИЕ:</legend>
         <ul>
           <li>
             <input type="radio" name="food" value="rechargeable" id="filter-rechargeable" checked>
@@ -213,7 +216,8 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit">Показать</button>
+      </div>
+      <div class="submit"><a href="">ПОКАЗАТЬ</a></div>
     </form>
   </section>
 
@@ -223,12 +227,12 @@
       <li class="page-3"><a href="">3</a></li>
       <li class="next-page"><a href="">СЛЕДУЮЩАЯ</a></li>
     </ul>
-  <section class="description-perforators">
+  <div class="description-perforators">
     <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-    <p class="perforators-paragraph">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
       Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
       ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-  </section>
+  </div>
 </main>
 
 <footer class="main-footer">
@@ -253,7 +257,7 @@
     </ul>
   </div>
   <div class="footer-container-2">
-    <p class="footer-description">2010-2019 Компания "Техномарт"<br>
+    <p class="footer-description">&#169;2010-2019 Компания "Техномарт"<br>
       Все права защищены</p>
     <ul class="social-network">
       <li><a href="">Вконтакте</a></li>
