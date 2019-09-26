@@ -17,9 +17,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden,
-.link-buy,
-.link-bookmarks{  /*Скрыл "Купить" и "В закладки" из карточки товаров*/
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -34,8 +32,9 @@ a {
 
 .main-header-logo {
   width: 220px;
-  padding-top: 13px;
-  padding-left: 59px;
+  height: 47px;
+  font-size: 21px;
+  line-height: 21px;
   background-color: #ee3643;
 }
 
@@ -102,6 +101,8 @@ a {
 
 .formalize-background {
   width: 150px;
+  font-size: 17px;
+  line-height: 18px;
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 20px;
@@ -129,15 +130,12 @@ a {
   font-size: 16px;
   line-height: 23px;
   text-transform: none;
-  font-weight: normal;
   list-style: none;
   color: #ee3643;
 }
 
 .description-phone {
-  width: 310px; /*Временно задал это значение, вместо 264px как в макете,
-                  иначе текст переносится на 2 строку. Задавал разные отступы,
-                  никак не выравнивается..*/
+  width: 310px;
   color: #ee3643;
   background-color: #f4f7f9;
   padding-bottom: 8px;
@@ -146,7 +144,6 @@ a {
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
-  font-weight: normal;
 
 }
 .description-list {
@@ -167,7 +164,6 @@ a {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
-  font-weight: normal;
 }
 
 .login {
@@ -189,7 +185,6 @@ a {
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
-  font-weight: normal;
 }
 
 .login-link-registration {
@@ -202,7 +197,6 @@ a {
   line-height: 21px;
   text-align: center;
   text-transform: none;
-  font-weight: normal;
   background-color: #ffffff;
   margin-left: 160px;
 }
@@ -267,7 +261,6 @@ a {
   text-align: center;
 }
 
-.materials-link a:
 .tooling {
   width: 300px;
   padding-top: 5px;
@@ -314,7 +307,6 @@ a {
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
-
 }
 
 .slider h3 {
@@ -326,6 +318,11 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+}
+
+.slider-link a {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .slider-link:hover {
@@ -408,6 +405,11 @@ a {
   text-align: center;
 }
 
+.goods-link a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .goods-list {
   list-style: none;
 }
@@ -454,7 +456,7 @@ a {
 
 .link-name {
   color: #000000;
-  font-family: PTSans;
+  font-family: PTSans; /*Почему-то выделяет его в редакторе, но работает*/
 }
 .link-buy {
   width: 135px;
@@ -499,6 +501,11 @@ a {
   line-height: 30px;
   color: #32425c;
   font-weight: normal;
+}
+
+.manufacturers-link a {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .manufacturers-logo {
@@ -756,6 +763,16 @@ a {
   text-transform: none;
 }
 
+.feedback-footer-link:hover,
+.developer-footer-link:hover {
+  text-decoration-line: underline;
+}
+
+.feedback-footer-link:active,
+.developer-footer-link:active {
+  color: #c73644;
+  text-decoration: none;
+}
 .contacts,
 .contacts-form {
   display: none;
@@ -807,11 +824,43 @@ a {
   color: #000000;
 }
 
+.sort h3{
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: normal;
+  color: #000000;
+}
+.sort {
+  width:700px;
+
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.sort-price {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: normal;
+  color: #ee3643;
+}
+
+.sort-type,
+.sort-functional {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: normal;
+  color: #acaaa5;
+}
+
 .sort-price a,
 .sort-type a,
 .sort-functional a {
   color: #b2b2b2;
   border-bottom: 1px dashed #ee3643;
+  text-decoration: none;
 }
 
 .sort-price a:hover,    /*Не могу убрать прерывистое подчеркивание при наведении*/
@@ -888,36 +937,7 @@ a {
   color: #b5b5b5;
 }
 */
-.sort h3{
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: none;
-  font-weight: normal;
-  color: #000000;
-}
-.sort {
-  width:700px;
 
-  background-color: #f7f3ec;
-  margin-bottom: 20px;
-}
-
-.sort-price {
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: none;
-  font-weight: normal;
-  color: #ee3643;
-}
-
-.sort-type,
-.sort-functional {
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: none;
-  font-weight: normal;
-  color: #acaaa5;
-}
 
 
 .description-perforators h2 {
