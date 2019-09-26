@@ -36,14 +36,17 @@ a {
   font-size: 21px;
   line-height: 21px;
   background-color: #ee3643;
+  box-shadow: 0px 5px 0 0 #b62931;
 }
 
 .main-header-logo:hover {
   background-color: #ca2c37;
+  box-shadow: 0px 5px 0 0 #9b2022;
 }
 
 .main-header-logo:active {
   background-color: #ba2732;
+  box-shadow: 0px 5px 0 0 #882520;
 }
 
 .user-navigation{
@@ -120,7 +123,6 @@ a {
 .formalize:active {
   color: #a8c29a;
 }
-
 
 .description {
   background-color: #f3f7f8;
@@ -456,7 +458,7 @@ a {
 
 .link-name {
   color: #000000;
-  font-family: PTSans; /*Почему-то выделяет его в редакторе, но работает*/
+  font-family: PTSans; /*Почему-то выделяет его в редакторе как ошибку, но работает*/
 }
 .link-buy {
   width: 135px;
@@ -468,7 +470,7 @@ a {
   margin-bottom: 8px;
 }
 
-.link-bookmarks { /*Контейнер все время вытягивается, не могу задать размеры*/
+.link-bookmarks {
   width: 129px;
   height: 32px;
   background-color: #ffffff;
@@ -519,6 +521,11 @@ a {
   margin-bottom: 20px;
 }
 
+/* Пытаюсь сделать тень
+.manufacturers-logo:hover {
+  box-shadow: 20px 20px 5px 0 0 #cdccd1;
+}
+*/
 .service {
   background-color: #f4f7f9;
   margin-top: 1700px; /*временно отодвинул*/
@@ -534,7 +541,6 @@ a {
 .service ul {
   list-style: none;
 }
-
 
 .service-description {
   font-size: 13px;
@@ -573,10 +579,6 @@ a {
   color: #32425c;
   background-color: #ffffff;
 }
-
-
-
-
 
 .delivery-container h3 {
   font-size: 36px;
@@ -626,7 +628,6 @@ a {
   margin-left: 132px;
 }
 
-
 .company-link {
   width: 220px;
   height: 38px;
@@ -672,8 +673,8 @@ a {
   background-color: #ee3643;
   margin-left: 130px;
   text-align: center;
+  box-shadow: 0px 5px 0 0 #b62931;
 }
-
 
 .footer-container-1 {
   background-color: #32425c;
@@ -788,14 +789,13 @@ a {
   background-color: #ffffff;
   color: #000000;
   text-transform: none;
-
 }
 
 .order,
 .account {
   font-size: 16px;
   line-height: 18px;
-  color: #32425c; /*ПРОВЕРИТ ЬПО ОРИГИНАЛУ ЦВЕТ */
+  color: #32425c;
   text-transform: none;
   font-weight: normal;
   text-decoration:underline
@@ -936,32 +936,6 @@ a {
   color: #e9e9e9;
 }
 
-/*
-.checkbox1:hover {
-  color: #b5b5b5;
-}
-*/
-
-
-/*
-.description-perforators h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  background-color: #f2f6f8;
-  text-transform: none;
-  font-weight: normal;
-}
-
-.perforators-paragraph {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-  text-transform: none;
-  font-weight: normal;
-}
-*/
-
 .description-perforators {
   background-color: #f2f6f8;
   color: #000000;
@@ -1027,17 +1001,18 @@ a {
   list-style: none;
 }
 
-/* с красным шрифтом, индикатор активности
-.page-1 a {
-  color: #ffffff;
-}
-*/
 .page-1 a,
 .page-2 a,
 .page-3 a,
 .next-page a {
   color: #000000;
 }
+
+/* с красным шрифтом, индикатор активности
+.page-1 a {
+  color: #ffffff;
+}
+*/
 
 /*c красной заливкой, индикатор активности
 .page-1 {
