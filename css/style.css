@@ -32,21 +32,21 @@ a {
 
 .main-header-logo {
   width: 220px;
-  height: 47px;
+  height: 42px;
   font-size: 21px;
   line-height: 21px;
   background-color: #ee3643;
-  box-shadow: 0px 5px 0 0 #b62931;
+  box-shadow: 0 5px 0 0 #b62931;
 }
 
 .main-header-logo:hover {
   background-color: #ca2c37;
-  box-shadow: 0px 5px 0 0 #9b2022;
+  box-shadow: 0 5px 0 0 #9b2022;
 }
 
 .main-header-logo:active {
   background-color: #ba2732;
-  box-shadow: 0px 5px 0 0 #882520;
+  box-shadow: 0 5px 0 0 #882520;
 }
 
 .user-navigation{
@@ -133,7 +133,7 @@ a {
   line-height: 23px;
   text-transform: none;
   list-style: none;
-  color: #ee3643;
+  color: #f57282;
 }
 
 .description-phone {
@@ -458,7 +458,7 @@ a {
 
 .link-name {
   color: #000000;
-  font-family: PTSans; /*Почему-то выделяет его в редакторе как ошибку, но работает*/
+  font-family: PTSans; /*Почему-то выделяет его в редакторе как ошибку, но шрифт подключает*/
 }
 .link-buy {
   width: 135px;
@@ -521,11 +521,16 @@ a {
   margin-bottom: 20px;
 }
 
-/*Пытаюсь сделать тень
-.manufacturers-logo:hover {
-   box-shadow: 0px 5px 0 0 #b62931;
+.manufacturers-logo:hover { /*Задал параметры тени больше на глаз, отсчитал насколько пикселей
+                             уходит вниз в стайл-гайде с виду похоже но не точно. Не до конца понял
+                             как сделать размеры такие же как в макете.*/
+  box-shadow: 0px 8px 33px 0px #a9adb5;
 }
-*/
+
+.manufacturers-logo:active { /*Данный параметр то же добавил на глаз*/
+  opacity:0.3;
+}
+
 .service {
   background-color: #f4f7f9;
   margin-top: 1700px; /*временно отодвинул*/
@@ -665,7 +670,7 @@ a {
 
 .logo-footer {
   width: 220px;
-  height: 68px;
+  height: 63px;
   padding-top: 21px;
   padding-right: 41px;
   padding-left: 42px;
@@ -673,7 +678,7 @@ a {
   background-color: #ee3643;
   margin-left: 130px;
   text-align: center;
-  box-shadow: 0px 5px 0 0 #b62931;
+  box-shadow: 0 5px 0 0 #b62931;
 }
 
 .footer-container-1 {
