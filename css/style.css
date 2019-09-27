@@ -101,8 +101,15 @@ a {
   background-color: #161d29;
 }
 
+.basket-background-red {
+  width: 150px;
+  height: 42px;
+  background-color: #ee3643;
+}
+
 .red {
   width: 150px;
+  height: 42px;
   background-color: #ee3643;
 }
 
@@ -491,6 +498,10 @@ a {
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
+}
+
+.manufacturers-list {
+  list-style: none;
 }
 
 .manufacturers-link {
@@ -947,15 +958,14 @@ a {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
+  font-family: Cuprum;
 }
 
 .description-perforators p {
   font-size: 13px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: none;
-  font-weight: normal;
 
-  font-family: Cuprum;
 }
 
 .filters legend {
@@ -1011,6 +1021,8 @@ a {
 .page-3 a,
 .next-page a {
   color: #000000;
+  font-family: PTSans;
+  font-weight: normal;
 }
 
 /* с красным шрифтом, индикатор активности
