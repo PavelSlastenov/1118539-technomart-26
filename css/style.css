@@ -944,6 +944,7 @@ a {
 .description-perforators h2 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
 }
 
 .description-perforators p {
