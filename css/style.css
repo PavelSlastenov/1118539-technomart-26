@@ -33,10 +33,10 @@ a {
 .main-header-logo {
   width: 220px;
   height: 42px;
-  font-size: 21px;
-  line-height: 21px;
+  text-align: center;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
+
 }
 
 .main-header-logo:hover {
@@ -671,13 +671,8 @@ a {
 .logo-footer {
   width: 220px;
   height: 63px;
-  padding-top: 21px;
-  padding-right: 41px;
-  padding-left: 42px;
-  padding-bottom 26px;
   background-color: #ee3643;
   margin-left: 130px;
-  text-align: center;
   box-shadow: 0 5px 0 0 #b62931;
 }
 
