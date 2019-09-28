@@ -1,3 +1,58 @@
+/*---------------------------Сеточные стили-----------------------------------*/
+.main-header {
+  margin-bottom: 59px;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+
+  /* Временно для сетки */
+  min-height: 320px;
+  background-color: transparent;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 46px;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.user-navigation {
+  width: 850px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.site-navigation {
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -965,7 +1020,6 @@ a {
   font-size: 13px;
   line-height: 30px;
   text-transform: none;
-
 }
 
 .filters legend {

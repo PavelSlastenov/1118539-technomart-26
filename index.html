@@ -9,15 +9,16 @@
 </head>
 <body>
 <h1 class="visually-hidden">ТЕХНОМАРТ</h1>
-<header>
-  <section class="main-navigation">
-    <nav>
+<header class="main-header"> /****/
+  <section>
+    <nav class="main-navigation"> /*класс был в section*/
       <div class="main-header-logo">
         <a href="index.html"><img src="img/logo.svg" width="109" height="18" alt="Логотип магазина Техномарт"></a>
       </div>
+      <div class="main-navigation-wrapper"> /******/
       <ul class="user-navigation">
         <li>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get"> <!--Эту форму нам пока нужно как то скрыть?-->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <p class="search-item">
               <input id="search" type="text" name="search" value="" placeholder="Поиск">
             </p>
@@ -27,6 +28,7 @@
         <li><a class="basket-background" href="">Корзина: 0</a></li>
         <li class="formalize-background"><a class="formalize" href="">Оформить заказ</a></li>
       </ul>
+      </div> /****/
     </nav>
   </section>
 </header>
@@ -49,7 +51,7 @@
   </ul>
 </section>
 
-<header>
+<header class="main-header"> /***********/
   <section class="navigation-container">
     <nav>
       <ul class="site-navigation">
