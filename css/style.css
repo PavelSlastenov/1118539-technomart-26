@@ -4,7 +4,6 @@ body {
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 36px;
-  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -462,14 +461,20 @@ a {
   color: #aaaaaa;
   font-size: 17px;
   line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .link-price {
   width: 141px;
   height: 38px;
+  font-size: 17px;
+  line-height: 18px;
   background-color: #ee3643;
   text-align: center;
   margin-left: 42px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .index-product-1,
@@ -492,8 +497,9 @@ a {
 
 .link-name {
   color: #000000;
-  font-family: PTSans;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
+
 .link-buy {
   width: 135px;
   height: 38px;
@@ -572,11 +578,13 @@ a {
   margin-top: 1700px; /*временно отодвинул*/
 }
 
-.service h2 {
+.service h2 {    /*Проверил по макетe у меня показывает жирность 400, правда не понял почему
+                  она не задалась автоматически, поскольку она стандартно задана в body*/
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   margin-bottom: 39px;
+  font-weight: 400;
 }
 
 .service ul {
@@ -587,9 +595,10 @@ a {
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
-  font-weight: normal;
   color: #000000;
   margin-bottom: 74px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
 }
 
 .button-delivery,
@@ -644,16 +653,18 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  font-weight: 400; /*У меня показывает жирность 400, но что-то визуально мне кажется в макете жирнее?*/
 }
 
 .company p  {
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
-  font-weight: normal;
   list-style: none;
   color: #000000;
   margin-bottom: 41px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 .company li {
@@ -667,6 +678,7 @@ a {
 
 .company {
   margin-left: 132px;
+
 }
 
 .company-link {
@@ -680,19 +692,23 @@ a {
 
 .contacts-map {
   margin-bottom: 86px;
+
 }
 .contacts-map h2{
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  font-weight: 400;
 }
 
 .contacts-map p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   text-transform: none;
   list-style: none;
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+
 }
 
 .contacts-map-link {
@@ -749,15 +765,17 @@ a {
 
 .navigation-footer-1 a:hover,
 .navigation-footer-2 a:hover {
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
 .navigation-footer-1 a:active {
   color: #929caa;
+  text-decoration: none;
 }
 
 .navigation-footer-2 a:active {
   color: #998a6e;
+  text-decoration: none;
 }
 
 .footer-container-2 {
@@ -817,7 +835,7 @@ a {
 
 /*Страница каталога*/
 
-.user-name {
+.user-name {  /*Жирность ушла когда убрал из body значение 700*/
   width: 299px;
   height: 45px;
   font-size: 21px;
@@ -858,6 +876,8 @@ a {
 
 .tabs a {
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+
 }
 
 .sort h3{
@@ -866,10 +886,10 @@ a {
   text-transform: none;
   font-weight: normal;
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 .sort {
   width:700px;
-
   background-color: #f7f3ec;
   margin-bottom: 20px;
 }
@@ -897,6 +917,7 @@ a {
   color: #b2b2b2;
   border-bottom: 1px dotted #ee3643;
   text-decoration: none;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .sort-price a:hover,
@@ -920,14 +941,16 @@ a {
   padding-top: 33px;width: 940px;
   background-color: #f2f6f8;
   color: #32425c;
-  font-size: 30px;
-  line-height: 30px;
+
   padding-bottom: 35px;
   padding-left: 30px;
 }
 
 .perforators-header h2 {
   font-weight: normal;
+  font-size: 30px;
+  line-height: 23px;
+
 }
 
 .perforators h3 {
@@ -981,7 +1004,6 @@ a {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
-  font-family: Cuprum;
 }
 
 .description-perforators p {
@@ -1003,8 +1025,8 @@ a {
 .manufacturers-color {
   font-size: 15px;
   line-height: 20px;
-  font-weight: normal;
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .food-filter {
@@ -1043,7 +1065,7 @@ a {
 .page-3 a,
 .next-page a {
   color: #000000;
-  font-family: PTSans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
 }
 
