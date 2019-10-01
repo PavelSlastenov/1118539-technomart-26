@@ -36,7 +36,7 @@ a {
 .main-navigation ul {
   list-style: none;
 }
-.main-header-logo {           /*Выровнить текст, сверху большой отступ*/
+.main-header-logo {           /*Выровнять текст, сверху большой отступ*/
   width: 220px;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
@@ -73,6 +73,7 @@ a {
   line-height: 18px;
   font-weight: normal;
   text-transform: none;
+  margin-left: 49px;
 }
 
 .bookmarks-background {
@@ -87,7 +88,7 @@ a {
   margin-left: 78px;
 }
 
-.site-navigation,
+.site-navigation ul,
 .bookmarks-background,
 .basket-background,
 .formalize-background a{
@@ -174,7 +175,13 @@ a {
 }
 
 .description {
+  width: 100%;
+  height: 320px; /*временно*/
   background-color: #f3f7f8;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .description-item {
@@ -183,11 +190,11 @@ a {
   text-transform: none;
   list-style: none;
   color: #ee3643;
-
 }
 
-.description-phone {
-  width: 310px;
+.description-phone {  /*Выровнять цифры, сильно прижимается вниз*/
+  /*width: 270px;*/
+  height: 45px;
   color: #ee3d49;
   background-color: #f4f7f9;
   padding-bottom: 8px;
@@ -196,16 +203,6 @@ a {
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
-
-
-}
-.description-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.description-phone {
   border-width: 3px;
   border-style: solid;
   border-color: #ffffff;
@@ -220,13 +217,6 @@ a {
   text-transform: none;
 }
 
-.login {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 .login-link a,
 .login-link-registration a {
   color: #000000;
@@ -234,6 +224,7 @@ a {
 
 .login-link {
   width: 121px;
+  height: 45px;
   padding-top: 14px;
   padding-left: 48px;
   padding-bottom: 15px;
@@ -242,10 +233,12 @@ a {
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
+  box-sizing: border-box;
 }
 
 .login-link-registration {
   width: 150px;
+  height: 45px;
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 25px;
@@ -256,6 +249,7 @@ a {
   text-transform: none;
   background-color: #ffffff;
   margin-left: 160px;
+  box-sizing: border-box;
 }
 
 .login-link a:hover,
@@ -268,19 +262,20 @@ a {
   color: #b2b2b2;
 }
 
-/*Тренируюсь с сетками*/
-.site-navigation {
+.site-navigation ul{       /*выровнять текст*/
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
   width: 940px;
   height: 60px;
   background-color: #32425c;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
+  margin-left: 52px;
+  margin-right: 55px;
   align-items: center;
   justify-content: space-around;
-  margin-top: 300px; /*временно*/
 }
+
+
 
 .site-navigation a{
   color: #ffffff;
