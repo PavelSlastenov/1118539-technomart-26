@@ -286,7 +286,15 @@ a {
   text-transform: none;
 }
 
-.assortment {
+.assortment ul{
+  /*width: 940px;*/
+  /*height: 409px;*/
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   list-style: none;
   font-weight: normal;
 }
@@ -355,11 +363,14 @@ a {
 }
 
 .slider {
+  /*display: flex;
+  flex-direction: column;*/
   width: 620px;
   height: 266px;
   margin-bottom: 200px; /*временно отодвинул*/
   background-image: url("img/slider-1.jpg");
 }
+
 
 .slider-link {
   width: 198px;
