@@ -115,7 +115,7 @@ a {
 .contacts-map-link a,
 .navigation-footer-1 a,
 .search-item label,
-.social-network a {
+.footer-container-2 a {
   color: #ffffff;
 }
 
@@ -519,7 +519,6 @@ a {
   font-weight: normal;
   margin-top: auto;
   margin-bottom: auto;
-
 }
 
 .goods ul{
@@ -630,7 +629,10 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 940px;
   list-style: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .manufacturers-container {
@@ -641,6 +643,19 @@ a {
   background-color: #f9f5f0;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.manufacturers-container h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  margin-top: 33px;
+  margin-right: 270px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+
 }
 
 .manufacturers-link {
@@ -650,17 +665,19 @@ a {
   border-radius: 3px;
   font-weight: normal;
   text-align: center;
+  margin-top: 25px;
 }
 
-.manufacturers h2 {
+/*.manufacturers h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   font-weight: normal;
-  padding-top: 33px;
+ /* padding-top: 33px;
+  padding-right: 373px;
+  padding-bottom: 35px;
   padding-left: 30px;
-
-}
+}*/
 
 .manufacturers-link a {
   font-size: 14px;
@@ -687,8 +704,12 @@ a {
 }
 
 .service {
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #f4f7f9;
-  margin-top: 1700px; /*временно отодвинул*/
+  margin-bottom: 82px;
 }
 
 .service h2 {
@@ -703,6 +724,14 @@ a {
   list-style: none;
 }
 
+.service-container {
+}
+
+.amenities-container {
+  padding-top: 200px;
+}
+
+
 .service-description {
   font-size: 14px;
   line-height: 24px;
@@ -710,7 +739,6 @@ a {
   color: #000000;
   margin-bottom: 74px;
   font-family: "PT Sans", "Arial", sans-serif;
-
 }
 
 .button-delivery,
@@ -759,7 +787,14 @@ a {
 }
 
 .delivery-container {
-  margin-left: 450px;
+}
+
+.company-description {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 86px;
 }
 
 .company h2 {
@@ -775,7 +810,7 @@ a {
   text-transform: none;
   list-style: none;
   color: #000000;
-  margin-bottom: 41px;
+  margin-bottom: 36px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
 }
@@ -786,12 +821,16 @@ a {
   text-transform: none;
   list-style: none;
   color: #000000;
-  margin-bottom: 31px;
+  margin-bottom: 23px;
 }
 
 .company {
-  margin-left: 132px;
+  margin-left: auto;
+  margin-right: 121px;
+}
 
+.company-p-2 {
+  margin-bottom: 28px;
 }
 
 .company-link {
@@ -803,12 +842,18 @@ a {
   border-radius: 3px;
   text-align: center;
   font-weight: normal;
+  margin-top: 37px;
 }
 
 .contacts-map {
-  margin-bottom: 86px;
-
+  margin-right: auto;
 }
+
+.contacts-map img {
+  margin-top: 36px;
+  margin-bottom: 40px;
+}
+
 .contacts-map h2{
   font-size: 30px;
   line-height: 30px;
@@ -845,6 +890,8 @@ a {
 }
 
 .footer-container-1 {
+  display: flex;
+  flex-direction: row;
   background-color: #32425c;
 }
 
@@ -859,16 +906,20 @@ a {
   padding-bottom: 53px;
 }
 
-.navigation-footer-1 {
+.navigation-footer-1 ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
   font-weight: normal;
   text-transform: none;
-  list-style: none;
 }
 
-.navigation-footer-2 {
+.navigation-footer-2 ul{
+  display: flex;
+  flex-direction: row;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -896,8 +947,12 @@ a {
 }
 
 .footer-container-2 {
+  display: flex;
+  flex-direction: row;
   background-color: #293449;
 }
+
+
 
 .footer-description {
   font-size: 16px;
@@ -910,13 +965,14 @@ a {
   text-transform: none;
 }
 
-.social-network li {
+.footer-container-2 li {
   list-style: none;
 }
-.social-network a {
+.footer-container-2 a {
   font-weight: normal;
   text-transform: none;
 }
+
 .feedback-footer,
 .developed-footer {
   font-size: 16px;
@@ -924,6 +980,11 @@ a {
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
+}
+
+.feedback-footer,
+.developed-footer a {
+  color: #ffd180;
 }
 
 .feedback-footer-link,
