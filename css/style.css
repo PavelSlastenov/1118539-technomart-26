@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -269,8 +272,8 @@ a {
   width: 940px;
   height: 60px;
   background-color: #32425c;
-  margin-left: 52px;
-  margin-right: 55px;
+  margin-left: auto;
+  margin-right: auto;   /*сделать по центру весь блок*/
   align-items: center;
   justify-content: space-around;
 }
@@ -287,16 +290,19 @@ a {
 }
 
 .assortment ul{
-  /*width: 940px;*/
+  width: 940px;
   /*height: 409px;*/
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   box-sizing: border-box;
   flex-wrap: wrap;
   list-style: none;
   font-weight: normal;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 53px;
 }
 
 .assortment h3 {
@@ -318,7 +324,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffbf47;
-  margin-bottom: 20px; /*Временно отодвинул*/
+
 }
 
 .materials-link {
@@ -335,7 +341,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #3bbce3;
-  margin-bottom: 20px; /*Временно отодвинул*/
+
 }
 
 .tooling-link {
@@ -351,7 +357,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #dc91d8;
-  margin-bottom: 20px; /*Временно отодвинул*/
+
 }
 
 .technique-link {
@@ -367,7 +373,7 @@ a {
   flex-direction: column;*/
   width: 620px;
   height: 266px;
-  margin-bottom: 200px; /*временно отодвинул*/
+
   background-image: url("img/slider-1.jpg");
 }
 
@@ -411,7 +417,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #8ed78f;
-  margin-bottom: 20px; /*Временно отодвинул*/
+
 }
 
 .discounts-link {
@@ -428,7 +434,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffc047;
-  margin-bottom: 20px; /*Временно отодвинул*/
+
 }
 
 .delivery-link {
@@ -474,17 +480,35 @@ a {
   background-color: #b2b2b2;
 }
 
+.goods {
+  margin-right: auto;
+  margin-bottom: 21px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .goods h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   font-weight: normal;
+  margin-top: 33px;
+  margin-right: 374px;
+  margin-left: 30px;
 }
 
 .goods-container {
+  display: flex;
+  flex-direction: row;
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .goods-link {
@@ -493,16 +517,33 @@ a {
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
-  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
 }
+
+.goods ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+/*
+.index-product-container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
 
 .goods-link a {
   font-size: 14px;
   line-height: 18px;
-}
-
-.goods-list {
-  list-style: none;
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-bottom: 14px;
+  padding-left: 54px;
 }
 
 .goods h3 {
@@ -541,7 +582,8 @@ a {
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  margin-bottom: 20px; /* Временно отодвинул*/
+  margin-right: 20px;
+
 }
 
 .index-product-1 h3,
@@ -583,14 +625,22 @@ a {
   border-color: #63a63e;
 }
 
+.manufacturers ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
 .manufacturers-container {
+  display: flex;
+  flex-direction: row;
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
-}
-
-.manufacturers-list {
-  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .manufacturers-link {
@@ -607,6 +657,9 @@ a {
   line-height: 30px;
   color: #32425c;
   font-weight: normal;
+  padding-top: 33px;
+  padding-left: 30px;
+
 }
 
 .manufacturers-link a {
