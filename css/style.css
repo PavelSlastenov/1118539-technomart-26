@@ -301,7 +301,7 @@ a {
 
 }
 
-.site-navigation ul{
+.site-navigation ul {
   display: flex;
   flex-direction: row;
   width: 940px;
@@ -311,6 +311,7 @@ a {
   justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 
@@ -530,8 +531,10 @@ a {
   color: #32425c;
   font-weight: normal;
   margin-top: 33px;
-  margin-right: 374px;
+  margin-right: 350px;
   margin-left: 30px;
+
+
 }
 
 .goods-container {
@@ -543,6 +546,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+
 }
 
 .goods-link {
@@ -553,6 +557,8 @@ a {
   font-weight: normal;
   margin-top: auto;
   margin-bottom: auto;
+  padding-top: 2px;
+  margin-left: 20px;
 }
 
 .goods ul{
@@ -698,8 +704,9 @@ a {
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
-  text-align: center;
   margin-top: 25px;
+  padding-top: 2px;
+  padding-left: 69px;
 }
 
 /*.manufacturers h2 {
@@ -738,12 +745,19 @@ a {
 }
 
 .service {
-  height: 522px;
+  /*height: 522px;*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f4f7f9;
   margin-bottom: 82px;
+
+}
+
+.service-delivery-container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 98px;
 }
 
 .service h2 {
@@ -759,12 +773,8 @@ a {
 }
 
 .service-container {
+  margin-top: 68px;
 }
-
-.amenities-container {
-  padding-top: 200px;
-}
-
 
 .service-description {
   font-size: 14px;
@@ -773,6 +783,12 @@ a {
   color: #000000;
   margin-bottom: 74px;
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.amenities-delivery-container { /*Не знаю как доставку поднять немного выше, относительно блока с кнопками*/
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
 }
 
 .button-delivery,
@@ -808,7 +824,7 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
-  margin-bottom: 34px;
+  font-weight: normal;
 }
 
 .delivery-container p {
@@ -821,6 +837,8 @@ a {
 }
 
 .delivery-container {
+  margin-left: 80px;
+
 }
 
 .company-description {
@@ -874,7 +892,9 @@ a {
   line-height: 18px;
   background-color: #ee3643;
   border-radius: 3px;
-  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 41px;
   font-weight: normal;
   margin-top: 37px;
 }
@@ -913,6 +933,8 @@ a {
   border-radius: 3px;
   text-align: center;
   font-weight: normal;
+  padding-top: 9px;
+
 }
 
 .logo-footer {
@@ -985,8 +1007,6 @@ a {
   flex-direction: row;
   background-color: #293449;
 }
-
-
 
 .footer-description {
   font-size: 16px;
