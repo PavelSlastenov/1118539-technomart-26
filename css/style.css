@@ -533,8 +533,6 @@ a {
   margin-top: 33px;
   margin-right: 350px;
   margin-left: 30px;
-
-
 }
 
 .goods-container {
@@ -941,8 +939,13 @@ a {
   width: 220px;
   height: 68px;
   background-color: #ee3643;
-  margin-left: 130px;
+  margin-left: auto;
   box-shadow: 0 5px 0 0 #b62931;
+  padding-top: 20px;
+  padding-right: 41px;
+  padding-bottom: 25px;
+  padding-left: 41px;
+
 }
 
 .footer-container-1 {
@@ -960,6 +963,8 @@ a {
   padding-top: 32px;
   padding-left: 131px;
   padding-bottom: 53px;
+  margin-bottom: 32px;
+  margin-left: auto;
 }
 
 .navigation-footer-1 ul{
@@ -971,6 +976,10 @@ a {
   color: #f1f5f7;
   font-weight: normal;
   text-transform: none;
+  margin-left: 173px;
+  margin-top: 41px;
+  margin-bottom: 45px;
+
 }
 
 .navigation-footer-2 ul{
@@ -981,6 +990,11 @@ a {
   font-weight: normal;
   text-transform: none;
   list-style: none;
+}
+
+.navigation-footer-1 a,
+.navigation-footer-2 a {
+  margin-right: 60px;
 }
 
 .navigation-footer-2 a{
