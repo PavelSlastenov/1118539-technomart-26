@@ -101,8 +101,9 @@ a {
 .site-navigation a,
 .bookmarks-background,
 .basket-background,
-.basket-background-red a,
+.basket-background-red,
 .formalize a,
+.formalize-catalog a,
 .materials-link a,
 .tooling-link a,
 .technique-link a,
@@ -152,6 +153,8 @@ a {
   padding-bottom: 13px;
   padding-left: auto;
   text-transform: none;
+  margin-left: 28px;
+  margin-right: 0px;
 }
 
 .red {
@@ -172,8 +175,8 @@ a {
   padding-right: 20px;
   padding-left: 22px;
   margin-left: 31px;
-
 }
+
 .formalize:hover {
   background-color: #5fbb2d;
 }
@@ -215,7 +218,7 @@ a {
   height: 45px;
   color: #ee3d49;
   background-color: #f4f7f9;
-  padding-top: 13px;
+  padding-top: 10px;
   padding-right: 52px;
   padding-bottom: 11px;
   padding-left: 74px;
@@ -235,6 +238,20 @@ a {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+}
+
+.account-user {
+  display: flex;
+  flex-direction: column;
+  padding-top: 46px;
+  margin-right: auto;
+  margin-left: 51px;
+}
+
+.order-account-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 78px;
 }
 
 .adress-container {
@@ -306,6 +323,7 @@ a {
   justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 55px;
 
 }
 
@@ -1134,6 +1152,19 @@ a {
 
 /***************************Страница каталога************************************/
 
+.formalize-catalog {
+  margin-right: auto;
+  width: 150px;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: none;
+  background-color: #63a63e;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-right: 20px;
+  padding-left: 22px;
+}
+
 .user-name {
   width: 299px;
   height: 45px;
@@ -1142,6 +1173,9 @@ a {
   background-color: #ffffff;
   color: #000000;
   text-transform: none;
+  padding-top: 14px;
+  padding-left: 47px;
+  margin-bottom: 5px;
 
 }
 
@@ -1152,7 +1186,8 @@ a {
   color: #32425c;
   text-transform: none;
   font-weight: normal;
-  text-decoration:underline
+  text-decoration: underline;
+  margin-right: 32px;
 }
 
 .account {
@@ -1186,11 +1221,14 @@ a {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  margin-right: auto;
+  margin-left: 340px;
 }
 
 .tabs-container a {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
+  margin-right: 39px;
 }
 
 .sort h3{
@@ -1204,18 +1242,30 @@ a {
 .sort {
   display: flex;
   flex-direction: row;
+  height: 38px;
   width:700px;
   background-color: #f7f3ec;
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 562px;
+  padding-left: 19px;
+}
+
+.sort h3 {
+  font-weight: 700;
 }
 
 .sort ul {
   list-style: none;
 }
 
-.sort-list ul{
+.sort-list ul {
   display: flex;
   flex-direction: row;
+}
+
+.sort-list a{
+  padding-bottom: 13px; /*Приклеились к низу, не поднимается*/
 }
 
 .sort-price {
@@ -1266,12 +1316,14 @@ a {
 .perforators-header {
   width: 940px;
   height: 89px;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-right: auto;
   padding-bottom: 20px;
-  padding-left: auto;
+  padding-left: 30px;
   background-color: #f2f6f8;
   color: #32425c;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .perforators-header h2 {
