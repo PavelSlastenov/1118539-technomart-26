@@ -38,6 +38,7 @@ a {
 
 .main-navigation ul {
   list-style: none;
+
 }
 .main-header-logo {
   width: 220px;
@@ -66,7 +67,6 @@ a {
 .container-user-navigation {
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
 }
 
 .bookmarks-background,
@@ -82,7 +82,7 @@ a {
 .bookmarks-background {
   height: 15px;
   margin-top: 14px;
-  margin-left: 110px; /*добавлял на глаз, поскольку еще не сделал поиск*/
+  margin-left: 110px;
 }
 
 .basket-background {
@@ -195,15 +195,13 @@ a {
   background-color: #f3f7f8;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
   flex-wrap: wrap;
 }
 
 .description {
-  margin-top: 40px; /*Значение не по макету, иначе сильно уезжает вниз*/
+  margin-top: 40px;
   margin-right: 71px;
   margin-left: auto;
-
 }
 
 .description p {
@@ -228,7 +226,6 @@ a {
   border-width: 3px;
   border-style: solid;
   border-color: #ffffff;
-  box-sizing: border-box;
   margin-top: 46px;
   margin-bottom: 10px;
 }
@@ -255,7 +252,7 @@ a {
 }
 
 .adress-container {
-  margin-top: -10px; /*Сомневаюсь, а можно ли давать такие значения?*/
+  margin-top: -10px; /*Сомневаюсь, а можно давать такие значения?*/
   margin-left: 15px;
 }
 
@@ -294,7 +291,6 @@ a {
   background-color: #ffffff;
   margin-top: 46px;
   margin-left: 10px;
-
 }
 
 .login-link a:hover,
@@ -310,7 +306,6 @@ a {
 .navigation-container {
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .site-navigation ul {
@@ -324,9 +319,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding-right: 55px;
-
 }
-
 
 .site-navigation a{
   color: #ffffff;
@@ -347,7 +340,6 @@ a {
   font-weight: normal;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .assortment h3 {
@@ -370,7 +362,6 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffbf47;
-
 }
 
 .materials-link {
@@ -388,7 +379,6 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #3bbce3;
-
 }
 
 .tooling-link {
@@ -398,6 +388,7 @@ a {
   border-radius: 3px;
   text-align: center;
 }
+
 .technique {
   width: 300px;
   height: 123px;
@@ -405,7 +396,6 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #dc91d8;
-
 }
 
 .technique-link {
@@ -423,7 +413,6 @@ a {
   height: 266px;
   background-image: url("img/slider-1.jpg");
 }
-
 
 .slider-link {
   width: 198px;
@@ -465,7 +454,6 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #8ed78f;
-
 }
 
 .discounts-link {
@@ -483,7 +471,6 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffc047;
-
 }
 
 .delivery-link {
@@ -558,7 +545,6 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
-
 }
 
 .goods-link {
@@ -579,14 +565,6 @@ a {
   justify-content: flex-start;
   list-style: none;
 }
-
-/*
-.index-product-container {
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
-}
-*/
 
 .goods-link a {
   font-size: 14px;
@@ -611,7 +589,6 @@ a {
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-
 }
 
 .link-price {
@@ -654,8 +631,6 @@ a {
   border-color: #eaeaea;
   margin-right: 20px;
 }
-
-
 
 .index-product-1 h3,
 .index-product-2 h3,
@@ -728,7 +703,6 @@ a {
   margin-right: 270px;
   margin-bottom: 30px;
   margin-left: 30px;
-
 }
 
 .manufacturers-link {
@@ -741,17 +715,6 @@ a {
   padding-top: 2px;
   padding-left: 69px;
 }
-
-/*.manufacturers h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  font-weight: normal;
- /* padding-top: 33px;
-  padding-right: 373px;
-  padding-bottom: 35px;
-  padding-left: 30px;
-}*/
 
 .manufacturers-link a {
   font-size: 14px;
@@ -770,7 +733,6 @@ a {
   margin-bottom: 20px;
   padding-right: 20px;
 }
-
 
 .manufacturers-logo:hover {
   box-shadow: 0 8px 33px 0 #a9adb5;
@@ -969,7 +931,6 @@ a {
   text-align: center;
   font-weight: normal;
   padding-top: 9px;
-
 }
 
 .logo-footer-container {
@@ -985,7 +946,6 @@ a {
   padding-top: 20px;
   padding-right: 41px;
   padding-left: 41px;
-
 }
 
 .footer-container-1 {
@@ -1024,7 +984,6 @@ a {
   margin-top: 41px;
   margin-bottom: 45px;
   padding-left: 23px;
-
 }
 
 .navigation-footer-2 ul{
@@ -1035,9 +994,6 @@ a {
   font-weight: normal;
   text-transform: none;
   list-style: none;
-
-
-
 }
 
 .navigation-footer-1 a{
@@ -1118,7 +1074,6 @@ a {
   text-transform: none;
 }
 
-
 .feedback-footer,
 .developed-footer a {
   color: #ffd180;
@@ -1178,7 +1133,6 @@ a {
   padding-top: 14px;
   padding-left: 47px;
   margin-bottom: 5px;
-
 }
 
 .order,
@@ -1216,7 +1170,6 @@ a {
   list-style: none;
 }
 
-
 .tabs-container ul {
   display: flex;
   flex-direction: row;
@@ -1241,6 +1194,7 @@ a {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
 }
+
 .sort {
   display: flex;
   flex-direction: row;
@@ -1348,7 +1302,6 @@ a {
   width: 700px;
 }
 
-
 .perforators h3 {
   font-size: 18px;
   line-height: 20px;
@@ -1370,7 +1323,6 @@ a {
   border-style: solid;
   border-color: #eaeaea;
 }
-
 
 .catalog-product-1 h3,
 .catalog-product-2 h3,
@@ -1400,7 +1352,6 @@ a {
   height: 261px;
   background-color: #f2f6f8;
   color: #000000;
-
 }
 
 .description-perforators-container h2 {
