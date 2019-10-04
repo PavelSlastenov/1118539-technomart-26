@@ -935,15 +935,18 @@ a {
 
 }
 
+.logo-footer-container {
+  margin-left: 131px;
+}
+
 .logo-footer {
   width: 220px;
   height: 68px;
   background-color: #ee3643;
-  margin-left: auto;
+  margin-left: 131px;
   box-shadow: 0 5px 0 0 #b62931;
   padding-top: 20px;
   padding-right: 41px;
-  padding-bottom: 25px;
   padding-left: 41px;
 
 }
@@ -961,10 +964,14 @@ a {
   font-weight: normal;
   text-transform: none;
   padding-top: 32px;
+
   padding-left: 131px;
   padding-bottom: 53px;
   margin-bottom: 32px;
-  margin-left: auto;
+}
+
+.navigation-footer-container {
+  margin-left: 68px;
 }
 
 .navigation-footer-1 ul{
@@ -976,9 +983,9 @@ a {
   color: #f1f5f7;
   font-weight: normal;
   text-transform: none;
-  margin-left: 173px;
   margin-top: 41px;
   margin-bottom: 45px;
+  padding-left: 23px;
 
 }
 
@@ -990,15 +997,18 @@ a {
   font-weight: normal;
   text-transform: none;
   list-style: none;
+
+
+
 }
 
-.navigation-footer-1 a,
-.navigation-footer-2 a {
+.navigation-footer-1 a{
   margin-right: 60px;
 }
 
 .navigation-footer-2 a{
   color: #ffd180;
+  margin-right: 65px;
 }
 
 .navigation-footer-1 a:hover,
