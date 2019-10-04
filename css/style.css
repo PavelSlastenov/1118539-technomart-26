@@ -605,11 +605,28 @@ a {
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
-  text-align: center;
-  margin-left: 42px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  margin-bottom: 21px;
+  margin-left: 42px;
+  padding-left: 36px;
+  /*padding-top: 1px;*/  /*Да же когда задаю 1 px,вместо 13 как в шаблоне, уезжает сильно вниз*/
 }
+
+.link-price-4 {
+  width: 141px;
+  height: 38px;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  margin-top: 53px;  /*Добавил что бы выровнить до высоты других карточек*/
+  margin-bottom: 21px;
+  margin-left: 42px;
+}
+
 
 .index-product-1,
 .index-product-2,
@@ -620,8 +637,9 @@ a {
   border-style: solid;
   border-color: #eaeaea;
   margin-right: 20px;
-
 }
+
+
 
 .index-product-1 h3,
 .index-product-2 h3,
@@ -749,7 +767,6 @@ a {
   flex-wrap: wrap;
   background-color: #f4f7f9;
   margin-bottom: 82px;
-
 }
 
 .service-delivery-container {
@@ -936,7 +953,7 @@ a {
 }
 
 .logo-footer-container {
-  margin-left: 131px;
+  margin-left: auto;
 }
 
 .logo-footer {
@@ -972,6 +989,7 @@ a {
 
 .navigation-footer-container {
   margin-left: 68px;
+  margin-right: auto;
 }
 
 .navigation-footer-1 ul{
@@ -1041,6 +1059,26 @@ a {
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
+  margin-left: auto;
+}
+
+.social-network ul{
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  margin-left: 169px;
+  margin-right: 130px;
+}
+
+.social-network li {
+  margin-right: 26px;
+}
+
+.feedback-footer-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 39px;
+  margin-right: auto;
 }
 
 .footer-container-2 li {
@@ -1060,9 +1098,14 @@ a {
   text-transform: none;
 }
 
+
 .feedback-footer,
 .developed-footer a {
   color: #ffd180;
+}
+
+.feedback-footer {
+  margin-right: 53px;
 }
 
 .feedback-footer-link,
@@ -1099,6 +1142,7 @@ a {
   background-color: #ffffff;
   color: #000000;
   text-transform: none;
+
 }
 
 .order,
