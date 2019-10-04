@@ -331,7 +331,7 @@ a {
 }
 
 .assortment ul{
-  width: 940px;
+  width: 1200px;
   /*height: 409px;*/
   display: flex;
   flex-direction: row;
@@ -341,6 +341,7 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 .assortment h3 {
   font-size: 24px;
@@ -362,6 +363,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffbf47;
+  margin-right: 20px;
 }
 
 .materials-link {
@@ -379,6 +381,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #3bbce3;
+  margin-right: 20px;
 }
 
 .tooling-link {
@@ -396,6 +399,7 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #dc91d8;
+  margin-bottom: 20px;
 }
 
 .technique-link {
@@ -412,6 +416,7 @@ a {
   width: 620px;
   height: 266px;
   background-image: url("img/slider-1.jpg");
+  margin-right: 20px;
 }
 
 .slider-link {
@@ -471,6 +476,8 @@ a {
   padding-left: 23px;
   padding-bottom: 22px;
   background-color: #ffc047;
+  margin-left: 630px; /*временно пока не сделаю слайдер*/
+  margin-bottom: 100px; /*временно пока не сделаю слайдер*/
 }
 
 .delivery-link {
