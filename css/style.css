@@ -109,11 +109,11 @@ a {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods-link a,
+.goods a,
 .link-buy a,
-.manufacturers-link a,
-.company-link a,
-.contacts-map-link a,
+.manufacturers a,
+.company a,
+.contacts-map a,
 .navigation-footer-top a,
 .search-item label,
 .footer-bottom a {
@@ -324,11 +324,11 @@ a {
   text-transform: none;
 }
 
+
 .assortment ul{
-  width: 960px;
+  width: 940px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   font-weight: normal;
   margin-right: auto;
@@ -346,6 +346,24 @@ a {
 .assortment a {
   font-size: 14px;
   line-height: 18px;
+}
+
+.assortment-container-top {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.assortmen-container-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+
+}
+.assortment-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
 }
 
 .materials,
@@ -386,7 +404,7 @@ a {
 .technique a,
 .discounts a,
 .delivery a {
-  width: 135px;
+  /*width: 135px;*/
   border-radius: 3px;
   color: #ffffff;
   font-weight: normal;
@@ -512,6 +530,7 @@ a {
 }
 
 .goods {
+  margin-top: 500px; /*УБРАТЬ!!!ВРЕМЕННО!!*/
   margin-right: auto;
   margin-bottom: 21px;
   margin-left: auto;
@@ -661,16 +680,17 @@ a {
   border-color: #63a63e;
 }
 
+
 .manufacturers ul{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
   width: 940px;
   list-style: none;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 85px;
+
 }
 
 .manufacturers-container {
@@ -710,23 +730,19 @@ a {
   line-height: 18px;
 }
 
-.manufacturers-logo {
+.manufacturers a {
   width: 220px;
-  padding-top: 54px;
-  padding-bottom: 58px;
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  text-align: center;
   margin-bottom: 20px;
-  padding-right: 20px;
 }
 
-.manufacturers-logo:hover {
+.manufacturers a:hover {
   box-shadow: 0 8px 33px 0 #a9adb5;
 }
 
-.manufacturers-logo:active {
+.manufacturers a:active {
   opacity:0.3;
 }
 
@@ -881,6 +897,7 @@ a {
   background-color: #ee3643;
   border-radius: 3px;
   padding-top: 14px;
+  padding-right: 40px;
   padding-bottom: 12px;
   padding-left: 41px;
   font-weight: normal;
@@ -920,7 +937,10 @@ a {
   border-radius: 3px;
   text-align: center;
   font-weight: normal;
-  padding-top: 9px; /*разобраться с отступами и дать нормальные значения из макета*/
+  padding-top: 14px;
+  padding-right: 59px;
+  padding-bottom: 12px;
+  padding-left: 63px;
 }
 
 .logo-footer-container {
