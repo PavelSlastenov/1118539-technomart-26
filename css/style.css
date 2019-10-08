@@ -87,7 +87,6 @@ a {
 }
 
 .basket-background {
-  height: 15px;
   margin-top: 14px;
   margin-left: 78px;
 }
@@ -102,7 +101,7 @@ a {
 .bookmarks-background,
 .basket-background,
 .basket-background-red,
-.formalize a,
+.formalize,
 .formalize-catalog a,
 .materials-link a,
 .tooling-link a,
@@ -115,9 +114,9 @@ a {
 .manufacturers-link a,
 .company-link a,
 .contacts-map-link a,
-.navigation-footer-1 a,
+.navigation-footer-top a,
 .search-item label,
-.footer-container-2 a {
+.footer-bottom a {
   color: #ffffff;
 }
 
@@ -143,7 +142,6 @@ a {
 
 .basket-background-red {
   width: 150px;
-  height: 42px;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -157,11 +155,6 @@ a {
   margin-right: 0;
 }
 
-.red {
-  width: 150px;
-  height: 42px;
-  background-color: #ee3643;
-}
 
 .formalize {
   margin-right: auto;
@@ -174,7 +167,7 @@ a {
   padding-bottom: 13px;
   padding-right: 20px;
   padding-left: 22px;
-  margin-left: 31px;
+
 }
 
 .formalize:hover {
@@ -191,11 +184,11 @@ a {
 
 .user-navigation {
   width: 100%;
-  height: 320px; /*временно*/
   background-color: #f3f7f8;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 59px;
 }
 
 .description {
@@ -213,7 +206,6 @@ a {
 }
 
 .description-phone {
-  height: 45px;
   color: #ee3d49;
   background-color: #f4f7f9;
   padding-top: 10px;
@@ -244,7 +236,7 @@ a {
   margin-left: 51px;
 }
 
-.order-account-container {
+.order-account {
   display: flex;
   flex-direction: row;
   margin-left: 78px;
@@ -262,7 +254,7 @@ a {
 
 .login-link {
   width: 121px;
-  height: 45px;
+  height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
   padding-top: 14px;
   padding-left: 48px;
   padding-bottom: 15px;
@@ -277,7 +269,7 @@ a {
 
 .login-link-registration {
   width: 150px;
-  height: 45px;
+  height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
   padding-top: 14px;
   padding-right: 25px;
   padding-bottom: 11px;
@@ -311,13 +303,16 @@ a {
   display: flex;
   flex-direction: row;
   width: 960px;
-  height: 60px;
   background-color: #32425c;
   align-items: center;
   justify-content: space-around;
+  margin-top: 44px;
   margin-right: auto;
+  margin-bottom: 60px;
   margin-left: auto;
   padding-right: 55px;
+  padding-top: 11px;  /*Задать вопрос с криншотами*/
+  padding-bottom: 13px;
 }
 
 .site-navigation a{
@@ -331,7 +326,6 @@ a {
 
 .assortment ul{
   width: 960px;
-  /*height: 409px;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -340,7 +334,6 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 .assortment h3 {
   font-size: 24px;
@@ -361,11 +354,11 @@ a {
 .discounts,
 .delivery {
   width: 300px;
-  height: 123px;
   padding-top: 5px;
   padding-left: 23px;
   padding-bottom: 22px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .materials {
@@ -394,7 +387,6 @@ a {
 .discounts a,
 .delivery a {
   width: 135px;
-  height: 38px;
   border-radius: 3px;
   color: #ffffff;
   font-weight: normal;
@@ -443,17 +435,20 @@ a {
   /*display: flex;
   flex-direction: column;*/
   width: 620px;
-  height: 266px;
   background-image: url("img/slider-1.jpg");
   margin-right: 20px;
 }
 
 .slider-link {
   width: 198px;
-  height: 38px;
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
+  padding-top: 14px;
+  padding-right: 45px;
+  padding-bottom: 14px;
+  padding-left: 49px;
+  color: #ffffff;
 }
 
 .slider h3 {
@@ -540,7 +535,6 @@ a {
   display: flex;
   flex-direction: row;
   width: 940px;
-  height: 89px;
   background-color: #f9f5f0;
   margin-right: auto;
   margin-left: auto;
@@ -549,7 +543,6 @@ a {
 
 .goods-link {
   width: 253px;
-  height: 38px;
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
@@ -593,22 +586,24 @@ a {
 
 .link-price {
   width: 141px;
-  height: 38px;
+  height: 38px; /*Оставил пока не разобрался с padding*/
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  text-align: auto;
   margin-bottom: 21px;
   margin-left: 42px;
-  padding-left: 36px;
-  text-align: auto;
-  /*padding-top: 1px;*/ /*Да же когда задаю 1px, вместо 13 как в шаблоне, уезжает сильно вниз*/
+  /*padding-top: 13px;  Задать вопрос с скриншотом
+  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-left: 36px;*/
 }
 
 .link-price-4 {
   width: 141px;
-  height: 38px;
+  height: 38px; /*Оставил пока не разобрался с padding*/
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
@@ -618,13 +613,13 @@ a {
   margin-top: 53px;  /*Добавил что бы выровнить до высоты других карточек*/
   margin-bottom: 21px;
   margin-left: 42px;
+  /*padding-top: 13px;  Задать вопрос с скриншотом
+  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-left: 36px; */
 }
 
-
-.index-product-1,
-.index-product-2,
-.index-product-3,
-.index-product-4 {
+.product {
   width: 220px;
   border-width: 1px;
   border-style: solid;
@@ -632,10 +627,7 @@ a {
   margin-right: 20px;
 }
 
-.index-product-1 h3,
-.index-product-2 h3,
-.index-product-3 h3,
-.index-product-4 h3{
+.product h3{
   text-align: center;
 }
 
@@ -650,7 +642,6 @@ a {
 
 .link-buy {
   width: 135px;
-  height: 38px;
   background-color: #63a63e;
   border-radius: 3px;
   text-align: center;
@@ -660,7 +651,6 @@ a {
 
 .link-bookmarks {
   width: 129px;
-  height: 32px;
   background-color: #ffffff;
   border-radius: 3px;
   text-align: center;
@@ -687,7 +677,6 @@ a {
   display: flex;
   flex-direction: row;
   width: 940px;
-  height: 89px;
   background-color: #f9f5f0;
   margin-right: auto;
   margin-left: auto;
@@ -707,7 +696,7 @@ a {
 
 .manufacturers-link {
   width: 253px;
-  height: 38px;
+  height: 38px; /*Оставил пока не разобрался с padding*/
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
@@ -723,7 +712,6 @@ a {
 
 .manufacturers-logo {
   width: 220px;
-  height: 145px;
   padding-top: 54px;
   padding-bottom: 58px;
   border-width: 1px;
@@ -792,7 +780,7 @@ a {
 .button-guarantee,
 .button-loan {
   width: 240px;
-  height: 62px;
+
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -802,6 +790,10 @@ a {
   background-color: #32425c;
   border: none;
   font-weight: bold;
+  padding-top: 21px;
+  padding-right: 140px;
+  padding-bottom: 20px;
+  padding-left: 23px;
 }
 
 .button-delivery:hover,
@@ -884,12 +876,11 @@ a {
 
 .company-link {
   width: 220px;
-  height: 38px;
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
   border-radius: 3px;
-  padding-top: 12px;
+  padding-top: 14px;
   padding-bottom: 12px;
   padding-left: 41px;
   font-weight: normal;
@@ -923,14 +914,13 @@ a {
 
 .contacts-map-link {
   width: 300px;
-  height: 38px;
   font-size: 14px;
   line-height: 24px;
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
   font-weight: normal;
-  padding-top: 9px;
+  padding-top: 9px; /*разобраться с отступами и дать нормальные значения из макета*/
 }
 
 .logo-footer-container {
@@ -939,16 +929,16 @@ a {
 
 .logo-footer {
   width: 220px;
-  height: 68px;
   background-color: #ee3643;
   margin-left: 131px;
   box-shadow: 0 5px 0 0 #b62931;
   padding-top: 20px;
   padding-right: 41px;
+  padding-bottom: 25px;
   padding-left: 41px;
 }
 
-.footer-container-1 {
+.footer-top {
   display: flex;
   flex-direction: row;
   background-color: #32425c;
@@ -972,7 +962,7 @@ a {
   margin-right: auto;
 }
 
-.navigation-footer-1 ul{
+.navigation-footer-top ul{
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -986,7 +976,7 @@ a {
   padding-left: 23px;
 }
 
-.navigation-footer-2 ul{
+.navigation-footer-bottom ul{
   display: flex;
   flex-direction: row;
   font-size: 18px;
@@ -996,31 +986,31 @@ a {
   list-style: none;
 }
 
-.navigation-footer-1 a{
+.navigation-footer-top a{
   margin-right: 60px;
 }
 
-.navigation-footer-2 a{
+.navigation-footer-bottom a{
   color: #ffd180;
   margin-right: 65px;
 }
 
-.navigation-footer-1 a:hover,
-.navigation-footer-2 a:hover {
+.navigation-footer-top a:hover,
+.navigation-footer-bottom a:hover {
   text-decoration: underline;
 }
 
-.navigation-footer-1 a:active {
+.navigation-footer-top a:active {
   color: #929caa;
   text-decoration: none;
 }
 
-.navigation-footer-2 a:active {
+.navigation-footer-bottom a:active {
   color: #998a6e;
   text-decoration: none;
 }
 
-.footer-container-2 {
+.footer-bottom {
   display: flex;
   flex-direction: row;
   background-color: #293449;
@@ -1057,10 +1047,10 @@ a {
   margin-right: auto;
 }
 
-.footer-container-2 li {
+.footer-bottom li {
   list-style: none;
 }
-.footer-container-2 a {
+.footer-bottom a {
   font-weight: normal;
   text-transform: none;
 }
@@ -1124,19 +1114,20 @@ a {
 
 .user-name {
   width: 299px;
-  height: 45px;
+  height: 45px; /*Оставил времеено пока не разобрался с отступами*/
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
   text-transform: none;
   padding-top: 14px;
+  padding-right: 69px;
+  margin-bottom: 21px;
   padding-left: 47px;
-  margin-bottom: 5px;
+
 }
 
-.order,
-.account {
+.order-account a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -1146,19 +1137,11 @@ a {
   margin-right: 32px;
 }
 
-.account {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-}
-
-.order a:hover,
-.account a:hover {
+.order-account a:hover {
   color: #ee3643;
 }
 
-.order a:active,
-.account a:active {
+.order-account a:active {
   color: #bfc6ce;
 }
 
@@ -1271,7 +1254,6 @@ a {
 
 .perforators-header {
   width: 940px;
-  height: 89px;
   padding-top: 10px;
   padding-right: auto;
   padding-bottom: 20px;
@@ -1308,34 +1290,6 @@ a {
   text-transform: none;
 }
 
-.catalog-product-1,
-.catalog-product-2,
-.catalog-product-3,
-.catalog-product-4,
-.catalog-product-5,
-.catalog-product-6,
-.catalog-product-7,
-.catalog-product-8,
-.catalog-product-9 {
-  width: 220px;
-  height: auto;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eaeaea;
-}
-
-.catalog-product-1 h3,
-.catalog-product-2 h3,
-.catalog-product-3 h3,
-.catalog-product-4 h3,
-.catalog-product-5 h3,
-.catalog-product-6 h3,
-.catalog-product-7 h3,
-.catalog-product-8 h3,
-.catalog-product-9 {
-  text-align: center;
-}
-
 .manufacturers-filters a:hover {
   color: #b5b5b5;
 }
@@ -1348,8 +1302,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 261px;
   background-color: #f2f6f8;
   color: #000000;
 }
@@ -1365,6 +1317,7 @@ a {
   line-height: 30px;
   text-transform: none;
   font-family: "PT Sans", "Arial", sans-serif;
+  padding-bottom: 73px;
 }
 
 .description-perforators {
@@ -1413,15 +1366,16 @@ a {
 
 .submit {
   width: 140px;
-  height: 38px;
   background-color: #ffffff;
   font-size: 13px;
   line-height: 18px;
-  text-align: center;
   border-width: 1px;
   border-style: solid;
   border-color: #e5e5e5;
-  padding-top: 10px;
+  padding-top: 15px;  /*разобраться с отступом*/
+  padding-right: 39px;
+  padding-bottom: 14px;
+  padding-left: 39px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
 }
@@ -1439,7 +1393,6 @@ a {
   font-size: 13px;
   line-height: 18px;
   width: 38px;
-  height: 38px;
   background-color: #ffffff;
   text-align: center;
   border-width: 1px;
@@ -1451,7 +1404,6 @@ a {
 .next-page {
   font-family: "PT Sans", "Arial", sans-serif;
   width: 140px;
-  height: 38px;
   background-color: #ffffff;
   font-size: 13px;
   line-height: 18px;
