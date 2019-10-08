@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cuprum", sans-serif; /*НАЙТИ АЛЬТЕРНАТИВНЫЙ ШРИФТ*/
-  min-width: 960px;
+  min-width: 940px;
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
@@ -33,8 +33,18 @@ a {
   width: 100%;
   height: 42px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
+}
+
+.main-navigation-container {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .main-navigation ul {
@@ -191,7 +201,16 @@ a {
   margin-bottom: 59px;
 }
 
+.user-navigation-container {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .description {
+ width: 196px;
   margin-top: 40px;
   margin-right: 71px;
   margin-left: auto;
@@ -240,10 +259,6 @@ a {
   display: flex;
   flex-direction: row;
   margin-left: 78px;
-}
-
-.adress-container {  /*Убрал отрицательное значение, но не подвинулся текст*/
-  margin-left: 15px;
 }
 
 .login-link a,
@@ -295,6 +310,7 @@ a {
 }
 
 .navigation-container {
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -302,7 +318,6 @@ a {
 .site-navigation ul {
   display: flex;
   flex-direction: row;
-  width: 960px;
   background-color: #32425c;
   align-items: center;
   justify-content: space-around;
@@ -325,7 +340,7 @@ a {
 }
 
 
-.assortment ul{
+/*.assortment ul{
   width: 940px;
   display: flex;
   flex-direction: row;
@@ -334,7 +349,7 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-
+*/
 .assortment h3 {
   font-size: 24px;
   line-height: 30px;
@@ -348,22 +363,30 @@ a {
   line-height: 18px;
 }
 
-.assortment-container-top {
+.assortment-container-top ul{
+  width: 940px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  list-style: none;
+  font-weight: normal;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .assortmen-container-bottom {
+  width: 940px;
   display: flex;
   flex-direction: row;
-  width: 940px;
+  list-style: none;
+  font-weight: normal;
+  margin-right: auto;
+  margin-left: auto;
 
 }
-.assortment-container {
+.assortment-container ul{
   display: flex;
   flex-direction: column;
 
-  width: 300px;
 }
 
 .materials,
@@ -450,11 +473,8 @@ a {
 }
 
 .slider {
-  /*display: flex;
-  flex-direction: column;*/
   width: 620px;
   background-image: url("img/slider-1.jpg");
-  margin-right: 20px;
 }
 
 .slider-link {
@@ -530,7 +550,7 @@ a {
 }
 
 .goods {
-  margin-top: 500px; /*УБРАТЬ!!!ВРЕМЕННО!!*/
+  margin-top: 53px;
   margin-right: auto;
   margin-bottom: 21px;
   margin-left: auto;
