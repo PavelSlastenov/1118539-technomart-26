@@ -4,7 +4,8 @@ html { box-sizing: border-box; }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", sans-serif; /*НАЙТИ АЛЬТЕРНАТИВНЫЙ ШРИФТ*/
+  min-width: 960px;
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
@@ -93,8 +94,7 @@ a {
 
 .site-navigation ul,
 .bookmarks-background,
-.basket-background,
-.formalize-background a{
+.basket-background {
   list-style: none;
 }
 
@@ -154,7 +154,7 @@ a {
   padding-left: auto;
   text-transform: none;
   margin-left: 28px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .red {
@@ -227,7 +227,6 @@ a {
   border-style: solid;
   border-color: #ffffff;
   margin-top: 46px;
-  margin-bottom: 10px;
 }
 
 .description-address {
@@ -251,8 +250,7 @@ a {
   margin-left: 78px;
 }
 
-.adress-container {
-  margin-top: -10px; /*Сомневаюсь, а можно давать такие значения?*/
+.adress-container {  /*Убрал отрицательное значение, но не подвинулся текст*/
   margin-left: 15px;
 }
 
@@ -289,6 +287,7 @@ a {
   text-align: center;
   text-transform: none;
   background-color: #ffffff;
+  color: #000000;
   margin-top: 46px;
   margin-left: 10px;
 }
@@ -311,7 +310,7 @@ a {
 .site-navigation ul {
   display: flex;
   flex-direction: row;
-  width: 940px;
+  width: 960px;
   height: 60px;
   background-color: #32425c;
   align-items: center;
@@ -331,7 +330,7 @@ a {
 }
 
 .assortment ul{
-  width: 1200px;
+  width: 960px;
   /*height: 409px;*/
   display: flex;
   flex-direction: row;
@@ -356,58 +355,88 @@ a {
   line-height: 18px;
 }
 
-.materials {
+.materials,
+.tooling,
+.technique,
+.discounts,
+.delivery {
   width: 300px;
   height: 123px;
   padding-top: 5px;
   padding-left: 23px;
   padding-bottom: 22px;
-  background-color: #ffbf47;
   margin-right: 20px;
 }
 
-.materials-link {
-  width: 135px;
-  height: 38px;
-  background-color: #e5ac40;
-  border-radius: 3px;
-  text-align: center;
+.materials {
+  background-color: #ffbf47;
 }
 
 .tooling {
-  width: 300px;
-  height: 123px;
-  padding-top: 5px;
-  padding-left: 23px;
-  padding-bottom: 22px;
   background-color: #3bbce3;
-  margin-right: 20px;
-}
-
-.tooling-link {
-  width: 135px;
-  height: 38px;
-  background-color: #35a9cc;
-  border-radius: 3px;
-  text-align: center;
 }
 
 .technique {
-  width: 300px;
-  height: 123px;
-  padding-top: 5px;
-  padding-left: 23px;
-  padding-bottom: 22px;
   background-color: #dc91d8;
-  margin-bottom: 20px;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.materials a,
+.tooling a,
+.technique a,
+.discounts a,
+.delivery a {
+  width: 135px;
+  height: 38px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.materials-link {
+  background-color: #e5ac40;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+}
+
+.tooling-link {
+  background-color: #35a9cc;
+  padding-top: 14px;
+  padding-right: 27px;
+  padding-bottom: 14px;
+  padding-left: 26px;
 }
 
 .technique-link {
-  width: 135px;
-  height: 38px;
   background-color: #c682c2;
-  border-radius: 3px;
-  text-align: center;
+  padding-top: 12px;
+  padding-right: 31px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+}
+.discounts-link {
+  background-color: #80c180;
+  padding-top: 14px;
+  padding-right: 23px;
+  padding-bottom: 14px;
+  padding-left: 23px;
+}
+
+.delivery-link {
+  background-color: #e5ac40;
+  padding-top: 14px;
+  padding-right: 37px;
+  padding-bottom: 14px;
+  padding-left: 37px;
 }
 
 .slider {
@@ -450,42 +479,6 @@ a {
 
 .slider-link:active {
   background-color: #ba2732;
-}
-
-.discounts {
-  width: 300px;
-  height: 123px;
-  padding-top: 5px;
-  padding-left: 23px;
-  padding-bottom: 22px;
-  background-color: #8ed78f;
-}
-
-.discounts-link {
-  width: 135px;
-  height: 38px;
-  background-color: #80c180;
-  border-radius: 3px;
-  text-align: center;
-}
-
-.delivery {
-  width: 300px;
-  height: 123px;
-  padding-top: 5px;
-  padding-left: 23px;
-  padding-bottom: 22px;
-  background-color: #ffc047;
-  margin-left: 630px; /*временно пока не сделаю слайдер*/
-  margin-bottom: 100px; /*временно пока не сделаю слайдер*/
-}
-
-.delivery-link {
-  width: 135px;
-  height: 38px;
-  background-color: #e5ac40;
-  border-radius: 3px;
-  text-align: center;
 }
 
 .materials-link a,
@@ -1081,7 +1074,7 @@ a {
   text-transform: none;
 }
 
-.feedback-footer,
+.feedback-footer a,
 .developed-footer a {
   color: #ffd180;
 }
@@ -1429,58 +1422,22 @@ a {
   border-style: solid;
   border-color: #e5e5e5;
   padding-top: 10px;
-}
-
-.submit a {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
 }
 
-.page ul {
+.page-container ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding-left: 560px;
 }
 
-.page-1-catalog a,
-.page-2 a,
-.page-3 a,
-.next-page a {
-  color: #000000;
+.page,
+.page-red {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-}
-
-.page-1-catalog,
-.page-2,
-.page-3,
-.next-page  {
-  margin-right: 10px;
-}
-
-.page-1-catalog a {
-  color: #ffffff;
-}
-
-.page-1-catalog {
-  width: 38px;
-  height: 38px;
-  background-color: #ee3643;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: center;
-  padding-top: 10px;
-}
-
-
-.page-1,
-.page-2,
-.page-3 {
   width: 38px;
   height: 38px;
   background-color: #ffffff;
@@ -1488,27 +1445,11 @@ a {
   border-width: 1px;
   border-style: solid;
   border-color: #e5e5e5;
-}
-
-.page-1:hover,
-.page-2:hover,
-.page-3:hover,
-.next-page:hover {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #bdc6ca;
-}
-
-.page-1:active,
-.page-2:active,
-.page-3:active,
-.next-page:active {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ee3643;
+  padding-top: 10px;
 }
 
 .next-page {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 140px;
   height: 38px;
   background-color: #ffffff;
@@ -1520,3 +1461,46 @@ a {
   border-color: #e5e5e5;
   padding-top: 10px;
 }
+
+.page a,
+.next-page a {
+  color: #000000;
+}
+
+.page,
+.page-red,
+.next-page  {
+  margin-right: 10px;
+}
+
+.page-red a {
+  color: #ffffff;
+}
+
+.page-red {
+  width: 38px;
+  height: 38px;
+  background-color: #ee3643;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.page-red:hover,
+.page:hover,
+.next-page:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bdc6ca;
+}
+
+.page-red:active,
+.page:active,
+.next-page:active {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ee3643;
+}
+
