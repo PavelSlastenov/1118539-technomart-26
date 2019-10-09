@@ -969,7 +969,6 @@ a {
 .logo-footer {
   width: 220px;
   background-color: #ee3643;
-  margin-left: 131px;
   box-shadow: 0 5px 0 0 #b62931;
   padding-top: 20px;
   padding-right: 41px;
@@ -983,22 +982,31 @@ a {
   background-color: #32425c;
 }
 
+.container-footer,
+.container-footer-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.adress-footer-container {
+  width: 322px;
+}
+
 .adress-footer {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
   font-weight: normal;
   text-transform: none;
-  padding-top: 32px;
-
-  padding-left: 131px;
-  padding-bottom: 53px;
   margin-bottom: 32px;
 }
 
-.navigation-footer-container {
-  margin-left: 68px;
-  margin-right: auto;
+.container-right {
+  display: flex;
+  flex-direction: row;
 }
 
 .navigation-footer-top ul{
@@ -1024,6 +1032,7 @@ a {
   text-transform: none;
   list-style: none;
 }
+
 
 .navigation-footer-top a{
   margin-right: 60px;
@@ -1055,23 +1064,24 @@ a {
   background-color: #293449;
 }
 
+.footer-description-container {
+  width: 228px;
+}
+
 .footer-description {
   font-size: 16px;
   line-height: 18px;
-  padding-top: 39px;
-  padding-left: 131px;
-  padding-bottom: 35px;
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
-  margin-left: auto;
+
 }
 
 .social-network ul{
   display: flex;
   flex-direction: row;
   margin-top: 45px;
-  margin-left: 169px;
+  
   margin-right: 130px;
 }
 
@@ -1079,11 +1089,15 @@ a {
   margin-right: 26px;
 }
 
+
 .feedback-footer-container {
   display: flex;
   flex-direction: row;
   margin-top: 39px;
-  margin-right: auto;
+}
+
+.feedback-footer {
+  width: 135px;
 }
 
 .footer-bottom li {
@@ -1119,6 +1133,10 @@ a {
   color: #d4b275;
   font-weight: normal;
   text-transform: none;
+}
+
+.developer-container {
+  width: 96px;
 }
 
 .feedback-footer-link:hover,
