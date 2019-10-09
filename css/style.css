@@ -4,8 +4,8 @@ html { box-sizing: border-box; }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum",Arial,sans-serif;
-  min-width: 940px;
+  font-family: "Cuprum", Arial, sans-serif;
+  min-width: 960px;
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
@@ -29,8 +29,8 @@ a {
 }
 
 .main-navigation {
+  /*height: 42px; /*Без этого значения, сильно растягивается вниз*/
   background-color: #293449;
-  height: 42px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -44,24 +44,20 @@ a {
 .main-navigation-container {
   display: flex;
   flex-direction: row;
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .main-header-logo {
   width: 220px;
+  height: 47px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
-  box-sizing: border-box;
-  text-align: center;
-  padding-top: 9px; /*Задал значение не по макету, иначе уезжает вниз*/
+  padding-top: 13px;
   padding-right: 56px;
   padding-bottom: 15px;
   padding-left: 55px;
-  /*margin-left: 130px;*/
-  margin-left: auto;
 }
 
 .main-header-logo:hover {
@@ -74,8 +70,6 @@ a {
   box-shadow: 0 5px 0 0 #882520;
 }
 
-
-
 .bookmarks-background,
 .basket-background,
 .search-form {
@@ -87,7 +81,6 @@ a {
 }
 
 .bookmarks-background {
-  height: 15px;
   margin-top: 14px;
   margin-left: 110px;
 }
@@ -115,7 +108,7 @@ a {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods a,
+.goods h3,
 .link-buy a,
 .manufacturers a,
 .company a,
@@ -161,19 +154,17 @@ a {
   margin-right: 0;
 }
 
-
 .formalize {
-  margin-right: auto;
   width: 150px;
+  height: 42px; /*Временно, без этого значения становится шире чем в макете*/
   font-size: 17px;
   line-height: 18px;
   text-transform: none;
   background-color: #63a63e;
   padding-top: 14px;
+  padding-right: 22px;
   padding-bottom: 13px;
-  padding-right: 20px;
-  padding-left: 22px;
-
+  padding-left: 20px;
 }
 
 .formalize:hover {
@@ -195,13 +186,12 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 59px;
-
 }
 
 .user-navigation-container {
   display: flex;
   flex-direction: row;
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -306,9 +296,8 @@ a {
   color: #b2b2b2;
 }
 
-
 .navigation-container {
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -324,7 +313,7 @@ a {
   margin-bottom: 60px;
   margin-left: auto;
   padding-right: 55px;
-  padding-top: 11px;  /*Задать вопрос с криншотами*/
+  padding-top: 11px;
   padding-bottom: 13px;
 }
 
@@ -336,7 +325,6 @@ a {
   list-style: none;
   text-transform: none;
 }
-
 
 .assortment h3{
   font-size: 24px;
@@ -359,7 +347,7 @@ a {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -367,7 +355,7 @@ a {
 .container-bottom {
   display: flex;
   flex-direction: row;
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -379,33 +367,6 @@ a {
   text-transform: none;
 }
 
-
-/*
-.assortment-top h3,
-.assortmen-bottom h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: none;
-  font-weight: normal;
-}
-
-.assortment-top a,
-.assortment-bottom a {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.assortment-top ul,
-.assortmen-bottom,
-.assortment-right {
-
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  font-weight: normal;
-}
-*/
 .materials,
 .tooling,
 .technique,
@@ -444,7 +405,6 @@ a {
 .technique a,
 .discounts a,
 .delivery a {
-  /*width: 135px;*/
   border-radius: 3px;
   color: #ffffff;
   font-weight: normal;
@@ -510,12 +470,14 @@ a {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  color: #000000; /*Временно*/
 }
 
 .slider p {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+  color: #000000; /*Временно*/
 }
 
 .slider-link a {
@@ -625,6 +587,8 @@ a {
   text-transform: none;
 }
 
+
+}
 .old-price {
   text-decoration: line-through;
   text-align: center;
@@ -637,7 +601,7 @@ a {
 
 .link-price {
   width: 141px;
-  height: 38px; /*Оставил пока не разобрался с padding*/
+  height: 38px; /*Временно оставил, без этого значения когда задаю padding из макета, становится намного шире чем в макете*/
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
@@ -646,25 +610,25 @@ a {
   text-align: auto;
   margin-bottom: 21px;
   margin-left: 42px;
-  /*padding-top: 13px;  Задать вопрос с скриншотом
+  /*padding-top: 13px;
   padding-right: 40px;
   padding-bottom: 13px;
   padding-left: 36px;*/
 }
 
-.link-price-4 {
+.link-price-right {
   width: 141px;
-  height: 38px; /*Оставил пока не разобрался с padding*/
+  height: 38px;  /*Временно оставил, без этого значения когда задаю padding из макета, становится намного шире чем в макете*/
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  margin-top: 53px;  /*Добавил что бы выровнить до высоты других карточек*/
+  margin-top: 53px; /*временно*/
   margin-bottom: 21px;
   margin-left: 42px;
-  /*padding-top: 13px;  Задать вопрос с скриншотом
+  /*padding-top: 13px;
   padding-right: 40px;
   padding-bottom: 13px;
   padding-left: 36px; */
@@ -712,15 +676,13 @@ a {
   border-color: #63a63e;
 }
 
-
 .manufacturers ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 940px;
+  width: 960px;
   list-style: none;
   padding-bottom: 85px;
-
 }
 
 .manufacturers-header {
@@ -743,7 +705,7 @@ a {
 
 .manufacturers-link {
   width: 253px;
-  height: 38px; /*Оставил пока не разобрался с padding*/
+  height: 38px; /*Временно оставил, пока без этого значения становится шире чем в макете*/
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
@@ -810,7 +772,7 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.amenities-delivery { /*Не знаю как доставку поднять немного выше, относительно блока с кнопками*/
+.amenities-delivery {
   display: flex;
   flex-direction: row;
   margin-left: 90px;
@@ -820,7 +782,6 @@ a {
 .button-guarantee,
 .button-loan {
   width: 240px;
-
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -867,7 +828,6 @@ a {
 
 .delivery-container {
   margin-left: 80px;
-
 }
 
 .company-description {
@@ -965,9 +925,9 @@ a {
   padding-left: 63px;
 }
 
-
 .logo-footer {
   width: 220px;
+  height: 68px; /*Временно оставил, без этого значения логотип становится больше чем нужно*/
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
   padding-top: 20px;
@@ -986,7 +946,7 @@ a {
 .container-footer-bottom {
   display: flex;
   flex-direction: row;
-  width: 940px;
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1033,7 +993,6 @@ a {
   list-style: none;
 }
 
-
 .navigation-footer-top a{
   margin-right: 60px;
 }
@@ -1074,7 +1033,6 @@ a {
   color: #ffffff;
   font-weight: normal;
   text-transform: none;
-
 }
 
 .social-network ul{
@@ -1088,7 +1046,6 @@ a {
 .social-network li {
   margin-right: 26px;
 }
-
 
 .feedback-footer-container {
   display: flex;
@@ -1149,6 +1106,7 @@ a {
   color: #c73644;
   text-decoration: none;
 }
+
 .contacts,
 .contacts-form {
   display: none;
@@ -1171,7 +1129,6 @@ a {
 
 .user-name {
   width: 299px;
-  height: 45px; /*Оставил времеено пока не разобрался с отступами*/
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
@@ -1181,7 +1138,6 @@ a {
   padding-right: 69px;
   margin-bottom: 21px;
   padding-left: 47px;
-
 }
 
 .order-account a {
@@ -1308,14 +1264,13 @@ a {
 }
 
 .perforators-header {
-  width: 940px;
+  width: 960px;
   padding-top: 10px;
   padding-right: auto;
   padding-bottom: 20px;
   padding-left: 30px;
   background-color: #f2f6f8;
   color: #32425c;
-
 }
 
 .perforators-header h2 {
@@ -1327,7 +1282,6 @@ a {
 .filters-catalog {
   display: flex;
   flex-direction: row-reverse;
-
 }
 
 .perforators ul{
@@ -1419,7 +1373,7 @@ a {
   border-width: 1px;
   border-style: solid;
   border-color: #e5e5e5;
-  padding-top: 15px;  /*разобраться с отступом*/
+  padding-top: 15px; /* с значениями из макета становиться шире чем нужно*/
   padding-right: 39px;
   padding-bottom: 14px;
   padding-left: 39px;
@@ -1484,7 +1438,6 @@ a {
   text-align: center;
   padding-top: 10px;
 }
-
 
 .page-red:hover,
 .page:hover,
