@@ -30,13 +30,13 @@ a {
 
 .main-navigation {
   background-color: #293449;
-  width: 100%;
   height: 42px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+
 
 .main-navigation-container {
   display: flex;
@@ -75,10 +75,7 @@ a {
   box-shadow: 0 5px 0 0 #882520;
 }
 
-.container-user-navigation {
-  display: flex;
-  flex-direction: row;
-}
+
 
 .bookmarks-background,
 .basket-background,
@@ -119,7 +116,7 @@ a {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods a,
+.goods-container a,
 .link-buy a,
 .manufacturers a,
 .company a,
@@ -309,6 +306,7 @@ a {
   color: #b2b2b2;
 }
 
+
 .navigation-container {
   width: 940px;
   margin-right: auto;
@@ -330,7 +328,7 @@ a {
   padding-bottom: 13px;
 }
 
-.site-navigation a{
+.site-navigation a {
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -340,17 +338,7 @@ a {
 }
 
 
-/*.assortment ul{
-  width: 940px;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  font-weight: normal;
-  margin-right: auto;
-  margin-left: auto;
-}
-*/
-.assortment h3 {
+.assortment h3{
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
@@ -363,32 +351,58 @@ a {
   line-height: 18px;
 }
 
-.assortment-container-top ul{
-  width: 940px;
+.assortment ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   font-weight: normal;
+}
+
+.container {
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.assortmen-container-bottom {
-  width: 940px;
+.container-bottom {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  font-weight: normal;
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
-
 }
-.assortment-container ul{
+.container-right ul{
   display: flex;
   flex-direction: column;
-
+  list-style: none;
+  font-weight: normal;
+}
+/*
+.assortment-top h3,
+.assortmen-bottom h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: none;
+  font-weight: normal;
 }
 
+.assortment-top a,
+.assortment-bottom a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.assortment-top ul,
+.assortmen-bottom,
+.assortment-right {
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: normal;
+}
+*/
 .materials,
 .tooling,
 .technique,
@@ -549,7 +563,7 @@ a {
   background-color: #b2b2b2;
 }
 
-.goods {
+.goods-container {
   margin-top: 53px;
   margin-right: auto;
   margin-bottom: 21px;
@@ -560,7 +574,7 @@ a {
   flex-wrap: wrap;
 }
 
-.goods h2 {
+.goods-container h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -570,7 +584,7 @@ a {
   margin-left: 30px;
 }
 
-.goods-container {
+.goods {
   display: flex;
   flex-direction: row;
   width: 940px;
@@ -591,7 +605,7 @@ a {
   margin-left: 20px;
 }
 
-.goods ul{
+.goods-container ul{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -607,7 +621,7 @@ a {
   padding-left: 54px;
 }
 
-.goods h3 {
+.goods-container h3 {
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
