@@ -4,7 +4,7 @@ html { box-sizing: border-box; }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif; /*НАЙТИ АЛЬТЕРНАТИВНЫЙ ШРИФТ*/
+  font-family: "Cuprum",Arial,sans-serif;
   min-width: 940px;
   font-size: 14px;
   line-height: 36px;
@@ -37,6 +37,9 @@ a {
   box-sizing: border-box;
 }
 
+.main-navigation ul {
+  list-style: none;
+}
 
 .main-navigation-container {
   display: flex;
@@ -47,10 +50,6 @@ a {
 
 }
 
-.main-navigation ul {
-  list-style: none;
-
-}
 .main-header-logo {
   width: 220px;
   background-color: #ee3643;
@@ -196,6 +195,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 59px;
+
 }
 
 .user-navigation-container {
@@ -376,7 +376,10 @@ a {
   flex-direction: column;
   list-style: none;
   font-weight: normal;
+  text-transform: none;
 }
+
+
 /*
 .assortment-top h3,
 .assortmen-bottom h3 {
@@ -565,9 +568,7 @@ a {
 
 .goods {
   margin-top: 53px;
-  margin-right: auto;
   margin-bottom: 21px;
-  margin-left: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -584,13 +585,10 @@ a {
   margin-left: 30px;
 }
 
-.goods-container {
+.goods-header {
   display: flex;
   flex-direction: row;
-  width: 940px;
   background-color: #f9f5f0;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 20px;
 }
 
@@ -721,23 +719,18 @@ a {
   flex-wrap: wrap;
   width: 940px;
   list-style: none;
-  margin-right: auto;
-  margin-left: auto;
   padding-bottom: 85px;
 
 }
 
-.manufacturers-container {
+.manufacturers-header {
   display: flex;
   flex-direction: row;
-  width: 940px;
   background-color: #f9f5f0;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 20px;
 }
 
-.manufacturers-container h2 {
+.manufacturers-header h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -781,7 +774,6 @@ a {
 }
 
 .service {
-  /*height: 522px;*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -789,9 +781,7 @@ a {
   margin-bottom: 82px;
 }
 
-.service-delivery-container {
-  margin-right: auto;
-  margin-left: auto;
+.service-delivery {
   margin-bottom: 98px;
 }
 
@@ -820,7 +810,7 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.amenities-delivery-container { /*Не знаю как доставку поднять немного выше, относительно блока с кнопками*/
+.amenities-delivery { /*Не знаю как доставку поднять немного выше, относительно блока с кнопками*/
   display: flex;
   flex-direction: row;
   margin-left: 90px;
@@ -883,8 +873,6 @@ a {
 .company-description {
   display: flex;
   flex-direction: row;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 86px;
 }
 
@@ -977,9 +965,6 @@ a {
   padding-left: 63px;
 }
 
-.logo-footer-container {
-  margin-left: auto;
-}
 
 .logo-footer {
   width: 220px;
