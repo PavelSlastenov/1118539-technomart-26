@@ -116,7 +116,7 @@ a {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods-container a,
+.goods a,
 .link-buy a,
 .manufacturers a,
 .company a,
@@ -563,7 +563,7 @@ a {
   background-color: #b2b2b2;
 }
 
-.goods-container {
+.goods {
   margin-top: 53px;
   margin-right: auto;
   margin-bottom: 21px;
@@ -574,7 +574,7 @@ a {
   flex-wrap: wrap;
 }
 
-.goods-container h2 {
+.goods h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -584,7 +584,7 @@ a {
   margin-left: 30px;
 }
 
-.goods {
+.goods-container {
   display: flex;
   flex-direction: row;
   width: 940px;
@@ -605,7 +605,7 @@ a {
   margin-left: 20px;
 }
 
-.goods-container ul{
+.goods ul{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -621,7 +621,7 @@ a {
   padding-left: 54px;
 }
 
-.goods-container h3 {
+.goods h3 {
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
