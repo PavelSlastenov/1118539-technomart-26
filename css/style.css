@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -105,7 +110,7 @@ a {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods h3,
+.goods h3, a,
 .link-buy a,
 .manufacturers a,
 .company a,
@@ -307,8 +312,6 @@ a {
   padding-right: 55px;
   padding-top: 11px;
   padding-bottom: 13px;
-
-
 }
 
 .site-navigation a {
@@ -349,10 +352,8 @@ a {
 .container-bottom {
   display: flex;
   flex-direction: row;
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
 }
+
 .container-right ul{
   display: flex;
   flex-direction: column;
@@ -446,10 +447,11 @@ a {
 .slider {
   width: 620px;
   background-image: url("img/slider-1.jpg");
+  margin-right: 20px;
 }
 
 .slider-link {
-  width: 198px;
+  width: 195px;
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
@@ -581,7 +583,6 @@ a {
   text-transform: none;
 }
 
-}
 .old-price {
   text-decoration: line-through;
   text-align: center;
@@ -600,7 +601,7 @@ a {
   background-color: #ee3643;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  text-align: auto;
+  text-align: center;
   margin-bottom: 21px;
   margin-left: 42px;
   /*padding-top: 13px;
@@ -628,7 +629,7 @@ a {
 }
 
 .product {
-  width: 220px;
+  width: 200px; /*временно задал, вместо 220px, не помещались 3 в ряд*/
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
@@ -939,7 +940,6 @@ a {
 .container-footer-bottom {
   display: flex;
   flex-direction: row;
-
 }
 
 .adress-footer-container {
@@ -957,7 +957,7 @@ a {
 
 .container-right {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .navigation-footer-top ul{
@@ -1187,7 +1187,7 @@ a {
   background-color: #f7f3ec;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 40px;
+
   padding-left: 19px;
 }
 
