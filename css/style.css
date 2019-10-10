@@ -44,9 +44,6 @@ a {
 .main-navigation-container {
   display: flex;
   flex-direction: row;
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .main-header-logo {
@@ -191,9 +188,6 @@ a {
 .user-navigation-container {
   display: flex;
   flex-direction: row;
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .description {
@@ -309,12 +303,12 @@ a {
   align-items: center;
   justify-content: space-around;
   margin-top: 44px;
-  margin-right: auto;
   margin-bottom: 60px;
-  margin-left: auto;
   padding-right: 55px;
   padding-top: 11px;
   padding-bottom: 13px;
+
+
 }
 
 .site-navigation a {
@@ -586,7 +580,6 @@ a {
   line-height: 20px;
   text-transform: none;
 }
-
 
 }
 .old-price {
@@ -946,9 +939,7 @@ a {
 .container-footer-bottom {
   display: flex;
   flex-direction: row;
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
+
 }
 
 .adress-footer-container {
