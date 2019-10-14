@@ -219,7 +219,7 @@ img {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods h3, a,
+.goods h3,
 .link-buy a,
 .manufacturers a,
 .company a,
@@ -350,8 +350,6 @@ img {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-
 }
 
 .description-address {
@@ -861,10 +859,25 @@ img {
   border-style: solid;
   border-color: #eaeaea;
   margin-right: 20px;
+
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
 }
 
-.product h3{
+.product .flag-new {
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.product h3 {
   text-align: center;
+}
+
+.goods a {
+  color: #000000;
 }
 
 .link-name {
