@@ -114,10 +114,64 @@ img {
   line-height: 18px;
   font-weight: normal;
   text-transform: none;
+}
+
+.bookmarks-background {
+  width: 150px;
+  margin-left: 49px;
+  padding-top: 14px;
+  text-align: center;
+
+  position: relative;
+}
+
+.bookmarks-background::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 13px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.basket-background {
+  padding-top: 14px;
+  text-align: center;
+  width: 150px;
+  position: relative;
+}
+
+.basket-background::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.search-form{
   margin-left: 49px;
 }
 
 .icon-search {
+  margin-left: 17px;
   position: relative;
 }
 
@@ -138,22 +192,13 @@ img {
   opacity: 0.3;
 }
 
-.icon-search:hover {
-  /*додумать*/
+.icon-search:hover::before,
+.icon-search:focus::before,
+.icon-search:active::before {
+  opacity: 1;
 }
 
-.bookmarks-background {
-  margin-top: 14px;
-  margin-right: 46px;
-  margin-bottom: 13px;
-  margin-left: 110px;
-}
 
-.basket-background {
-  margin-top: 14px;
-  margin-right: 31px;
- 
-}
 
 .site-navigation ul,
 .bookmarks-background,
@@ -287,6 +332,25 @@ img {
   border-style: solid;
   border-color: #ffffff;
   margin-top: 46px;
+
+  position: relative;
+}
+
+.description-phone::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 40px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+
 }
 
 .description-address {
