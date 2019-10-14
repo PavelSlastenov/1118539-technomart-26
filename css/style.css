@@ -193,9 +193,12 @@ img {
 }
 
 .icon-search:hover::before,
-.icon-search:focus::before,
-.icon-search:active::before {
+.icon-search:focus::before {
   opacity: 1;
+}
+
+.icon-search:active::before {
+  opacity: 0.3;
 }
 
 
@@ -521,6 +524,24 @@ img {
 
 .materials {
   background-color: #ffbf47;
+  position: relative;
+}
+
+.materials::before {
+  content: "";
+
+  position: absolute;
+
+  top: 31px;
+  right: 53px;
+
+  width: 44px;
+  height: 65px;
+
+  background-image: url("img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .tooling {
@@ -556,6 +577,7 @@ img {
   padding-bottom: 14px;
   padding-left: 24px;
 }
+
 
 .tooling-link {
   background-color: #35a9cc;
