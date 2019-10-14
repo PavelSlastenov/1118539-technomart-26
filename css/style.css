@@ -545,8 +545,8 @@ img {
 
 .materials .flag{
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 
   width: 60px;
   height: 59px;
@@ -691,7 +691,7 @@ img {
   padding-bottom: 14px;
   padding-left: 37px;
 }
-
+/*
 .slider {
   width: 620px;
   background-image: url("../img/slider-1.jpg");
@@ -714,14 +714,15 @@ img {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000; /*Временно*/
+  color: #000000;
 }
+
 
 .slider p {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
-  color: #000000; /*Временно*/
+  color: #000000;
 }
 
 .slider-link a {
@@ -736,6 +737,380 @@ img {
 .slider-link:active {
   background-color: #ba2732;
 }
+*/
+/***********************************новый****************************************************
+.slider-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.main-header {
+  background-color: #eeeeee;
+
+}
+
+.slider {
+  position: relative;
+
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 1;
+
+  width: 6px;
+  height: 6px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controls .active::before {
+
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(2) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item h3 {
+  max-width: 620px;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 8px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.slider-item p {
+  max-width: 620px;
+  margin: 0;
+}
+
+.button {
+  display: block;
+  width: 195px;
+  padding: 14px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #ee3643;;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+*/////////////////////////////////////////////////////////////////////////////
+
+
+.slider-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+  width: 620px; /*ширина слайдера*/
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-item h3 {
+  max-width: 620px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .materials-link a,
 .tooling-link,
