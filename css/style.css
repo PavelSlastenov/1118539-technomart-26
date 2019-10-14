@@ -147,6 +147,11 @@ img {
   position: relative;
 }
 
+.basket-background-red {
+  background-color: #ee3643;
+}
+
+
 .basket-background::before {
   content: "";
 
@@ -267,7 +272,6 @@ img {
 
 .formalize {
   width: 150px;
-  height: 42px; /*Временно, без этого значения становится шире чем в макете*/
   font-size: 17px;
   line-height: 18px;
   text-transform: none;
@@ -535,6 +539,25 @@ img {
   height: 65px;
 
   background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.materials .flag{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 60px;
+  height: 59px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.materials .flag-new {
+  background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -820,37 +843,58 @@ img {
 
 .link-price {
   width: 141px;
-  height: 38px; /*Временно оставил, без этого значения когда задаю padding из макета, становится намного шире чем в макете*/
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 21px;
-  margin-left: 42px;
-  /*padding-top: 13px;
-  padding-right: 40px;
-  padding-bottom: 13px;
-  padding-left: 36px;*/
+
+  position: relative;
+}
+
+.product .link-price:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
+}
+
+.link-price-right:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .link-price-right {
   width: 141px;
-  height: 38px;  /*Временно оставил, без этого значения когда задаю padding из макета, становится намного шире чем в макете*/
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
-  text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  margin-top: 53px; /*временно*/
-  margin-bottom: 21px;
-  margin-left: 42px;
-  /*padding-top: 13px;
-  padding-right: 40px;
-  padding-bottom: 13px;
-  padding-left: 36px; */
+  position: relative;
+  margin-top: 53px;
 }
 
 .product {
@@ -866,11 +910,143 @@ img {
   text-align: center;
 }
 
+.product .flag{
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
 .product .flag-new {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.product .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.product .actions .buy,
+.product .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.product .actions {
+  display: none;
+}
+
+.product:hover .actions {
+  display: block;
+}
+
+.product:nth-child(4n) {  /*лишний отступ у 4 элемента*/
+  margin-right: 0;
+}
+
+.product .image {
+  width: 218px;
+  height: 168px;
+}
+
+.product .image img {
+  max-width: 100%;
+}
+
+.product .link-name {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .old-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product .buy:hover {
+  background-color: #5fbb2d;
+}
+
+.product .buy:active {
+  background-color: #518534;
+}
+
+.buy {
+  position: relative;
+}
+
+.buy::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+}
+
+.product .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.product .bookmark:active {
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+
 
 .product h3 {
   text-align: center;

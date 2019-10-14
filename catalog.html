@@ -12,19 +12,20 @@
 
 <header>
   <section class="main-navigation">
-      <div class="main-navigation-container container">
-        <div class="main-header-logo">
-          <a href="index.html"><img src="img/logo.svg" width="109" height="18" alt="Логотип магазина Техномарт"></a>
-        </div>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <input id="search" type="text" name="search" value="" placeholder="Поиск">
-          </p>
-        </form>
-        <a class="bookmarks-background" href="">Закладки: 0</a>
-        <a class="basket-background" href="">Корзина: 0</a>
-        <a class="formalize" href="">Оформить заказ</a>
+    <div class="main-navigation-container container">
+      <div class="main-header-logo">
+        <a href="index.html"><img src="img/logo.svg" width="109" height="18" alt="Логотип магазина Техномарт"></a>
       </div>
+      <div class="icon-search"></div>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <input id="search" type="text" name="search" value="" placeholder="Поиск"><!--Здесь нужен закрывающий тег, а то редактор без него выделяет как ошибку и с ним всю строку выделяет-->
+        </p>
+      </form>
+      <a class="bookmarks-background" href="">Закладки: 0</a>
+      <a class="basket-background-red" href="">Корзина: 0</a>
+      <a class="formalize" href="">Оформить заказ</a>
+    </div>
   </section>
 
   <section class="user-navigation">
@@ -35,8 +36,9 @@
         </div>
         <div class="adress-container">
           <p class="description-phone">+7 (812) 555-05-55</p>
-          <p class="description-address"> г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
-      </div>
+          <p class="description-address">г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
+        </div>
+
         <div class="account-user">
           <div class="user-name">Равшан Джамшутович</div>
           <div class="order-account">
@@ -45,6 +47,7 @@
           </div>
         </div>
     </div>
+
       <section class="site-navigation">
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -59,6 +62,7 @@
     </div>
   </section>
 </header>
+
 <main>
 
   <div class="tabs-container container">
