@@ -856,7 +856,7 @@ img {
 }
 
 .product {
-  width: 200px; /*временно задал, вместо 220px, не помещались 3 в ряд*/
+  width: 220px;
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
@@ -945,16 +945,120 @@ img {
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  margin-bottom: 20px;
+
 }
 
 .manufacturers a:hover {
-  box-shadow: 0 8px 33px 0 #a9adb5;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers a:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
   opacity:0.3;
 }
+
+.manufacturers-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 220px;
+  height: 145px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+}
+
+.img-bosch {
+  content: "";
+
+  position: absolute;
+  top: 53px;
+  left: 47px;
+
+  width: 126px;
+  height: 37px;
+}
+
+
+.img-makita {
+  content: "";
+
+  position: absolute;
+  top: 50px;
+  left: 48px;
+
+  width: 123px;
+  height: 40px;
+}
+
+.img-dewalt {
+  content: "";
+
+  position: absolute;
+  top: 48px;
+  left: 37px;
+
+  width: 146px;
+  height: 44px;
+}
+
+.img-interskol {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  left: 9px;
+
+  width: 200px;
+  height: 88px;
+}
+
+.img-hitachi {
+  content: "";
+
+  position: absolute;
+  top: 58px;
+  left: 28px;
+
+  width: 169px;
+  height: 31px;
+}
+
+.img-lg {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 48px;
+
+  width: 121px;
+  height: 73px;
+}
+
+.img-aeg {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: 35px;
+
+  width: 151px;
+  height: 96px;
+}
+
+.img-metabo {
+  content: "";
+
+  position: absolute;
+  top: 34px;
+  left: 10px;
+
+  width: 204px;
+  height: 69px;
+}
+
+
+
 
 .service {
   display: flex;
