@@ -24,6 +24,12 @@ ul {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -32,9 +38,36 @@ ul {
   margin: -1px;
   font-weight: normal;
 }
+*/
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.site-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  vertical-align: middle;
+  color: #ffffff;
+}
+
 
 .main-navigation {
-  /*height: 42px; /*Без этого значения, сильно растягивается вниз*/
+  /*height: 42px;*/
   background-color: #293449;
   display: flex;
   flex-direction: column;
@@ -45,6 +78,8 @@ ul {
 .main-navigation ul {
   list-style: none;
 }
+
+
 
 .main-navigation-container {
   display: flex;
@@ -82,14 +117,42 @@ ul {
   margin-left: 49px;
 }
 
+.icon-search {
+  position: relative;
+}
+
+.icon-search::before {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  left: 17px;
+
+  width: 17px;
+  height: 17px;
+
+  background-image: url("img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.icon-search:hover {
+  /*додумать*/
+}
+
 .bookmarks-background {
   margin-top: 14px;
+  margin-right: 46px;
+  margin-bottom: 13px;
   margin-left: 110px;
 }
 
 .basket-background {
   margin-top: 14px;
-  margin-left: 78px;
+  margin-right: 31px;
+ 
 }
 
 .site-navigation ul,
@@ -196,7 +259,7 @@ ul {
 }
 
 .description {
- width: 196px;
+  width: 196px;
   margin-top: 40px;
   margin-right: 71px;
   margin-left: auto;
@@ -257,6 +320,7 @@ ul {
   width: 121px;
   height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
   padding-top: 14px;
+  padding-right: 27px;
   padding-left: 48px;
   padding-bottom: 15px;
   background-color: #ffffff;
@@ -266,6 +330,25 @@ ul {
   text-transform: none;
   margin-top: 46px;
   margin-left: 69px;
+
+  position: relative;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #ffffff;
 }
 
 .login-link-registration {
@@ -309,9 +392,6 @@ ul {
   justify-content: space-around;
   margin-top: 44px;
   margin-bottom: 60px;
-  padding-right: 55px;
-  padding-top: 11px;
-  padding-bottom: 13px;
 }
 
 .site-navigation a {
@@ -1445,4 +1525,3 @@ ul {
   border-style: solid;
   border-color: #ee3643;
 }
-
