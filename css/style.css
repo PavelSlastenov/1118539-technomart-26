@@ -79,8 +79,6 @@ img {
   list-style: none;
 }
 
-
-
 .main-navigation-container {
   display: flex;
   flex-direction: row;
@@ -135,7 +133,7 @@ img {
   width: 14px;
   height: 16px;
 
-  background-image: url("img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -159,7 +157,7 @@ img {
   width: 14px;
   height: 16px;
 
-  background-image: url("img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -185,7 +183,7 @@ img {
   width: 17px;
   height: 17px;
 
-  background-image: url("img/icon-search.svg");
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -349,7 +347,7 @@ img {
   width: 19px;
   height: 19px;
 
-  background-image: url("img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -411,7 +409,7 @@ img {
   width: 20px;
   height: 17px;
 
-  background-image: url("img/icon-login.svg");
+  background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -520,11 +518,11 @@ img {
   padding-bottom: 22px;
   margin-right: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .materials {
   background-color: #ffbf47;
-  position: relative;
 }
 
 .materials::before {
@@ -538,26 +536,89 @@ img {
   width: 44px;
   height: 65px;
 
-  background-image: url("img/icon-1.svg");
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .tooling {
   background-color: #3bbce3;
 }
 
+.tooling::before {
+  content: "";
+
+  position: absolute;
+
+  top: 33px;
+  right: 37px;
+
+  width: 75px;
+  height: 61px;
+
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .technique {
   background-color: #dc91d8;
+}
+
+.technique::before {
+  content: "";
+
+  position: absolute;
+
+  top: 31px;
+  right: 33px;
+
+  width: 78px;
+  height: 62px;
+
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .discounts {
   background-color: #8ed78f;
 }
 
+.discounts::before {
+  content: "";
+
+  position: absolute;
+
+  top: 33px;
+  right: 37px;
+
+  width: 59px;
+  height: 72px;
+
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .delivery {
   background-color: #ffc047;
+}
+
+.delivery::before {
+  content: "";
+
+  position: absolute;
+
+  top: 32px;
+  right: 33px;
+
+  width: 78px;
+  height: 63px;
+
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .materials a,
@@ -612,7 +673,7 @@ img {
 
 .slider {
   width: 620px;
-  background-image: url("img/slider-1.jpg");
+  background-image: url("../img/slider-1.jpg");
   margin-right: 20px;
 }
 
@@ -1194,7 +1255,7 @@ img {
 
 .social-network ul{
   display: flex;
-  flex-direction: row;
+  flex-direction: top;
   margin-top: 45px;
 
   margin-right: 130px;
@@ -1202,7 +1263,88 @@ img {
 
 .social-network li {
   margin-right: 26px;
+
+
 }
+
+.social-network-vk,
+.social-network-fb,
+.social-network-insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+/*
+.social-network-vk {
+  margin-left: 169px;
+}
+*/
+
+
+.social-network-vk::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 8px;
+
+  width: 26px;
+  height: 15px;
+
+  background-image: url("../img/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-network-fb::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  width: 12px;
+  height: 22px;
+
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-network-insta::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-network-vk:hover,
+.social-network-fb:hover,
+.social-network-insta:hover,
+.social-network-vk:focus,
+.social-network-fb:focus,
+.social-network-insta:focus,
+.social-network-vk:active,
+.social-network-fb:active,
+.social-network-insta:active {
+  background-color: #ee3643;
+}
+
 
 .feedback-footer-container {
   display: flex;
