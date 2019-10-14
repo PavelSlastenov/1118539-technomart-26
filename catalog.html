@@ -19,7 +19,7 @@
       <div class="icon-search"></div>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
         <p>
-          <input id="search" type="text" name="search" value="" placeholder="Поиск"><!--Здесь нужен закрывающий тег, а то редактор без него выделяет как ошибку и с ним всю строку выделяет-->
+          <input id="search" type="text" name="search" value="" placeholder="Поиск">
         </p>
       </form>
       <a class="bookmarks-background" href="">Закладки: 0</a>
@@ -64,10 +64,10 @@
 </header>
 
 <main>
-
   <div class="tabs-container container">
     <ul>
-      <li><a href="catalog.html">КАТАЛОГ</a></li>
+      <li class="icon-home"><a href=""></a></li>
+      <li class="icon-right"><a href="catalog.html">КАТАЛОГ</a></li>
       <li><a href="">ИСТРУМЕНТ</a></li>
       <li><a href="">ПЕРФОРАТОРЫ</a></li>
     </ul>
@@ -227,7 +227,25 @@
   </section>
   </div>
 
-  <section class="filters">
+    <section class="filters">
+
+        <h2>Фильтр:</h2>
+          <fieldset class="filter filter-price">
+            <legend>Цена:</legend>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <input type="text" name="min-price" value="0" aria-label="Минимальная цена">
+              <input type="text" name="max-price" value="30000" aria-label="Максимальная цена">
+            </div>
+
+
+
     <form method="get" action="https://echo.htmlacademy.ru">
       <div class="manufacturers-filters">
       <fieldset class="fieldset-border">

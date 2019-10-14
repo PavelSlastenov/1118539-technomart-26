@@ -997,7 +997,7 @@ img {
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
-  width: 620px; /*ширина слайдера*/
+  width: 620px;
   margin-top: 20px;
   margin-right: 20px;
 }
@@ -1081,28 +1081,6 @@ img {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2105,7 +2083,43 @@ img {
   padding-right: 69px;
   margin-bottom: 21px;
   padding-left: 47px;
+
+  position: relative;
 }
+
+.user-name::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+/*
+.user-name::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  right: 39px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+*/
 
 .order-account a {
   font-size: 16px;
@@ -2145,6 +2159,44 @@ img {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   margin-right: 39px;
+}
+
+.icon-home {
+  position: relative;
+}
+
+.icon-home::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 14px;
+  height: 12px;
+
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-right {
+  position: relative;
+}
+
+.icon-right::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .sort h3{
@@ -2294,10 +2346,6 @@ img {
   padding-bottom: 73px;
 }
 
-.filters {
-  margin-top: 300px;
-}
-
 .fieldset-border {
   border: none;
 }
@@ -2420,4 +2468,162 @@ img {
   border-width: 1px;
   border-style: solid;
   border-color: #ee3643;
+}
+
+.catalog-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filters {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.filters h2 {
+  margin: 0;
+  margin-top: 20px;
+  padding: 9px 0 10px 20px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+
+.filter {
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter legend {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-top: 15px;
+  padding: 39px 20px 39px 20px;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.scale {
+  position: absolute;
+  top: 37px;
+  left: 20px;
+  width: 180px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 27px;
+  width: 20px;
+  height: 20px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 20px;
+}
+
+.range-toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+
+.price-controls input {
+  width: 95px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 3px;
+}
+
+.price-controls::after {
+  content: "";
+
+  position: absolute;
+  top: 19px;
+  right: 105px;
+  width: 10px;
+  height: 1px;
+
+  background-color: #444444;
+}
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+
+  list-style: none;
+}
+
+.filter li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.filter li:last-child {
+  margin-bottom: 16px;
+}
+
+.filter label {
+  position: relative;
+
+  display: block;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  user-select: none;
 }
