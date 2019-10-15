@@ -1323,7 +1323,7 @@ img {
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  margin-right: 22px;
+  margin-right: 20px;
   margin-bottom: 21px;
 
   position: relative;
@@ -1400,9 +1400,11 @@ img {
   display: block;
 }
 
-.product:nth-child(4n) {  /*лишний отступ у 4 элемента*/
+
+.product:nth-child(3n) {
   margin-right: 0;
 }
+
 
 .product .image {
   width: 218px;
@@ -1578,6 +1580,17 @@ img {
   position: relative;
   border: 1px solid #e5e5e5;
 }
+
+.manufacturers-container-right {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 220px;
+  height: 145px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+}
+
 
 .img-bosch {
   content: "";
