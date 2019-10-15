@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
-  min-width: 960px;
+  min-width: 940px;
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
@@ -67,7 +67,6 @@ img {
 
 
 .main-navigation {
-  /*height: 42px;*/
   background-color: #293449;
   display: flex;
   flex-direction: column;
@@ -139,6 +138,7 @@ img {
 
   opacity: 0.3;
 }
+
 
 .basket-background {
   padding-top: 14px;
@@ -247,6 +247,7 @@ img {
 .bookmarks-background:hover,
 .basket-background:hover {
   background-color: #212a3a;
+  opacity: 1;
 }
 
 .bookmarks-background:active,
@@ -401,6 +402,22 @@ img {
   position: relative;
 }
 
+.login-link:hover,
+.login-link-registration:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.login-link-registration:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.login-link:hover:before {
+   opacity: 0.3 ;
+
+}
+
 .login-link::before {
   content: "";
 
@@ -491,7 +508,7 @@ img {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -924,7 +941,7 @@ img {
 
 
 .slider-container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -1255,7 +1272,8 @@ img {
   border-width: 1px;
   border-style: solid;
   border-color: #eaeaea;
-  margin-right: 20px;
+  margin-right: 22px;
+  margin-bottom: 21px;
 
   position: relative;
   display: inline-block;
@@ -1443,7 +1461,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 960px;
+  width: 940px;
   list-style: none;
   padding-bottom: 85px;
 }
@@ -2161,7 +2179,8 @@ img {
   margin-right: 39px;
 }
 
-.icon-home {
+.icon-home,
+.icon-right {
   position: relative;
 }
 
@@ -2180,21 +2199,16 @@ img {
   background-position: 0 0;
 }
 
-.icon-right {
-  position: relative;
-}
-
 .icon-right::before {
   content: "";
 
   position: absolute;
   top: 0;
-  left: 0;
-
+  left: 18px;
   width: 8px;
   height: 12px;
 
-  background-image: url("../img/icon-right.svg");
+  background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2282,8 +2296,44 @@ img {
   text-decoration: none;
 }
 
+.icon-up,
+.icon-down {
+  position: relative;
+}
+
+.icon-up::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 46px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-down::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 78px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
 .perforators-header {
-  width: 960px;
+  width: 940px;
   padding-top: 10px;
   padding-right: auto;
   padding-bottom: 20px;
@@ -2400,6 +2450,7 @@ img {
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin-top: 31px;
 }
 
 .page,
