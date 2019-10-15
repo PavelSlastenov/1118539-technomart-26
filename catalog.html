@@ -218,9 +218,6 @@
         </li>
       </ul>
 
-
-
-
       <div class="page-container">
       <ul>
         <li class="page-red"><a href="">1</a></li>
@@ -233,7 +230,7 @@
   </div>
 
     <section class="filters">
-
+      <div class="price-filters">
         <h2>Фильтр:</h2>
           <fieldset class="filter filter-price">
             <legend>Цена:</legend>
@@ -248,56 +245,56 @@
               <input type="text" name="min-price" value="0" aria-label="Минимальная цена">
               <input type="text" name="max-price" value="30000" aria-label="Максимальная цена">
             </div>
-
-
-
-    <form method="get" action="https://echo.htmlacademy.ru">
-      <div class="manufacturers-filters">
-      <fieldset class="fieldset-border">
-        <legend>Производители:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="bosch" id="filter-bosch" checked>
-            <label class="manufacturers-color" for="filter-bosch">BOSCH</label>
-          </li>
-          <li>
-            <input type="checkbox" name="interskol" id="filter-interskol">
-            <label class="manufacturers-color" for="filter-interskol">ИНТЕРСКОЛ</label>
-          </li>
-          <li>
-            <input type="checkbox" name="makita" id="filter-makita" checked>
-            <label class="manufacturers-color" for="filter-makita">MAKITA</label>
-          </li>
-          <li>
-            <input type="checkbox" name="dewalt" id="filter-dewalt">
-            <label class="manufacturers-color" for="filter-dewalt">DEWALT</label>
-          </li>
-          <li>
-            <input type="checkbox" name="hitachi" id="filter-hitachi">
-            <label class="manufacturers-color" for="filter-hitachi">HITACHI</label>
-          </li>
-        </ul>
-      </fieldset>
       </div>
-      <div class="food-filter">
-      <fieldset class="fieldset-border">
-        <legend>ПИТАНИЕ:</legend>
-        <ul>
-          <li>
-            <input type="radio" name="food" value="rechargeable" id="filter-rechargeable" checked>
-            <label class="food-color" for="filter-rechargeable">АККУМУЛЯТОРНЫЕ</label>
-          </li>
-          <li>
-            <input type="radio" name="food" value="networking" id="filter-networking">
-            <label class="food-color" for="filter-networking">СЕТЕВЫЕ</label>
-          </li>
-        </ul>
-      </fieldset>
-      </div>
-      <button class="submit" type="submit">ПОКАЗАТЬ</button>
-    </form>
-  </section>
+
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <div class="manufacturers-filters">
+
+          <fieldset class="filter filter-manufacturers">
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-manufacturers-checkbox" id="filter-bosch" type="checkbox" name="bosch" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-manufacturers-checkbox" id="filter-interskol" type="checkbox" name="interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-manufacturers-checkbox" id="filter-makita" type="checkbox" name="makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-manufacturers-checkbox" id="filter-dewalt" type="checkbox" name="dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-manufacturers-checkbox" id="filter-hitachi" type="checkbox" name="hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter filter-power">
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-power-radio" id="type-wireless" type="radio" name="power" value="wireless" checked>
+                <label for="type-wireless">Аккумуляторные</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-power-radio" id="type-wired" type="radio" name="power" value="wired">
+                <label for="type-wired">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="submit filter-btn" type="submit">Показать</button>
+      </form>
+    </section>
   </div>
+
+
   <div class="description-perforators">
     <div class="container">
     <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
