@@ -111,6 +111,7 @@ img {
   line-height: 18px;
   font-weight: normal;
   text-transform: none;
+
 }
 
 .bookmarks-background {
@@ -211,8 +212,6 @@ img {
 .icon-search:active::before {
   opacity: 0.3;
 }
-
-
 
 .site-navigation ul,
 .bookmarks-background,
@@ -349,7 +348,7 @@ img {
 .description {
   width: 196px;
   margin-top: 40px;
-  margin-right: 71px;
+  margin-right: 81px;
   margin-left: auto;
 }
 
@@ -375,6 +374,7 @@ img {
   border-style: solid;
   border-color: #ffffff;
   margin-top: 46px;
+  margin-bottom: 5px;
 
   position: relative;
 }
@@ -384,7 +384,7 @@ img {
 
   position: absolute;
   top: 13px;
-  left: 40px;
+  left: 15px;
 
   width: 19px;
   height: 19px;
@@ -399,13 +399,14 @@ img {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  margin-left: 18px;
+  margin-top: 0;
 }
 
 .account-user {
   display: flex;
   flex-direction: column;
   padding-top: 46px;
-  margin-right: auto;
   margin-left: 51px;
 }
 
@@ -523,7 +524,7 @@ img {
 
 
 .navigation-container {
-  width: 960px;
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -533,7 +534,7 @@ img {
   flex-direction: row;
   background-color: #32425c;
   align-items: center;
-  justify-content: space-around;
+  justify-content: ;
   margin-top: 44px;
   margin-bottom: 60px;
 }
@@ -545,6 +546,10 @@ img {
   font-weight: normal;
   list-style: none;
   text-transform: none;
+  margin-left: 25px;
+
+  padding-top: 20px;
+
 }
 
 .assortment h3{
@@ -588,14 +593,22 @@ img {
 
 .materials,
 .tooling,
-.technique,
 .discounts,
 .delivery {
+  width: 300px;
+  padding-top: px;
+  padding-left: 23px;
+  padding-bottom: 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.technique {
   width: 300px;
   padding-top: 5px;
   padding-left: 23px;
   padding-bottom: 22px;
-  margin-right: 20px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -735,6 +748,8 @@ img {
   padding-right: 24px;
   padding-bottom: 14px;
   padding-left: 24px;
+
+
 }
 
 
@@ -2295,14 +2310,12 @@ img {
 }
 
 .user-name {
-  min-width: 299px;
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
   text-transform: none;
   padding-top: 14px;
-  padding-right: 69px;
   padding-bottom: 11px;
   padding-left: 47px;
 
@@ -3193,3 +3206,6 @@ img {
   cursor: pointer;
   user-select: none;
 }
+
+/*--------------------------------Модальные окна---------------------------------------*/
+
