@@ -1262,6 +1262,7 @@ img {
   font-weight: 700;
 }
 
+
 .link-price {
   width: 141px;
   margin: 10px auto;
@@ -1272,11 +1273,16 @@ img {
   background-color: #ee3643;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-
   position: relative;
 }
 
-.product .link-price:after {
+
+
+
+.product .link-price:after,
+.product .link-price-right:after,
+.product .link-price-left:after,
+.product-index .link-price:after {
   content: "";
 
   position: absolute;
@@ -1290,19 +1296,6 @@ img {
   border-left-color: #ee3643;
 }
 
-.link-price-right:after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: -20px;
-
-  width: 0;
-  height: 0;
-
-  border: 19px solid white;
-  border-left-color: #ee3643;
-}
 
 .link-price-right {
   width: 141px;
@@ -1316,6 +1309,19 @@ img {
   font-weight: 700;
   position: relative;
   margin-top: 53px;
+}
+
+.link-price-left {
+  width: 141px;
+  margin: 10px auto;
+  padding: 10px 30px;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  position: relative;
+
 }
 
 .product {
@@ -1332,7 +1338,28 @@ img {
   text-align: center;
 }
 
-.product .flag{
+.product-index {
+  width: 220px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  margin-right: 20px;
+  margin-bottom: 21px;
+
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product h3,
+.product-index h3 {
+  margin-right: 33px;
+  text-align: center;
+}
+
+.product .flag,
+.product-index .flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -1345,13 +1372,15 @@ img {
   z-index: 20;
 }
 
-.product .flag-new {
+.product .flag-new,
+.product-index .flag-new {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.product .actions {
+.product .actions,
+.product-index .actions {
   position: absolute;
   top: 0;
   left: 0;
@@ -1365,7 +1394,9 @@ img {
 }
 
 .product .actions .buy,
-.product .actions .bookmark {
+.product-index .actions .buy,
+.product .actions .bookmark,
+.product-index .actions .bookmark {
   display: block;
   width: 129px;
   margin: 0 auto;
@@ -1386,56 +1417,53 @@ img {
   text-transform: uppercase;
 }
 
-.product .actions .bookmark {
+.product .actions .bookmark,
+.product-index .actions .bookmark {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
 }
 
-.product .actions {
+.product .actions,
+.product-index .actions {
   display: none;
 }
 
-.product:hover .actions {
+.product:hover .actions,
+.product-index:hover .actions {
   display: block;
 }
 
 
-.product:nth-child(3n) {
+.product:nth-child(3n) {  /*Лишний отступ у 3 элемента*/
   margin-right: 0;
 }
 
-
-.product .image {
+.product .image,
+.product-index .image {
   width: 218px;
   height: 168px;
 }
 
-.product .image img {
+.product .image img,
+.product-index .image img {
   max-width: 100%;
-}
-
-.product .link-name {
-  min-height: 40px;
-  padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
 }
 
 .catalog-item .old-price {
   min-height: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
-
-  color: #999;
   text-decoration: line-through;
 }
 
-.product .buy:hover {
+.product .buy:hover,
+.product-index .buy:hover {
   background-color: #5fbb2d;
 }
 
-.product .buy:active {
+.product .buy:active,
+.product-index .buy:active {
   background-color: #518534;
 }
 
@@ -1461,20 +1489,17 @@ img {
 }
 }
 
-.product .bookmark:hover {
+.product .bookmark:hover,
+.product-index .bookmark:hover {
   border: 3px solid #32425c;
 }
 
-.product .bookmark:active {
+.product .bookmark:active,
+.product-index .bookmark:active {
   border: 3px solid #32425c;
   opacity: 0.3;
 }
 
-
-
-.product h3 {
-  text-align: center;
-}
 
 .goods a {
   color: #000000;
@@ -1487,6 +1512,11 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  min-height: 40px;
+  padding:  25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
 }
 
 .link-buy {
@@ -2265,7 +2295,7 @@ img {
 }
 
 .user-name {
-  width: 299px;
+  min-width: 299px;
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
@@ -2273,8 +2303,10 @@ img {
   text-transform: none;
   padding-top: 14px;
   padding-right: 69px;
-  margin-bottom: 21px;
+  padding-bottom: 11px;
   padding-left: 47px;
+
+  margin-bottom: 21px;
 
   position: relative;
 }
@@ -3016,7 +3048,7 @@ img {
 }
 
 .filters h2 {
-  margin: 0;
+
   margin-top: 20px;
   padding: 9px 0 10px 20px;
 
