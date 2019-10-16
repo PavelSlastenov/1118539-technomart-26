@@ -231,14 +231,13 @@ img {
 .slider-link a,
 .discounts-link a,
 .delivery-link a,
-.goods h3,
 .link-buy a,
 .manufacturers a,
 .company a,
 .contacts-map a,
 .navigation-footer-top a,
-.search-item label,
-.footer-bottom a {
+.footer-bottom a,
+.goods-link {
   color: #ffffff;
 }
 
@@ -337,7 +336,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 59px;
+
 }
 
 .user-navigation-container {
@@ -1236,14 +1235,16 @@ img {
 
 .goods-link {
   width: 253px;
+  height: 38px; /*Временно оставил, пока без этого значения становится шире чем в макете*/
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 25px;
   padding-top: 2px;
-  margin-left: 20px;
+  padding-left: 69px;
 }
+
+
 
 .goods ul{
   display: flex;
@@ -1367,6 +1368,12 @@ img {
   text-align: center;
 }
 
+.product:hover,
+.product-index:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+
 .product h3,
 .product-index h3 {
   margin-right: 33px;
@@ -1450,6 +1457,12 @@ img {
 }
 
 
+.product img:hover,
+.product-index img:hover {   /*Придумать другой способ*/
+ opacity: 0;
+}
+
+
 .product:nth-child(3n) {  /*Лишний отступ у 3 элемента*/
   margin-right: 0;
 }
@@ -1502,7 +1515,7 @@ img {
 
   opacity: 0.3;
 }
-}
+
 
 .product .bookmark:hover,
 .product-index .bookmark:hover {
@@ -1513,11 +1526,6 @@ img {
 .product-index .bookmark:active {
   border: 3px solid #32425c;
   opacity: 0.3;
-}
-
-
-.goods a {
-  color: #000000;
 }
 
 .link-name {
@@ -1593,24 +1601,22 @@ img {
   padding-left: 69px;
 }
 
-.manufacturers-link a {
-  font-size: 14px;
-  line-height: 18px;
-}
 
-.manufacturers a {
+.manufacturers-container a,
+.manufacturers-container-right a {
   width: 220px;
   border-width: 1px;
-  border-style: solid;
   border-color: #eaeaea;
 
 }
 
-.manufacturers a:hover {
+.manufacturers-container a:hover,
+.manufacturers-container-right a:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-.manufacturers a:active {
+.manufacturers-container a:active,
+.manufacturers-container-right a:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
   opacity:0.3;
 }
@@ -2427,7 +2433,12 @@ img {
 .tabs-container a {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
-  margin-right: 39px;
+  margin-right: 28px;
+
+}
+
+.taabs {
+  margin-top: 15px;
 }
 
 .icon-home,
@@ -2440,7 +2451,9 @@ img {
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
+
+
 
   width: 14px;
   height: 12px;
@@ -2455,13 +2468,23 @@ img {
 
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 0;
+
+
   width: 8px;
   height: 12px;
+
+
 
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.tabs-catalog {
+  /*margin-left: -22px;*/
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .sort h3{
@@ -2480,7 +2503,6 @@ img {
   background-color: #f7f3ec;
   margin-top: 20px;
   margin-bottom: 20px;
-
   padding-left: 19px;
 }
 
@@ -2495,6 +2517,8 @@ img {
 .sort-list ul {
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  margin-left: 140px;
 }
 
 .sort-price {
@@ -2558,6 +2582,7 @@ img {
   position: absolute;
   top: 0;
   left: 46px;
+  margin-top: 6px;
 
   width: 11px;
   height: 10px;
@@ -2565,6 +2590,8 @@ img {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+
 
   opacity: 0.3;
 }
@@ -2575,6 +2602,7 @@ img {
   position: absolute;
   top: 0;
   left: 78px;
+  margin-top: 6px;
 
   width: 11px;
   height: 10px;
@@ -2591,6 +2619,8 @@ img {
 .icon-down:hover::before {
   opacity: unset;
 }
+
+
 /*
 .icon-up:active::before {
   content: "";
