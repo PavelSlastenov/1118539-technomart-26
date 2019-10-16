@@ -71,7 +71,6 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .main-navigation ul {
@@ -1222,7 +1221,6 @@ img {
   color: #32425c;
   font-weight: normal;
   margin-top: 33px;
-  margin-right: 350px;
   margin-left: 30px;
 }
 
@@ -1240,8 +1238,11 @@ img {
   border-radius: 3px;
   font-weight: normal;
   margin-top: 25px;
+  margin-left: 373px;
   padding-top: 2px;
-  padding-left: 69px;
+  padding-left: 50px;
+
+
 }
 
 
@@ -1383,8 +1384,8 @@ img {
 .product .flag,
 .product-index .flag {
   position: absolute;
-  top: -1px;
-  right: -1px;
+  top: 1px;
+  right: 1px;
 
   width: 60px;
   height: 60px;
@@ -1456,12 +1457,12 @@ img {
   display: block;
 }
 
-
+/* Скрыть картинку перфоратора в карточке товаров, работает не очень, только при наведении в область картинки.
 .product img:hover,
-.product-index img:hover {   /*Придумать другой способ*/
+.product-index img:hover {
  opacity: 0;
 }
-
+*/
 
 .product:nth-child(3n) {  /*Лишний отступ у 3 элемента*/
   margin-right: 0;
@@ -1585,7 +1586,6 @@ img {
   color: #32425c;
   font-weight: normal;
   margin-top: 33px;
-  margin-right: 270px;
   margin-bottom: 30px;
   margin-left: 30px;
 }
@@ -1597,6 +1597,7 @@ img {
   border-radius: 3px;
   font-weight: normal;
   margin-top: 25px;
+  margin-left: 269px;
   padding-top: 2px;
   padding-left: 69px;
 }
@@ -2442,7 +2443,9 @@ img {
 }
 
 .icon-home,
-.icon-right {
+.icon-right,
+.icon-right-two,
+.icon-right-free {
   position: relative;
 }
 
@@ -2451,7 +2454,8 @@ img {
 
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
+  margin-top: 23px;
 
 
 
@@ -2468,7 +2472,49 @@ img {
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: 8px;
+  margin-top: 23px;
+
+
+
+  width: 8px;
+  height: 12px;
+
+
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-right-two::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -10px;
+  margin-top: 23px;
+
+
+
+  width: 8px;
+  height: 12px;
+
+
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-right-free::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 8px;
+  margin-top: 23px;
+
 
 
   width: 8px;
@@ -2482,9 +2528,15 @@ img {
 }
 
 .tabs-catalog {
-  /*margin-left: -22px;*/
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tabs-catalog-two {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: -15px; /*пришлось подвинуть -, придумать другой способ*/
+
 }
 
 .sort h3{
@@ -2519,6 +2571,7 @@ img {
   flex-direction: row;
   margin-top: 10px;
   margin-left: 140px;
+
 }
 
 .sort-price {
@@ -2817,6 +2870,7 @@ img {
 .filters-catalog {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 60px;
 }
 
 .perforators ul{
@@ -2990,6 +3044,7 @@ img {
   color: #000000;
 }
 
+
 .description-perforators h2 {
   font-size: 30px;
   line-height: 30px;
@@ -3002,6 +3057,14 @@ img {
   text-transform: none;
   font-family: "PT Sans", "Arial", sans-serif;
   padding-bottom: 73px;
+}
+
+.container-description-perforators {
+  width: 940px;
+  margin-top: 67px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .page-container ul {
