@@ -1347,7 +1347,11 @@ img {
 
 .link-price-left {
   width: 141px;
-  margin: 10px auto;
+  margin-top: 13px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1px;
+
   padding: 10px 30px;
   font-size: 17px;
   line-height: 18px;
@@ -1372,7 +1376,7 @@ img {
   text-align: center;
 }
 
-.product-index {
+.product-index {  /*сделал отдельный класс, поскольку в каталоге задано что у каждого 3 элемента нет margin-right*/
   width: 220px;
   border-width: 1px;
   border-style: solid;
@@ -1386,20 +1390,41 @@ img {
   text-align: center;
 }
 
+.product-index-right { /*сделал отдельный класс, поскольку в каталоге задано что у каждого 4 элемента есть margin-right*/
+  width: 220px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  margin-bottom: 21px;
+
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product:focus,
 .product:hover,
-.product-index:hover {
+.product-index:focus,
+.product-index:hover,
+.product-index-right:focus,
+.product-index-right:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 
 .product h3,
-.product-index h3 {
-  margin-right: 33px;
-  text-align: center;
+.product-index h3,
+.product-index-right h3 {
+  width: 155px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12px;
 }
 
 .product .flag,
-.product-index .flag {
+.product-index .flag,
+.product-index-right .flag {
   position: absolute;
   top: 1px;
   right: 1px;
@@ -1413,14 +1438,16 @@ img {
 }
 
 .product .flag-new,
-.product-index .flag-new {
+.product-index .flag-new,
+.product-index-right .flag-new {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .product .actions,
-.product-index .actions {
+.product-index .actions,
+.product-index-right .actions {
   position: absolute;
   top: 0;
   left: 0;
@@ -1435,8 +1462,10 @@ img {
 
 .product .actions .buy,
 .product-index .actions .buy,
+.product-index-right .actions .buy,
 .product .actions .bookmark,
-.product-index .actions .bookmark {
+.product-index .actions .bookmark,
+.product-index-right .actions .bookmark {
   display: block;
   width: 129px;
   margin: 0 auto;
@@ -1458,21 +1487,25 @@ img {
 }
 
 .product .actions .bookmark,
-.product-index .actions .bookmark {
+.product-index .actions .bookmark,
+.product-index-right .actions .bookmark {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
 }
 
 .product .actions,
-.product-index .actions {
+.product-index .actions,
+.product-index-right .actions {
   display: none;
 }
 
 .product:focus .actions,
 .product:hover .actions,
 .product-index:focus .actions,
-.product-index:hover .actions {
+.product-index:hover .actions,
+.product-index-right:focus .actions,
+.product-index-right:hover .actions{
   display: block;
 }
 
@@ -1490,13 +1523,15 @@ img {
 }
 
 .product .image,
-.product-index .image {
+.product-index .image,
+.product-index-right .image {
   width: 218px;
   height: 168px;
 }
 
 .product .image img,
-.product-index .image img {
+.product-index .image img,
+.product-index-right .image img{
   max-width: 100%;
 }
 
@@ -1531,20 +1566,25 @@ img {
 .product .buy:focus,
 .product .buy:hover,
 .product-index .buy:focus,
-.product-index .buy:hover {
+.product-index .buy:hover,
+.product-index-right .buy:focus,
+.product-index-right .buy:hover {
   background-color: #5fbb2d;
 }
 
 .product .buy:focus::before,
 .product .buy:hover::before,
 .product-index .buy:focus::before,
-.product-index .buy:hover::before {
+.product-index .buy:hover::before,
+.product-index-right .buy:focus::before,
+.product-index-right .buy:hover::before {
   opacity: 1;
 }
 
 
 .product .buy:active,
-.product-index .buy:active {
+.product-index .buy:active,
+.product-index-right .buy:active {
   background-color: #518534;
   border-color: #518534;
 }
@@ -1552,12 +1592,15 @@ img {
 .product .bookmark:focus,
 .product .bookmark:hover,
 .product-index .bookmark:focus,
-.product-index .bookmark:hover {
+.product-index .bookmark:hover,
+.product-index-right .bookmark:focus,
+.product-index-right .bookmark:hover {
   border: 3px solid #32425c;
 }
 
 .product .bookmark:active,
-.product-index .bookmark:active {
+.product-index .bookmark:active,
+.product-index-right .bookmark:active {
   border: 3px solid #32425c;
   opacity: 0.3;
 }
@@ -1569,10 +1612,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  min-height: 40px;
-  padding:  25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+
 
 }
 
@@ -1784,7 +1824,7 @@ img {
   flex-direction: column;
   margin-top: 65px;
   padding-top: 60px;
-  padding-bottom: 97px;
+  padding-bottom: 99px;
 
 
   background-color: #f4f7f9;
@@ -1794,21 +1834,18 @@ img {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
-  margin-bottom: 39px;
   font-weight: 400;
 }
 
 .catalog-service p {
   width: 398px;
-  margin: 0;
-  padding: 0;
-  padding-top: 25px;
   text-transform: none;
   font-weight: 400;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+
 }
 
 .service-information {
@@ -1852,11 +1889,14 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-align: left;
+  text-transform: none;
   color: #ffffff;
   cursor: pointer;
   background-color: #32425c;
-  box-shadow: inset 0 1px 0 0 #405069;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
+
+
 .service-controls label:focus,
 .service-controls label:hover {
   background-color: #293449;
