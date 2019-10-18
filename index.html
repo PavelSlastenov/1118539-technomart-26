@@ -17,11 +17,11 @@
         <a href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
       </div>
       <div class="icon-search"></div>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <input id="search" type="text" name="search" value="" placeholder="Поиск"><!--Здесь нужен закрывающий тег, а то редактор без него выделяет как ошибку и с ним всю строку выделяет-->
-        </p>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search"></label>
+        <input id="search" type="search" name="search" aria-label="Поиск" placeholder="Поиск:">
       </form>
+
       <a class="bookmarks-background" href="">Закладки: 0</a>
       <a class="basket-background" href="">Корзина: 0</a>
       <a class="formalize" href="">Оформить заказ</a>
@@ -80,12 +80,18 @@
     <section class="slider">
       <div class="slider-container">
         <h2 class="visually-hidden">Описание</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-1" name="bottom" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="bottom">
         <div class="slider-controls">
           <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-          <i class="active"></i>
+          <label class="slider-action-left" for="product-1">
+            <span class="visually-hidden">Переключатель слайдов влево</span>
+          </label>
+          <label class="slider-action-right" for="product-2">
+            <span class="visually-hidden">Переключатель слайдов вправо</span>
+          </label>
+
         </div>
         <ul class="slider-list">
           <li class="slider-item">
