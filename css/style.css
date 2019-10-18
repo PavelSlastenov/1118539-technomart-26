@@ -84,15 +84,17 @@ img {
 
 .main-header-logo {
   width: 220px;
-  height: 47px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
+  height: 42px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
+
   padding-top: 13px;
   padding-right: 56px;
   padding-bottom: 15px;
   padding-left: 55px;
 }
 
+.main-header-logo:focus,
 .main-header-logo:hover {
   background-color: #ca2c37;
   box-shadow: 0 5px 0 0 #9b2022;
@@ -167,7 +169,10 @@ img {
   opacity: 0.3;
 }
 
+
+.bookmarks-background:focus::before,
 .bookmarks-background:hover::before,
+.basket-background:focus::before,
 .basket-background:hover::before {
   opacity: 1;
 }
@@ -203,8 +208,8 @@ img {
   opacity: 0.3;
 }
 
-.icon-search:hover::before,
-.icon-search:focus::before {
+.icon-search:focus::before,
+.icon-search:hover::before {
   opacity: 1;
 }
 
@@ -240,6 +245,7 @@ img {
   color: #ffffff;
 }
 
+.site-navigation a:focus,
 .site-navigation a:hover {
   background-color: #293449;
 }
@@ -249,7 +255,9 @@ img {
   background-color: #1d2739;
 }
 
+.bookmarks-background:focus,
 .bookmarks-background:hover,
+.basket-background:focus,
 .basket-background:hover {
   background-color: #212a3a;
   opacity: 1;
@@ -260,7 +268,6 @@ img {
   color: #a2a5a9;
   background-color: #161d29;
 }
-
 
 
 .basket-background-red {
@@ -296,7 +303,7 @@ img {
   opacity: 0.3;
 }
 
-
+.basket-background-red:focus::before,
 .basket-background-red:hover::before {
   opacity: inherit;
 }
@@ -317,6 +324,7 @@ img {
   padding-left: 20px;
 }
 
+.formalize:focus,
 .formalize:hover {
   background-color: #5fbb2d;
 }
@@ -455,7 +463,10 @@ img {
   position: relative;
 }
 
+
+.login-link:focus,
 .login-link:hover,
+.login-link-registration:focus,
 .login-link-registration:hover {
   color: #ee3643;
 }
@@ -1190,10 +1201,15 @@ img {
   font-weight: 700;
 }
 
+.materials-link:focus,
 .materials-link:hover,
+.tooling-link:focus,
 .tooling-link:hover,
+.technique-link:focus,
 .technique-link:hover,
+.discounts-link:focus,
 .discounts-link:hover,
+.delivery-link:focus,
 .delivery-link:hover {
   background-color: #cccccc;
 }
@@ -1452,13 +1468,17 @@ img {
   display: none;
 }
 
+.product:focus .actions,
 .product:hover .actions,
+.product-index:focus .actions,
 .product-index:hover .actions {
   display: block;
 }
 
 /* Скрыть картинку перфоратора в карточке товаров, работает не очень, только при наведении в область картинки.
+.producs img:focus,
 .product img:hover,
+.product-index img:focus,
 .product-index img:hover {
  opacity: 0;
 }
@@ -1486,15 +1506,6 @@ img {
   text-decoration: line-through;
 }
 
-.product .buy:hover,
-.product-index .buy:hover {
-  background-color: #5fbb2d;
-}
-
-.product .buy:active,
-.product-index .buy:active {
-  background-color: #518534;
-}
 
 .buy {
   position: relative;
@@ -1502,7 +1513,6 @@ img {
 
 .buy::before {
   content: "";
-
   position: absolute;
   top: 7px;
   left: 12px;
@@ -1517,8 +1527,30 @@ img {
   opacity: 0.3;
 }
 
+.product .buy:focus,
+.product .buy:hover,
+.product-index .buy:focus,
+.product-index .buy:hover {
+  background-color: #5fbb2d;
+}
 
+.product .buy:focus::before,
+.product .buy:hover::before,
+.product-index .buy:focus::before,
+.product-index .buy:hover::before {
+  opacity: 1;
+}
+
+
+.product .buy:active,
+.product-index .buy:active {
+  background-color: #518534;
+  border-color: #518534;
+}
+
+.product .bookmark:focus,
 .product .bookmark:hover,
+.product-index .bookmark:focus,
 .product-index .bookmark:hover {
   border: 3px solid #32425c;
 }
@@ -1610,8 +1642,9 @@ img {
   border-color: #eaeaea;
 
 }
-
+.manufacturers-container a:focus,
 .manufacturers-container a:hover,
+.manufacturers-container-right a:focus,
 .manufacturers-container-right a:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
@@ -1823,9 +1856,8 @@ img {
   background-color: #32425c;
   box-shadow: inset 0 1px 0 0 #405069;
 }
-
-.service-controls label:hover,
-.service-controls label:focus {
+.service-controls label:focus,
+.service-controls label:hover {
   background-color: #293449;
 }
 
@@ -1896,23 +1928,24 @@ img {
   background-position: 0 0;
 }
 
-.service-credit .credit-form {
+.credit-form {
   position: absolute;
   z-index: 2;
 
   width: 195px;
-  padding-right: 40px;
   margin-top: 26px;
+  text-align: center;
 
+  color: #ffffff;
   background-color: #ff5357;
 }
 
-.service-credit .credit-form:hover,
-.service-credit .credit-form:focus {
+.credit-form:focus,
+.credit-form:hover {
   background-color: #ca2c37;
 }
 
-.service-credit .btn:active {
+.btn:active {
   background-color: #ba2732;
 }
 
@@ -1954,6 +1987,11 @@ img {
   font-weight: 400;
 }
 
+.company {
+  width: 519px;
+  margin-top: 82px;
+}
+
 .company p  {
   font-size: 13px;
   line-height: 24px;
@@ -1974,14 +2012,6 @@ img {
   margin-bottom: 23px;
 }
 
-.company {
-  margin-left: auto;
-  margin-right: 121px;
-}
-
-.company-p-2 {
-  margin-bottom: 28px;
-}
 
 .company-link {
   width: 220px;
@@ -1994,16 +2024,20 @@ img {
   padding-bottom: 12px;
   padding-left: 41px;
   font-weight: normal;
+
+}
+
+.company-link-container {
   margin-top: 37px;
 }
 
 .contacts-map {
-  margin-right: auto;
+  margin-left: 121px;
+  margin-top: 82px;
 }
 
 .contacts-map img {
   margin-top: 36px;
-  margin-bottom: 40px;
 }
 
 .contacts-map h2{
@@ -2034,11 +2068,16 @@ img {
   padding-right: 59px;
   padding-bottom: 12px;
   padding-left: 63px;
+
+}
+
+.contacts-map-link-container {
+  margin-top: 40px;
 }
 
 .logo-footer {
   width: 220px;
-  height: 68px;
+  height: 63px;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
   padding-top: 20px;
@@ -2061,6 +2100,8 @@ img {
 
 .adress-footer-container {
   width: 322px;
+  margin-top: 32px;
+  margin-bottom: 53px;
 }
 
 .adress-footer {
@@ -2069,13 +2110,14 @@ img {
   color: #f3f7f9;
   font-weight: normal;
   text-transform: none;
-  margin-bottom: 32px;
 }
 
 .container-right {
   display: flex;
   flex-direction: column;
 }
+
+
 
 .navigation-footer-top ul{
   display: flex;
@@ -2086,9 +2128,9 @@ img {
   color: #f1f5f7;
   font-weight: normal;
   text-transform: none;
-  margin-top: 41px;
-  margin-bottom: 45px;
-  padding-left: 23px;
+  margin-top: 42px;
+  margin-left: 68px;
+
 }
 
 .navigation-footer-bottom ul{
@@ -2099,6 +2141,9 @@ img {
   font-weight: normal;
   text-transform: none;
   list-style: none;
+  margin-top: 45px;
+  margin-left: 91px;
+
 }
 
 .navigation-footer-top a{
@@ -2107,10 +2152,13 @@ img {
 
 .navigation-footer-bottom a{
   color: #ffd180;
-  margin-right: 65px;
+  margin-right: 61px;
+
 }
 
+.navigation-footer-top a:focus,
 .navigation-footer-top a:hover,
+.navigation-footer-bottom a:focus,
 .navigation-footer-bottom a:hover {
   text-decoration: underline;
 }
@@ -2223,12 +2271,12 @@ img {
   background-position: 0 0;
 }
 
-.social-network-vk:hover,
-.social-network-fb:hover,
-.social-network-insta:hover,
 .social-network-vk:focus,
 .social-network-fb:focus,
 .social-network-insta:focus,
+.social-network-vk:hover,
+.social-network-fb:hover,
+.social-network-insta:hover,
 .social-network-vk:active,
 .social-network-fb:active,
 .social-network-insta:active {
@@ -2239,7 +2287,6 @@ img {
 .feedback-footer-container {
   display: flex;
   flex-direction: row;
-  margin-top: 39px;
 }
 
 .feedback-footer {
@@ -2269,7 +2316,6 @@ img {
 }
 
 .feedback-footer {
-  margin-right: 53px;
 }
 
 .feedback-footer-link,
@@ -2285,7 +2331,9 @@ img {
   width: 96px;
 }
 
+.feedback-footer-link:focus,
 .feedback-footer-link:hover,
+.developer-footer-link:focus,
 .developer-footer-link:hover {
   text-decoration-line: underline;
 }
@@ -2606,9 +2654,11 @@ img {
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
 }
-
+.sort-price a:focus,
 .sort-price a:hover,
+.sort-type a:focus,
 .sort-type a:hover,
+.sort-functional a:focus,
 .sort-functional a:hover {
   color: #000000;
   text-decoration-line: underline;
@@ -2668,7 +2718,9 @@ img {
   opacity: 0.3;
 }
 
+.icon-up:focus::before,
 .icon-up:hover::before,
+.icon-down:focus::before
 .icon-down:hover::before {
   opacity: unset;
 }
@@ -2979,13 +3031,13 @@ img {
   border-radius: 50%;
 }
 
-.filter-power-radio:hover + label::before,
-.filter-power-radio:focus + label::before {
+.filter-power-radio:focus + label::before,
+.filter-power-radio:hover + label::before {
   border-color: #b5b5b5;
 }
 
-.filter-power-radio:hover + label::after,
-.filter-power-radio:focus + label::after {
+.filter-power-radio:focus + label::after
+.filter-power-radio:hover + label::after{
   background-color: #b5b5b5;
 }
 
@@ -3012,9 +3064,8 @@ img {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
-
-.filter-submit:hover,
-.filter-submit:focus {
+.filter-submit:focus,
+.filter-submit:hover {
   background-color: #ffffff;
   border-color: #bdc6ca;
 }
@@ -3126,8 +3177,11 @@ img {
   padding-top: 10px;
 }
 
+.page-red:focus,
 .page-red:hover,
+.page:focus,
 .page:hover,
+.next-page:focus,
 .next-page:hover {
   border-width: 1px;
   border-style: solid;
