@@ -2068,6 +2068,43 @@ img {
   margin-bottom: 23px;
 }
 
+.company-delivery {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 36px;
+
+  list-style: none;
+}
+
+.company-delivery li {
+  position: relative;
+
+  margin-top: 20px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+}
+
+.company-delivery li:first-child {
+  margin-top: 0;
+}
+
+.company-delivery li::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  margin-top: -2px;
+
+  background-color: #ee3643;
+}
 
 .company-link {
   width: 220px;
@@ -2128,7 +2165,7 @@ img {
 }
 
 .contacts-map-link-container {
-  margin-top: 40px;
+  margin-top: 62px;
 }
 
 .logo-footer {
