@@ -20,7 +20,8 @@ a {
 }
 
 ul,
-p {
+p,
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -89,7 +90,7 @@ img {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
 
-  padding-top: 13px;
+  padding-top: 8px;
   padding-right: 56px;
   padding-bottom: 15px;
   padding-left: 55px;
@@ -592,7 +593,6 @@ img {
   list-style: none;
   text-transform: none;
   margin-left: 25px;
-
   padding-top: 20px;
 
 }
@@ -608,6 +608,7 @@ img {
 .assortment a {
   font-size: 14px;
   line-height: 18px;
+
 }
 
 .assortment ul {
@@ -617,6 +618,7 @@ img {
   font-weight: normal;
   margin-top: 59px;
 }
+
 
 .container {
   width: 940px;
@@ -642,9 +644,9 @@ img {
 .discounts,
 .delivery {
   width: 300px;
-  padding-top: px;
+  height: 123px;
+  padding-top: 26px;
   padding-left: 23px;
-  padding-bottom: 22px;
   margin-right: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -652,6 +654,7 @@ img {
 
 .technique {
   width: 300px;
+  height: 123px;
   padding-top: 5px;
   padding-left: 23px;
   padding-bottom: 22px;
@@ -662,6 +665,7 @@ img {
 .materials {
   background-color: #ffbf47;
 }
+
 
 .materials::before {
   content: "";
@@ -786,48 +790,56 @@ img {
   border-radius: 3px;
   color: #ffffff;
   font-weight: normal;
+
+
 }
 
 .materials-link {
+  width: 135px;
+  height: 38px;
   background-color: #e5ac40;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 14px;
-  padding-left: 24px;
-
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 24px;
 }
 
 
 .tooling-link {
+  width: 135px;
+  height: 38px;
   background-color: #35a9cc;
-  padding-top: 14px;
-  padding-right: 27px;
-  padding-bottom: 14px;
-  padding-left: 26px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 27px;
 }
 
 .technique-link {
+  width: 135px;
+  height: 38px;
   background-color: #c682c2;
-  padding-top: 12px;
-  padding-right: 31px;
-  padding-bottom: 12px;
-  padding-left: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 31px;
 }
 .discounts-link {
+  width: 135px;
+  height: 38px;
   background-color: #80c180;
-  padding-top: 14px;
-  padding-right: 23px;
-  padding-bottom: 14px;
-  padding-left: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 24px;
+
 }
 
 .delivery-link {
+  width: 135px;
+  height: 38px;
   background-color: #e5ac40;
-  padding-top: 14px;
-  padding-right: 37px;
-  padding-bottom: 14px;
-  padding-left: 37px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 37px;
 }
+
 /*
 .slider {
   width: 620px;
@@ -1010,7 +1022,8 @@ img {
   background-color: #d7373b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-*/////////////////////////////////////////////////////////////////////////////
+*/
+/
 
 
 .slider-container {
@@ -1197,7 +1210,7 @@ img {
 }
 
 
-.materials-link a,
+.materials-link,
 .tooling-link,
 .technique-link,
 .discounts-link,
@@ -1215,6 +1228,7 @@ img {
   line-height: 30px;
   font-weight: 700;
 }
+
 
 .materials-link:focus,
 .materials-link:hover,
@@ -2521,22 +2535,24 @@ img {
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 1;
 }
 
 
-/*
+
 .user-name::before {
   content: "";
   position: absolute;
   top: 14px;
-  right: 39px;
+  left: 39px;
   width: 20px;
   height: 17px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  
 }
-*/
+
 
 .order-account a {
   font-size: 16px;
@@ -2556,8 +2572,6 @@ img {
   color: #bfc6ce;
 }
 
-
-
 .user-name:active {
   color: #b2b2b2;
 }
@@ -2566,121 +2580,74 @@ img {
   list-style: none;
 }
 
-.tabs-container ul {
+
+.tabs {
   display: flex;
-  flex-direction: row;
+
+  width: 358px;
+  padding: 0;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+
   list-style: none;
 }
 
-.tabs-container a {
-  color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
-  margin-right: 28px;
-
-}
-
-.taabs {
-  margin-top: 15px;
-}
-
-.icon-home,
-.icon-right,
-.icon-right-two,
-.icon-right-free {
+.tabs a {
   position: relative;
+
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.icon-home::before {
-  content: "";
-
+.tabs .home {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 23px;
-
-
 
   width: 14px;
-  height: 12px;
+  height: 18px;
+
+  margin-top: 10px;
 
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.icon-right::before {
+.tabs li:nth-child(2) {
+  margin-left: 54px;
+
+}
+
+.tabs li:nth-child(3) {
+  margin-left: 42px;
+}
+
+.tabs li:last-child {
+  margin-left: 43px;
+}
+
+.tabs a::after {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 8px;
-  margin-top: 23px;
-
-
-
+  top: 3px;
+  right: -25px;
   width: 8px;
   height: 12px;
-
-
 
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.icon-right-two::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: -10px;
-  margin-top: 23px;
-
-
-
-  width: 8px;
-  height: 12px;
-
-
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.tabs .tabs-current::after {
+  display: none;
 }
 
-.icon-right-free::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 8px;
-  margin-top: 23px;
 
 
-
-  width: 8px;
-  height: 12px;
-
-
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.tabs-catalog {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.tabs-catalog-two {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: -15px; /*пришлось подвинуть -, придумать другой способ*/
-
-}
 
 .sort h3{
   font-size: 13px;
@@ -2768,6 +2735,8 @@ img {
   color: #ee3643;
   text-decoration: none;
 }
+
+
 
 .icon-up,
 .icon-down {
@@ -3165,16 +3134,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .description-perforators{
   display: flex;
   flex-direction: row;
@@ -3347,11 +3306,10 @@ img {
   left: 20px;
   width: 180px;
   height: 2px;
-
   background-color: #d7dcde;
 }
 
-.bar {
+.regulator {
   width: 152px;
   height: 2px;
 
