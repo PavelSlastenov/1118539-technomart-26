@@ -14,13 +14,12 @@
   <section class="main-navigation">
     <div class="main-navigation-container container">
       <div class="main-header-logo">
-        <a href="index.html"><img src="img/logo.svg" width="109" height="18" alt="Логотип магазина Техномарт"></a>
+        <a href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
       </div>
       <div class="icon-search"></div>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <input id="search" type="text" name="search" value="" placeholder="Поиск">
-        </p>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search"></label>
+        <input id="search" type="search" name="search" aria-label="Поиск" placeholder="Поиск:">
       </form>
       <a class="bookmarks-background" href="">Закладки: 0</a>
       <a class="basket-background-red" href="">Корзина: 10</a>
@@ -38,15 +37,16 @@
           <p class="description-phone">+7 (812) 555-05-55</p>
           <p class="description-address">г.Санкт-Петербург ул. Б.Конюшенная, д.19/8</p>
         </div>
-
         <div class="account-user">
-          <div class="user-name">Равшан Джамшутович</div>
-          <div class="order-account">
-            <a href="">Мои заказы</a>
-            <a href="">Личный кабинет</a>
+          <div class="user-name">Равшан Джамшутович
+          <a class="exit" href=""><span class="visually-hidden">Выйти</span></a>
           </div>
+          <ul>
+            <li><a class="user-orders" href="#">Мои заказы</a><li>
+            <li><a class="user-account" href="#">Личный кабинет</a><li>
+          </ul>
         </div>
-    </div>
+        </div>
 
       <section class="site-navigation">
         <ul>

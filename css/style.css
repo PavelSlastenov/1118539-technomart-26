@@ -21,7 +21,8 @@ a {
 
 ul,
 p,
-h3 {
+h3,
+h2 {
   padding: 0;
   margin: 0;
 }
@@ -86,7 +87,7 @@ img {
 
 .main-header-logo {
   width: 220px;
-  height: 42px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
+  height: 45px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b62931;
 
@@ -158,7 +159,7 @@ img {
 
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 12px;
 
   width: 14px;
   height: 16px;
@@ -196,6 +197,7 @@ img {
 
 .search input {
   width: 100%;
+  height: 100%;
   padding: 11px 0;
   padding-left: 49px;
 
@@ -317,21 +319,17 @@ img {
   text-align: center;
   background-color: #ee3643;
   padding-top: 14px;
-  padding-right: 26px;
-  padding-bottom: 13px;
-  padding-left: auto;
   text-transform: none;
-  margin-left: 28px;
   margin-right: 0;
+  position: relative;
 }
-
 
 .basket-background-red::before {
   content: "";
 
   position: absolute;
   top: 15px;
-  left: 755px;
+  left: 10px;
 
   width: 14px;
   height: 16px;
@@ -341,6 +339,7 @@ img {
   background-position: 0 0;
 
   opacity: 0.3;
+
 }
 
 .basket-background-red:focus::before,
@@ -449,32 +448,7 @@ img {
   margin-top: 0;
 }
 
-.account-user {
-  display: flex;
-  flex-direction: column;
-  padding-top: 46px;
-  margin-left: 51px;
-}
 
-.order-account {
-  display: flex;
-  flex-direction: row;
-  margin-left: 78px;
-}
-
-/*
-.shape {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 5px;
-  background-image: url("../img/shape_1.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-*/
 
 .login-link a,
 .login-link-registration a {
@@ -1266,6 +1240,7 @@ img {
   color: #32425c;
   font-weight: normal;
   margin-top: 33px;
+  margin-bottom: 33px;
   margin-left: 30px;
 }
 
@@ -1282,7 +1257,8 @@ img {
   background-color: #ee3643;
   border-radius: 3px;
   font-weight: normal;
-  margin-top: 25px;
+  margin-top: 28px;
+
   margin-left: 373px;
   padding-top: 2px;
   padding-left: 50px;
@@ -1307,6 +1283,9 @@ img {
   padding-bottom: 14px;
   padding-left: 54px;
 }
+
+
+
 
 .goods h3 {
   font-size: 18px;
@@ -1371,7 +1350,7 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   position: relative;
-  margin-top: 45px;
+  margin-top: 27px;
 }
 
 .link-price-left {
@@ -1641,8 +1620,6 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-
-
 }
 
 .link-buy {
@@ -2055,11 +2032,18 @@ img {
   line-height: 30px;
   color: #000000;
   font-weight: 400;
+  margin-bottom: 39px;
 }
 
 .company {
   width: 519px;
   margin-top: 82px;
+}
+
+.company-container {
+  width: 387px;
+  margin-top: 36px;
+
 }
 
 .company p  {
@@ -2068,19 +2052,12 @@ img {
   text-transform: none;
   list-style: none;
   color: #000000;
-  margin-bottom: 36px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
 }
 
-.company li {
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: none;
-  list-style: none;
-  color: #000000;
-  margin-bottom: 23px;
-}
+
 
 .company-delivery {
   display: flex;
@@ -2088,19 +2065,23 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 36px;
-
+  margin-top: 28px;
   list-style: none;
 }
 
 .company-delivery li {
   position: relative;
-
-  margin-top: 20px;
-
+  text-transform: none;
+  list-style: none;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 23px;
+}
+
+.company-delivery li:nth-child(3n) {  /*Лишний отступ у 3 элемента*/
+  margin-bottom: 0;
 }
 
 .company-delivery li:first-child {
@@ -2152,6 +2133,7 @@ img {
   line-height: 30px;
   color: #000000;
   font-weight: 400;
+  margin-bottom: 36px;
 }
 
 .contacts-map p {
@@ -2179,7 +2161,7 @@ img {
 }
 
 .contacts-map-link-container {
-  margin-top: 62px;
+  margin-top: 40px;
 }
 
 .logo-footer {
@@ -2477,6 +2459,15 @@ img {
   padding-left: 22px;
 }
 
+
+.account-user {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  padding-top: 46px;
+  margin-left: 51px;
+}
+
 .user-name {
   font-size: 21px;
   line-height: 21px;
@@ -2486,9 +2477,6 @@ img {
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 47px;
-
-  margin-bottom: 21px;
-
   position: relative;
 }
 
@@ -2507,6 +2495,7 @@ img {
   background-position: 0 0;
 }
 
+.user-name:focus::before,
 .user-name:hover::before {
   content: "";
 
@@ -2535,50 +2524,120 @@ img {
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 1;
 }
 
 
 
-.user-name::before {
+
+.exit::before {
   content: "";
+
   position: absolute;
   top: 14px;
-  left: 39px;
+  left: 269px;
   width: 20px;
   height: 17px;
+
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  
 }
 
 
-.order-account a {
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
+.exit:focus::before,
+.exit:hover::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 269px;
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.exit:active::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 269px;
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+.account-user ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: px;
+  margin-left: 17px;
   text-transform: none;
-  font-weight: normal;
+  list-style: none;
+
+}
+
+
+.user-orders,
+.user-account {
+  font-size: 16px;
   text-decoration: underline;
+  color: #32425c;
+}
+
+.user-orders {
   margin-right: 32px;
 }
 
-.order-account a:hover {
+.user-orders {
+  position: relative;
+}
+
+.user-orders::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  right: -19px;
+  width: 4px;
+  height: 5px;
+
+  background-color: #32425c;
+  border-radius: 50%;
+}
+
+.user-orders:hover,
+.user-orders:focus,
+.user-account:hover,
+.user-account:focus {
+  text-decoration: underline;
   color: #ee3643;
 }
 
-.order-account a:active {
+.user-orders:active {
   color: #bfc6ce;
 }
 
-.user-name:active {
+.user-account:active {
   color: #b2b2b2;
 }
 
-.account-user ul{
-  list-style: none;
-}
+
 
 
 .tabs {
