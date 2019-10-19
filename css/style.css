@@ -2726,6 +2726,7 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 19px;
+  border-radius: 3px;
 }
 
 
@@ -3059,9 +3060,9 @@ img {
 
 .perforators-header {
   width: 940px;
-  padding-top: 10px;
-  padding-right: auto;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-right: 742px;
+  padding-bottom: 34px;
   padding-left: 30px;
   background-color: #f2f6f8;
   color: #32425c;
@@ -3071,6 +3072,7 @@ img {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
+
 }
 
 .filters-catalog {
@@ -3106,6 +3108,11 @@ img {
   margin-top: 15px;
 }
 
+.filter-manufacturers-container {
+  width: 141px;
+  margin-right: 44px;
+  margin-left: auto;
+}
 
 .filter-manufacturers-checkbox + label::before {
   content: "";
@@ -3150,13 +3157,16 @@ img {
 }
 
 
-
 .filter-power {
   margin-top: 16px;
   border-bottom: none;
 }
 
-*/
+.filter-power-container {
+  width: 141px;
+  margin-right: 44px;
+  margin-left: auto;
+}
 
 
 .filter-power-radio + label::before {
@@ -3172,7 +3182,7 @@ img {
   border-radius: 50%;
 }
 
-.filter-power-radio:checked + label::after {
+.filter-power-radio:checked::after {
   content: "";
 
   position: absolute;
@@ -3190,7 +3200,7 @@ img {
   border-color: #b5b5b5;
 }
 
-.filter-power-radio:focus + label::after
+.filter-power-radio:focus + label::after,
 .filter-power-radio:hover + label::after{
   background-color: #b5b5b5;
 }
@@ -3207,7 +3217,10 @@ img {
 .filter-submit {
   width: 140px;
   margin-top: 56px;
-  padding: 12px 39px 10px 39px;
+  padding-top: 12px;
+  padding-right: 39px;
+  padding-bottom: 10px;
+  padding-left: 39px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -3218,6 +3231,7 @@ img {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
+
 .filter-submit:focus,
 .filter-submit:hover {
   background-color: #ffffff;
@@ -3354,7 +3368,7 @@ img {
 .filters h2 {
 
   margin-top: 20px;
-  padding: 9px 0 10px 20px;
+  padding-left: 18px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;

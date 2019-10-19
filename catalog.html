@@ -255,6 +255,7 @@
 
           <fieldset class="filter filter-manufacturers">
             <legend>Производители:</legend>
+            <div class="filter-manufacturers-container">
             <ul>
               <li>
                 <input class="visually-hidden filter-manufacturers-checkbox" id="filter-bosch" type="checkbox" name="bosch" checked>
@@ -277,9 +278,11 @@
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
+            </div>
           </fieldset>
           <fieldset class="filter filter-power">
             <legend>Питание:</legend>
+            <div class="filter-power-container">
             <ul>
               <li>
                 <input class="visually-hidden filter-power-radio" id="type-wireless" type="radio" name="power" value="wireless" checked>
@@ -290,6 +293,7 @@
                 <label for="type-wired">Сетевые</label>
               </li>
             </ul>
+            </div>
           </fieldset>
           <button class="submit filter-btn" type="submit">Показать</button>
       </form>
