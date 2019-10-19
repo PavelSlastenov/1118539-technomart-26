@@ -2721,18 +2721,21 @@ img {
   display: flex;
   flex-direction: row;
   width: 700px;
+  height: 38px;
   background-color: #f7f3ec;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 19px;
 }
 
-.sort h3 {
-  font-weight: 700;
-}
+
 
 .sort ul {
   list-style: none;
+}
+
+.sort h3 {
+  margin-top: 11px;
 }
 
 .sort-list ul {
@@ -2813,14 +2816,44 @@ img {
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-dir.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-
-
-  opacity: 0.3;
 }
+
+.icon-up:focus::before,
+.icon-up:hover::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 46px;
+  margin-top: 6px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir-black.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-up:active::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 46px;
+  margin-top: 6px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir-red.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .icon-down::before {
   content: "";
@@ -2833,51 +2866,50 @@ img {
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url("../img/icon-down-dir.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   color: red;
-
-  opacity: 0.3;
 }
 
-.icon-up:focus::before,
-.icon-up:hover::before,
-.icon-down:focus::before
+.icon-down:focus::before,
 .icon-down:hover::before {
-  opacity: unset;
-}
-
-
-/*
-.icon-up:active::before {
   content: "";
+
   position: absolute;
   top: 0;
   left: 78px;
+  margin-top: 6px;
+
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-up-dir-red.svg");
+
+  background-image: url("../img/icon-down-dir-black.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .icon-down:active::before {
   content: "";
+
   position: absolute;
   top: 0;
   left: 78px;
+  margin-top: 6px;
+
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-down-dir-red.svg");
+
+  background-image: url("../img/icon-down-dir-red.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-*/
-/*
-.filters-container {
-  border: none;
-}
- */
+
+
+
+
+
+
 
 .filters-container-checkbox + label::before {
   content: "";
@@ -2907,6 +2939,12 @@ img {
   background-position: 0 0;
   opacity: 0.2;
 }
+
+
+
+
+
+
 
 .filter-container-checkbox:hover + label::before,
 .filter-container-checkbox:focus + label::before {
