@@ -235,6 +235,7 @@ img {
   content: "";
 
   position: absolute;
+
   top: 12px;
   left: 17px;
 
@@ -332,6 +333,7 @@ img {
   content: "";
 
   position: absolute;
+
   top: 15px;
   left: 10px;
 
@@ -514,6 +516,7 @@ img {
   content: "";
 
   position: absolute;
+
   top: 14px;
   left: 14px;
 
@@ -685,7 +688,6 @@ img {
   margin-bottom: 20px;
 }
 
-
 .technique {
   position: relative;
 
@@ -696,7 +698,6 @@ img {
 .materials {
   background-color: #ffbf47;
 }
-
 
 .materials::before {
   content: "";
@@ -893,14 +894,6 @@ img {
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-
-  clip: rect(0, 0, 0, 0);
-}
 
 .slider {
   position: relative;
@@ -912,7 +905,6 @@ img {
   left: 328px;
   bottom: 104px;
 
-  z-index: 100;
 
   width: 160px;
   height: 18px;
@@ -1168,9 +1160,6 @@ img {
   padding-bottom: 14px;
   padding-left: 54px;
 }
-
-
-
 
 .goods h3 {
   font-size: 18px;
@@ -1590,7 +1579,7 @@ img {
 .manufacturers-container a:active,
 .manufacturers-container-right a:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 .manufacturers-container {
@@ -1622,7 +1611,6 @@ img {
   border: 1px solid #e5e5e5;
 }
 
-
 .img-bosch {
   content: "";
 
@@ -1633,7 +1621,6 @@ img {
   width: 126px;
   height: 37px;
 }
-
 
 .img-makita {
   content: "";
@@ -1711,7 +1698,6 @@ img {
   width: 204px;
   height: 69px;
 }
-
 
 .catalog-service {
   background-color: #f4f7f9;
@@ -1847,8 +1833,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 25px;
   left: 151px;
+
   width: 468px;
   height: 261px;
 
@@ -1861,8 +1849,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 239px;
+
   width: 389px;
   height: 283px;
 
@@ -1875,8 +1865,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: -3px;
   left: 165px;
+
   width: 465px;
   height: 285px;
 
@@ -1974,7 +1966,6 @@ img {
 
   color: #000000;
 }
-
 
 .company-delivery {
   display: flex;
@@ -2243,7 +2234,6 @@ img {
   margin-top: 35px;
   margin-left: 161px;
 }
-
 
 .social-network-vk,
 .social-network-fb,
@@ -2769,8 +2759,6 @@ img {
   color: #ee3643;
 }
 
-
-
 .icon-up,
 .icon-down {
   position: relative;
@@ -2780,8 +2768,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 46px;
+
   margin-top: 6px;
 
   width: 11px;
@@ -2797,8 +2787,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 46px;
+
   margin-top: 6px;
 
   width: 11px;
@@ -2813,8 +2805,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 46px;
+
   margin-top: 6px;
 
   width: 11px;
@@ -2830,8 +2824,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 78px;
+
   margin-top: 6px;
 
   width: 11px;
@@ -2864,8 +2860,10 @@ img {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 78px;
+  
   margin-top: 6px;
 
   width: 11px;
@@ -3345,56 +3343,59 @@ img {
   background-color: #f7f3ec;
 }
 
-
 .filter {
   padding: 0;
   margin: 0;
-
   margin-top: 13px;
 
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+
   border: none;
   border-bottom: 1px solid #e5e5e5;
+
+  color: #000000;
 }
 
-
 .filter-bottom { /*сделал второй класс, что бы убрать border-bottom которого нет в фильтре "Питание'*/
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-top: 13px;
 
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
   border: none;
+
+  color: #000000;
 }
 
-.filter legend{
-  margin: 0;
+.filter legend {
+  line-height: 30px;
+
   padding: 0;
+  margin: 0;
 
   font-weight: bold;
-  line-height: 30px;
   text-transform: uppercase;
 }
-
 
 .range-controls {
   position: relative;
 
-  margin-top: 15px;
   padding: 39px 20px 39px 20px;
+  margin-top: 15px;
 
-  background-color: #f7f3ec;
   border-radius: 3px;
+  background-color: #f7f3ec;
 }
 
 .scale {
   position: absolute;
+
   top: 37px;
   left: 20px;
+
   width: 180px;
   height: 2px;
+
   background-color: #d7dcde;
 }
 
@@ -3407,15 +3408,17 @@ img {
 
 .range-toggle {
   position: absolute;
+
   top: 27px;
+
   width: 20px;
   height: 20px;
 
-  background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+
+  background-color: #ababab;
 }
 
 .range-toggle-min {
@@ -3431,27 +3434,33 @@ img {
 
   display: flex;
   justify-content: space-between;
+
   margin-top: 9px;
   margin-bottom: 24px;
 }
 
 .price-controls input {
   width: 95px;
+
   padding-top: 9px;
   padding-bottom: 11px;
 
   text-align: center;
-  background-color: #f7f3ec;
+
   border: none;
   border-radius: 3px;
+
+  background-color: #f7f3ec;
 }
 
 .price-controls::after {
   content: "";
 
   position: absolute;
+
   top: 19px;
   right: 105px;
+
   width: 10px;
   height: 1px;
 
@@ -3459,9 +3468,10 @@ img {
 }
 
 .filter ul,
-.filter-bottom ul{
-  margin: 0;
+.filter-bottom ul {
   padding: 0;
+
+  margin: 0;
   margin-top: 11px;
 
   list-style: none;
@@ -3469,8 +3479,8 @@ img {
 
 .filter li,
 .filter-bottom li {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-bottom: 10px;
 }
 
