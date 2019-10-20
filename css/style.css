@@ -1231,6 +1231,8 @@ img {
   text-align: center;
 }
 
+
+
 .product:focus,
 .product:hover,
 .product-index:focus,
@@ -1855,7 +1857,7 @@ img {
 
 .company-container {
   width: 387px;
-  margin-top: 36px;
+  margin-top: 20px;
 
 }
 
@@ -2782,8 +2784,8 @@ img {
 
 .filter-power {
   margin-top: 16px;
-
   border-bottom: none;
+
 }
 
 .filter-power-radio + label::before {
@@ -2908,12 +2910,15 @@ img {
 
 .filter-manufacturers {
   margin-top: 15px;
+
 }
 
 .filter-manufacturers-container {
   width: 141px;
   margin-right: 44px;
   margin-left: auto;
+
+
 }
 
 .filter-manufacturers-checkbox + label::before {
@@ -3196,7 +3201,18 @@ img {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.filter legend {
+
+.filter-bottom { /*сделал второй класс, что бы убрать border-bottom которого нет в фильтре "Питание'*/
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  border: none;
+}
+
+.filter legend{
   margin: 0;
   padding: 0;
 
@@ -3204,6 +3220,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
 }
+
 
 .range-controls {
   position: relative;
@@ -3284,7 +3301,8 @@ img {
   background-color: #444444;
 }
 
-.filter ul {
+.filter ul,
+.filter-bottom ul{
   margin: 0;
   padding: 0;
   margin-top: 11px;
@@ -3292,7 +3310,8 @@ img {
   list-style: none;
 }
 
-.filter li {
+.filter li,
+.filter-bottom li {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -3302,7 +3321,8 @@ img {
   margin-bottom: 16px;
 }
 
-.filter label {
+.filter label,
+.filter-bottom label {
   position: relative;
 
   display: block;
