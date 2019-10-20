@@ -22,7 +22,8 @@ a {
 ul,
 p,
 h3,
-h2 {
+h2,
+img {
   padding: 0;
   margin: 0;
 }
@@ -836,7 +837,7 @@ img {
 
 
 .slider-container {
-  width: 940px;
+  width: 620px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -1131,13 +1132,16 @@ img {
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  margin-top: 9px;
 }
 
 
 .link-price {
   width: 141px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin-top: 13px;
+  margin-right: auto;
+  margin-bottom: 21px;
+  margin-left: auto;
   padding: 10px 30px;
   font-size: 17px;
   line-height: 18px;
@@ -1171,25 +1175,10 @@ img {
 
 .link-price-right {
   width: 141px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-  padding: 10px 30px;
-  font-size: 17px;
-  line-height: 18px;
-  background-color: #ee3643;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 700;
-  position: relative;
-  margin-top: 27px;
-}
-
-.link-price-left {
-  width: 141px;
-  margin-top: 13px;
+  margin-top: 40px;
   margin-right: auto;
+  margin-bottom: 21px;
   margin-left: auto;
-  margin-bottom: 1px;
-
   padding: 10px 30px;
   font-size: 17px;
   line-height: 18px;
@@ -1197,8 +1186,9 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   position: relative;
-
 }
+
+
 
 .product {
   width: 220px;
@@ -1257,7 +1247,6 @@ img {
   width: 155px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 12px;
 }
 
 .product .flag,
@@ -2028,6 +2017,7 @@ img {
 .container-right {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 
@@ -2566,7 +2556,7 @@ img {
 .sort-list ul {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 140px;
 
 }
@@ -3180,6 +3170,8 @@ img {
 .filters h2 {
 
   margin-top: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   padding-left: 18px;
 
   font-family: "PT Sans", Arial, sans-serif;
