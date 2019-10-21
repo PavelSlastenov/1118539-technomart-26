@@ -1,5 +1,6 @@
 html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+*, *::before, *::after { box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -834,7 +835,7 @@ img {
 
   padding: 12px 24px;
 
-  background-color: #e5ac40;
+  background-color: rgba(0,0,0,.1);
 }
 
 .tooling-link {
@@ -846,7 +847,7 @@ img {
 
   padding: 12px 27px;
 
-  background-color: #35a9cc;
+  background-color: rgba(0,0,0,.1);
 }
 
 .technique-link {
@@ -858,7 +859,7 @@ img {
 
   padding: 12px 31px;
 
-  background-color: #c682c2;
+  background-color: rgba(0,0,0,.1);
 }
 
 .discounts-link {
@@ -870,7 +871,7 @@ img {
 
   padding: 12px 24px;
 
-  background-color: #80c180;
+  background-color: rgba(0,0,0,.1);
 }
 
 .delivery-link {
@@ -882,7 +883,7 @@ img {
 
   padding: 12px 37px;
 
-  background-color: #e5ac40;
+  background-color: rgba(0,0,0,.1);
 }
 
 .slider-container {
@@ -893,7 +894,6 @@ img {
 
   box-sizing: border-box;
 }
-
 
 .slider {
   position: relative;
@@ -941,9 +941,6 @@ img {
 
   width: 10px;
   height: 10px;
-
-  background: #ffffff;
-  border-radius: 50%;
 }
 
 .slider-list {
@@ -1075,6 +1072,8 @@ img {
   font-weight: 700;
 }
 
+
+
 .materials-link:focus,
 .materials-link:hover,
 .tooling-link:focus,
@@ -1085,7 +1084,8 @@ img {
 .discounts-link:hover,
 .delivery-link:focus,
 .delivery-link:hover {
-  background-color: #cccccc;
+  background-color: rgba(0,0,0,.2);
+
 }
 
 .materials-link:active,
@@ -1093,7 +1093,7 @@ img {
 .technique-link:active,
 .discounts-link:active,
 .delivery-link:active {
-  background-color: #b2b2b2;
+  background-color: rgba(0,0,0,.3);
 }
 
 .goods {
@@ -1141,6 +1141,24 @@ img {
   border-radius: 3px;
 
   background-color: #ee3643;
+}
+
+.goods-link:focus,
+.goods-link:hover,
+.manufacturers-link:focus,
+.manufacturers-link:hover,
+.company-link:focus,
+.company-link:hover,
+.contacts-map-link:focus,
+.contacts-map-link:hover {
+  background-color: #ca2c37;
+}
+
+.goods-link:active,
+.manufacturers-link:active,
+.company-link:active,
+.contacts-map-link:active {
+  background-color: #ba2732;
 }
 
 .goods ul{
@@ -1205,10 +1223,11 @@ img {
   background-color: #ee3643;
 }
 
+
 .product .link-price:after,
 .product .link-price-right:after,
-.product .link-price-left:after,
 .product-index .link-price:after,
+.product-index .link-price-right:after,
 .product-index-right .link-price-right:after {
   content: "";
 
@@ -1244,6 +1263,20 @@ img {
   background-color: #ee3643;
 }
 
+
+/*
+.link-price:focus,
+.link-price-right:focus,
+.link-price:hover,
+.link-price-right:hover {
+  background-color: #ca2c37;
+}
+
+.link-price:active,
+.link-price-right:active {
+  background-color: #ba2732;
+}
+*/
 .product {
   position: relative;
 
@@ -1329,7 +1362,7 @@ img {
   left: 0;
 
   width: 218px;
-  height: 88px;
+  height: 170px;
   padding: 40px 0;
 
   background-color: rgba(255,255,255,0.9);
@@ -1401,7 +1434,7 @@ img {
 .product .image,
 .product-index .image {
   width: 218px;
-  height: 168px;
+  /*height: 168px;*/
 }
 
 .product .image img,
@@ -2633,6 +2666,7 @@ img {
   margin-left: 43px;
 }
 
+
 .tabs a::after {
   content: "";
 
@@ -2646,6 +2680,7 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 
 .tabs .tabs-current::after {
   display: none;
@@ -2863,7 +2898,7 @@ img {
 
   top: 0;
   left: 78px;
-  
+
   margin-top: 6px;
 
   width: 11px;
@@ -2994,6 +3029,18 @@ img {
   background-color: #ffffff;
 }
 
+.filter-btn:focus,
+.filter-btn:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-btn:active {
+  border: 1px solid #ee3643;
+}
+
+.filter-btn:active  {
+  outline: none; }
+
 .perforators-header {
   width: 940px;
 
@@ -3081,7 +3128,7 @@ img {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.7;
+
 }
 
 .filter-manufacturers-checkbox:hover + label::before,
