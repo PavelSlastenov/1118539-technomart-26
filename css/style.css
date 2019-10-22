@@ -1143,7 +1143,7 @@ img {
   flex-wrap: wrap;
 
   margin-top: 30px;
-  margin-bottom: 21px;
+  margin-bottom: 0px;
 }
 
 .goods h2 {
@@ -1270,7 +1270,6 @@ img {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-
   border-radius: 3px;
 
   background-color: #ee3643;
@@ -1312,6 +1311,7 @@ img {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  border-radius: 3px;
 
   background-color: #ee3643;
 }
@@ -1618,6 +1618,8 @@ img {
   display: flex;
   flex-direction: row;
 
+  height: 88px;
+
   margin-bottom: 20px;
 
   background-color: #f9f5f0;
@@ -1627,9 +1629,9 @@ img {
   font-size: 30px;
   line-height: 30px;
 
-  margin-top: 33px;
+  margin-top: 29px;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 28px;
 
   font-weight: normal;
 
@@ -1643,7 +1645,7 @@ img {
   padding-top: 2px;
   padding-left: 69px;
 
-  margin-top: 25px;
+  margin-top: 24px;
   margin-left: 269px;
 
   border-radius: 3px;
@@ -1652,9 +1654,9 @@ img {
   background-color: #ee3643;
 }
 
-
 .manufacturers-container a,
-.manufacturers-container-right a {
+.manufacturers-container-right a,
+.manufacturers-container-right-bottom a{
   width: 220px;
 
   border-width: 1px;
@@ -1664,12 +1666,15 @@ img {
 .manufacturers-container a:focus,
 .manufacturers-container a:hover,
 .manufacturers-container-right a:focus,
-.manufacturers-container-right a:hover {
+.manufacturers-container-right a:hover,
+.manufacturers-container-right-bottom a:focus,
+.manufacturers-container-right-bottom a:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-container a:active,
-.manufacturers-container-right a:active {
+.manufacturers-container-right a:active,
+.manufacturers-container-right-bottom a:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
@@ -1683,7 +1688,6 @@ img {
   width: 220px;
   height: 145px;
 
-  margin-top: 20px;
   margin-right: 20px;
 
   border: 1px solid #e5e5e5;
@@ -1698,9 +1702,20 @@ img {
   width: 220px;
   height: 145px;
 
-  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.manufacturers-container-right-bottom {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 220px;
+  height: 145px;
 
   border: 1px solid #e5e5e5;
+  margin-top: 18px;
 }
 
 .img-bosch {
@@ -1789,6 +1804,18 @@ img {
 
   width: 204px;
   height: 69px;
+}
+
+.manufacturers-container:nth-child(5) {
+  margin-top: 18px;
+}
+
+.manufacturers-container:nth-child(6) {
+  margin-top: 18px;
+}
+
+.manufacturers-container:nth-child(7) {
+  margin-top: 18px;
 }
 
 .catalog-service {
