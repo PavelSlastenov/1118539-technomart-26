@@ -75,6 +75,8 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
 
+  /*max-height: 42px;*/
+
   background-color: #293449;
 }
 
@@ -89,7 +91,7 @@ img {
 
 .main-header-logo {
   width: 220px;
-  height: 45px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
+  height: 42px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
 
   padding-top: 8px;
   padding-right: 56px;
@@ -125,7 +127,8 @@ img {
   position: relative;
 
   width: 150px;
-  padding-top: 14px;
+  padding-top: 12px;
+  padding-left: 16px;
   text-align: center;
 }
 
@@ -133,7 +136,8 @@ img {
   position: relative;
 
   width: 150px;
-  padding-top: 14px;
+  padding-top: 12px;
+  padding-left: 19px;
   text-align: center;
 }
 
@@ -145,8 +149,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 13px;
+  top: 12px;
+  left: 17px;
 
   width: 14px;
   height: 16px;
@@ -162,8 +166,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 12px;
+  top: 12px;
+  left: 19px;
 
   width: 14px;
   height: 16px;
@@ -240,7 +244,7 @@ img {
 
   position: absolute;
 
-  top: 10px;
+  top: 0px;
   left: 0px;
 
 
@@ -393,9 +397,8 @@ img {
 
   text-transform: none;
 
-  padding-top: 14px;
+  padding-top: 12px;
   padding-right: 22px;
-  padding-bottom: 13px;
   padding-left: 20px;
 
   background-color: #63a63e;
@@ -430,11 +433,12 @@ img {
 }
 
 .description {
-  width: 196px;
+  width: 191px;
 
-  margin-top: 40px;
-  margin-right: 81px;
-  margin-left: auto;
+  margin-top: 49px;
+  margin-left: 52px;
+
+  font-style: italic;
 }
 
 .description p {
@@ -459,8 +463,9 @@ img {
   padding-bottom: 11px;
   padding-left: 74px;
 
-  margin-top: 46px;
-  margin-bottom: 5px;
+  margin-top: 45px;
+  margin-bottom: 3px;
+  margin-left: 74px;
 
   border-width: 3px;
   border-style: solid;
@@ -486,11 +491,12 @@ img {
 }
 
 .description-address {
+
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
 
-  margin-left: 18px;
+  margin-left: 86px;
   margin-top: 0;
 
   color: #32425c;
@@ -519,8 +525,8 @@ img {
   padding-left: 48px;
   padding-bottom: 15px;
 
-  margin-top: 46px;
-  margin-left: 69px;
+  margin-top: 44px;
+  margin-left: 66px;
 
   color: #000000;
   background-color: #ffffff;
@@ -537,7 +543,6 @@ img {
 .login-link:active,
 .login-link-registration:active {
   opacity: 0.3;
-
   color: #000000;
 }
 
@@ -546,7 +551,7 @@ img {
 
   position: absolute;
 
-  top: 14px;
+  top: 15px;
   left: 14px;
 
   width: 20px;
@@ -577,7 +582,7 @@ img {
 }
 
 .login-link-registration {
-  width: 150px;
+  width: 148px;
   height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
 
   font-size: 21px;
@@ -591,7 +596,7 @@ img {
   padding-bottom: 11px;
   padding-left: 25px;
 
-  margin-top: 46px;
+  margin-top: 44px;
   margin-left: 10px;
 
   color: #000000;
@@ -609,9 +614,7 @@ img {
   display: flex;
   flex-direction: row;
 
-  align-items: center;
-
-  margin-top: 44px;
+  margin-top: 17px;
   margin-bottom: 60px;
 
   background-color: #32425c;
@@ -625,8 +628,8 @@ img {
   list-style: none;
   text-transform: none;
 
-  margin-left: 25px;
-  padding-top: 20px;
+  margin-left: 38px;
+  padding-top: px;
 
   color: #ffffff;
 }
@@ -636,9 +639,9 @@ img {
   line-height: 30px;
 
   text-transform: none;
-  font-weight: normal;
+  font-weight: 700;
 
-  margin-top: 26px;
+  margin-top: 20px;
   margin-left: 23px;
   margin-bottom: 15px;
 
@@ -652,6 +655,11 @@ img {
   margin-left: 25px;
 }
 
+.technique a {
+
+  margin-left: 23px;
+}
+
 .assortment ul {
   display: flex;
   flex-direction: row;
@@ -659,7 +667,7 @@ img {
   list-style: none;
   font-weight: normal;
 
-  margin-top: 59px;
+  margin-top: 52px;
 }
 
 .container {
@@ -679,9 +687,9 @@ img {
   line-height: 30px;
 
   text-transform: none;
-  font-weight: normal;
+  font-weight: 700;
 
-  margin-top: 26px;
+  margin-top: 21px;
   margin-left: 23px;
   margin-bottom: 15px;
 
@@ -692,7 +700,7 @@ img {
   font-size: 14px;
   line-height: 18px;
 
-  margin-left: 25px;
+  margin-left: 24px;
 }
 
 .container-right ul{
@@ -734,7 +742,7 @@ img {
   position: absolute;
 
   top: 31px;
-  right: 53px;
+  right: 43px;
 
   width: 44px;
   height: 65px;
@@ -773,7 +781,7 @@ img {
   position: absolute;
 
   top: 33px;
-  right: 37px;
+  right: 28px;
 
   width: 75px;
   height: 61px;
@@ -793,7 +801,7 @@ img {
   position: absolute;
 
   top: 31px;
-  right: 33px;
+  right: 31px;
 
   width: 78px;
   height: 62px;
@@ -812,8 +820,8 @@ img {
 
   position: absolute;
 
-  top: 33px;
-  right: 37px;
+  top: 26px;
+  right: 45px;
 
   width: 59px;
   height: 72px;
@@ -833,7 +841,7 @@ img {
   position: absolute;
 
   top: 32px;
-  right: 33px;
+  right: 31px;
 
   width: 78px;
   height: 63px;
@@ -861,7 +869,7 @@ img {
   font-size: 14px;
   line-height: 18px;
 
-  padding: 12px 24px;
+  padding: 11px 24px 10px;
 
   background-color: rgba(0,0,0,.1);
 }
@@ -873,7 +881,7 @@ img {
   font-size: 14px;
   line-height: 18px;
 
-  padding: 12px 27px;
+  padding: 11px 26px 10px;
 
   background-color: rgba(0,0,0,.1);
 }
@@ -885,19 +893,19 @@ img {
   font-size: 14px;
   line-height: 18px;
 
-  padding: 12px 31px;
+  padding: 11px 30px 10px;
 
   background-color: rgba(0,0,0,.1);
 }
 
 .discounts-link {
   width: 135px;
-  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
 
-  padding: 12px 24px;
+  padding: 13px 22px 10px;
+
 
   background-color: rgba(0,0,0,.1);
 }
@@ -909,7 +917,7 @@ img {
   font-size: 14px;
   line-height: 18px;
 
-  padding: 12px 37px;
+  padding: 11px 36px 10px;
 
   background-color: rgba(0,0,0,.1);
 }
@@ -985,7 +993,7 @@ img {
   display: none;
 
   width: 620px;
-  padding: 23px 35px;
+  padding: 23px;
 }
 
 .slider-item:nth-child(1) {
@@ -1057,16 +1065,20 @@ img {
   display: block;
 
   width: 195px;
+  min-height: 38px;
 
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: #ffffff;
 
-  padding: 13px 0;
-  margin-top: 116px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 50px;
+  margin-top: 123px;
+  margin-left: 2px;
 
   text-transform: uppercase;
-  text-align: center;
+
   text-decoration: none;
 
   border-radius: 3px;
@@ -1103,8 +1115,6 @@ img {
   font-weight: 700;
 }
 
-
-
 .materials-link:focus,
 .materials-link:hover,
 .tooling-link:focus,
@@ -1116,7 +1126,6 @@ img {
 .delivery-link:focus,
 .delivery-link:hover {
   background-color: rgba(0,0,0,.2);
-
 }
 
 .materials-link:active,
