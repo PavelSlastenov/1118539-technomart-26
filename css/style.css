@@ -205,7 +205,8 @@ img {
   height: 100%;
 
   padding: 11px 0;
-  padding-left: 49px;
+  padding-left: 30px;
+  padding-bottom: 16px;
 
   background-color: #293449;
   border: none;
@@ -228,6 +229,33 @@ img {
   background-color: #ffffff;
 }
 
+
+.input{
+  position: relative;
+}
+
+
+.icon-search {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  left: 0px;
+
+
+  width: 17px;
+  height: 17px;
+
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 1;
+}
+
+
+/*
 .icon-search {
   position: relative;
 }
@@ -259,7 +287,7 @@ img {
 .icon-search:active::before {
   opacity: 0.3;
 }
-
+*/
 .site-navigation ul,
 .bookmarks-background,
 .basket-background {
@@ -941,6 +969,9 @@ img {
 
   width: 10px;
   height: 10px;
+
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 .slider-list {
