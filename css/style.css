@@ -1142,7 +1142,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
 
-  margin-top: 53px;
+  margin-top: 30px;
   margin-bottom: 21px;
 }
 
@@ -1152,8 +1152,8 @@ img {
   font-weight: normal;
 
   margin-top: 33px;
-  margin-bottom: 33px;
-  margin-left: 30px;
+  margin-bottom: 32px;
+  margin-left: 29px;
 
   color: #32425c;
 }
@@ -1162,8 +1162,8 @@ img {
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 20px;
-
+  height: 88px;
+  margin-bottom: 24px;
   background-color: #f9f5f0;
 }
 
@@ -1174,9 +1174,9 @@ img {
   font-weight: normal;
   margin-top: 28px;
 
-  margin-left: 373px;
+  margin-left: 371px;
   padding-top: 2px;
-  padding-left: 50px;
+  padding-left: 55px;
 
   border-radius: 3px;
 
@@ -1223,6 +1223,8 @@ img {
   font-size: 18px;
   line-height: 20px;
 
+  margin-top: -4px;
+
   text-transform: none;
 }
 
@@ -1236,6 +1238,9 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
 
+  /*margin-top: 9px;
+  margin-bottom: 12px;*/
+
   margin-top: 9px;
 
   color: #aaaaaa;
@@ -1245,20 +1250,28 @@ img {
 .link-price {
   position: relative;
 
-  width: 141px;
+  width: 140px;
 
   font-size: 17px;
   line-height: 18px;
 
   padding: 10px 30px;
 
-  margin-top: 13px;
-  margin-right: auto;
-  margin-bottom: 21px;
-  margin-left: auto;
+  margin-top: 9px;
+  margin-left: 42px;
+
+  /*
+  margin-top: 5px;
+  margin-right: px;
+  margin-bottom: 29px;
+  margin-left: 42px;
+
+   */
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+
+  border-radius: 3px;
 
   background-color: #ee3643;
 }
@@ -1285,17 +1298,17 @@ img {
 .link-price-right {
   position: relative;
 
-  width: 141px;
+  width: 140px;
 
   font-size: 17px;
   line-height: 18px;
 
   padding: 10px 30px;
 
-  margin-top: 40px;
-  margin-right: auto;
+  margin-top: 36px;
+  margin-right: px;
   margin-bottom: 21px;
-  margin-left: auto;
+  margin-left: 42px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -1323,6 +1336,7 @@ img {
   display: inline-block;
 
   width: 220px;
+  /*height: 318px;*/
 
   font-weight: bold;
   text-align: center;
@@ -1368,6 +1382,9 @@ img {
 .product-index h3 {
   width: 155px;
 
+  font-size: 18px;
+  line-height: 20px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -1376,8 +1393,8 @@ img {
 .product-index .flag {
   position: absolute;
 
-  top: 1px;
-  right: 1px;
+  top: -1px;
+  right: -1px;
 
   width: 60px;
   height: 60px;
@@ -1471,8 +1488,8 @@ img {
   margin-right: 0;
 }
 
-.product .image,
-.product-index .image {
+.product image,
+.product-index image {
   width: 218px;
   /*height: 168px;*/
 }
@@ -1549,6 +1566,8 @@ img {
 .link-name {
   font-size: 18px;
   line-height: 20px;
+
+  margin-left: -2px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: none;
