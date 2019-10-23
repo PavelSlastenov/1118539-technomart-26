@@ -983,6 +983,24 @@ img {
   background-color: rgba(0,0,0,.1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider-container {
   width: 620px;
 
@@ -992,15 +1010,85 @@ img {
   box-sizing: border-box;
 }
 
+/*--------------------------------------------------------------*/
 .slider {
   position: relative;
+  padding: 0;
 }
 
+.slider__button-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 103px;
+
+  z-index: 1;
+}
+
+.slider__switch {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 70px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.slider__switch--prev {
+  right: 307px;
+}
+
+.slider__switch--next {
+  left: 313px;
+}
+
+.slider__switch i {
+  position: absolute;
+  top: 22px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+
+
+  vertical-align: top;
+
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.slider__switch--prev i {
+  left: 31px;
+  transform: rotate(45deg);
+}
+
+.slider__switch--next i {
+  right: 26px;
+
+  transform: rotate(-135deg);
+}
+
+.slider__switch:hover i,
+.slider__switch:focus i {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*------------------------------------------------------------*/
 .slider-controls {
   position: absolute;
 
-  left: 328px;
-  bottom: 104px;
+  left: 307px;
+  bottom: 76px;
 
 
   width: 160px;
@@ -1057,6 +1145,11 @@ img {
   padding: 23px;
 }
 
+
+
+
+
+
 .slider-item:nth-child(1) {
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
@@ -1086,27 +1179,7 @@ img {
   border-radius: 6px;
 }
 
-.slider-action-left {
-  position: absolute;
 
-  right: 280px;
-  bottom: 112px;
-
-  background-image: url("../img/icon-left.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.slider-action-right {
-  position: absolute;
-
-  left: 260px;
-  bottom: 112px;
-
-  background-image: url("../img/icon-right.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 .slider-list h3 {
   margin: 0;
@@ -1156,6 +1229,13 @@ img {
 .button:active {
   background-color: #ba2732;
 }
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
 
 .materials-link,
 .tooling-link,
