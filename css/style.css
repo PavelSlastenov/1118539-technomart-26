@@ -279,12 +279,14 @@ img {
 }
 */
 .site-navigation ul,
+.site-navigation-catalog ul,
 .bookmarks-background,
 .basket-background {
   list-style: none;
 }
 
 .site-navigation a,
+.site-navigation-catalog a,
 .bookmarks-background,
 .basket-background,
 .basket-background-red,
@@ -307,11 +309,14 @@ img {
 }
 
 .site-navigation a:focus,
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation-catalog a:focus,
+.site-navigation-catalog a:focus {
   background-color: #293449;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation-catalog a:active {
   color: #8e939c;
   background-color: #1d2739;
 }
@@ -341,8 +346,9 @@ img {
   text-align: center;
   text-transform: none;
 
-  padding-top: 14px;
-  margin-right: 0;
+  padding-top: 12px;
+  padding-left: 24px;
+
 
   background-color: #ee3643;
 }
@@ -352,8 +358,8 @@ img {
 
   position: absolute;
 
-  top: 15px;
-  left: 10px;
+  top: 12px;
+  left: 19px;
 
   width: 14px;
   height: 16px;
@@ -461,6 +467,45 @@ img {
 }
 
 .description-phone::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 11px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.description-phone-catalog {
+  position: relative;
+
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: none;
+
+  padding-top: 11px;
+  padding-right: 48px;
+  padding-bottom: 11px;
+  padding-left: 69px;
+
+  margin-top: 45px;
+  margin-bottom: 3px;
+  margin-left: 74px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffffff;
+
+  color: #ee3d49;
+  background-color: #f4f7f9;
+}
+
+.description-phone-catalog::before {
   content: "";
 
   position: absolute;
@@ -594,6 +639,7 @@ img {
 }
 
 .site-navigation ul {
+
   display: flex;
   flex-direction: row;
 
@@ -606,12 +652,18 @@ img {
   background-color: #32425c;
 }
 
-.site-navigation a {
+
+.site-navigation a,
+.site-navigation-catalog a {
+
   font-size: 17px;
   line-height: 17px;
 
-
-  padding-left: 52px;
+  width: 127px;
+  padding-top: 19px;
+  padding-right: 31px;
+  padding-bottom: 21px;
+  padding-left: 31px;
 
   font-weight: normal;
   list-style: none;
@@ -620,28 +672,39 @@ img {
   color: #ffffff;
 }
 
-.site-navigation li:nth-child(2n) {
-  padding-left: 12px;
+.site-navigation li:nth-child(1n),
+.site-navigation-catalog li:nth-child(1n) {
+  margin-left: 21px;
 }
 
-.site-navigation li:nth-child(3n) {
-  padding-left: 7px;
+.site-navigation li:nth-child(2n),
+.site-navigation-catalog li:nth-child(2n) {
+  margin-left: 2px;
 }
 
-.site-navigation li:nth-child(4n) {
-  padding-left: 8px;
+.site-navigation li:nth-child(3n),
+.site-navigation-catalog li:nth-child(3n) {
+  margin-left: -3px;
 }
 
-.site-navigation li:nth-child(5n) {
-  padding-left: 7px;
+.site-navigation li:nth-child(4n),
+.site-navigation-catalog li:nth-child(4n) {
+  margin-left: -2px;
 }
 
-.site-navigation li:nth-child(6n) {
-  padding-left: 10px;
+.site-navigation li:nth-child(5n),
+.site-navigation-catalog li:nth-child(5n) {
+  margin-left: -3px;
 }
 
-.site-navigation li:nth-child(7n) {
-  padding-left: 11px;
+.site-navigation li:nth-child(6n),
+.site-navigation-catalog li:nth-child(6n) {
+  margin-left: 1px;
+}
+
+.site-navigation li:nth-child(7n),
+.site-navigation-catalog li:nth-child(7n) {
+  margin-left: 1px;
 }
 
 .assortment h3{
@@ -2579,9 +2642,9 @@ img {
   font-size: 21px;
   line-height: 21px;
 
-  padding-top: 14px;
-  padding-bottom: 11px;
-  padding-left: 47px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-left: 48px;
 
   text-transform: none;
 
@@ -2691,7 +2754,6 @@ img {
   padding: 0;
 
   margin: 0;
-  margin-top: px;
   margin-left: 17px;
 
   text-transform: none;
@@ -2707,6 +2769,8 @@ img {
 
 .user-orders {
   margin-right: 32px;
+  margin-left: 2px;
+
 }
 
 .user-orders {
@@ -2742,6 +2806,19 @@ img {
 
 .user-account:active {
   color: #b2b2b2;
+}
+
+.site-navigation-catalog ul {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  margin-top: 32px;
+  margin-bottom: 60px;
+
+  background-color: #32425c;
 }
 
 .tabs {
