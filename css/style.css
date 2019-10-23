@@ -252,8 +252,8 @@ img {
 
   position: absolute;
 
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 
   width: 17px;
   height: 17px;
@@ -420,12 +420,13 @@ img {
   font-style: italic;
 }
 
-.description p {
+.description p {  /*Не могу перенести букву "и" вмпесте с ней переносится последнее слово.*/
   font-size: 16px;
   line-height: 23px;
 
   text-transform: none;
   list-style: none;
+  /*letter-spacing: 0.1px;*/
 
   color: #ee3643;
 }
@@ -1397,7 +1398,7 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
 
-  margin-top: 4px;
+  margin-top: 8px;
   margin-bottom: px;
   margin-left: 4px;
 
@@ -1458,7 +1459,7 @@ img {
 
   padding: 10px 30px;
 
-  margin-top: 10px;
+  margin-top: 11px;
   margin-left: 42px;
 
 
@@ -1555,7 +1556,7 @@ img {
   text-align: center;
 
   margin-right: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   border-width: 1px;
   border-style: solid;
@@ -1604,6 +1605,7 @@ img {
 .product h3 {
   width: 155px;
 
+  margin-top: -5px;
   font-size: 18px;
   line-height: 20px;
 
@@ -1640,28 +1642,31 @@ img {
   top: 0;
   left: 0;
 
-  width: 218px;
-  height: 170px;
-  padding: 40px 0;
+  width: 240px;
+
 
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
 }
 
+
 .product .actions .buy,
-.product-index .actions .buy,
-.product .actions .bookmark,
-.product-index .actions .bookmark {
+.product-index .actions .buy {
   display: block;
 
-  width: 129px;
+  width: 135px;
 
   font-size: 14px;
   line-height: 18px;
 
-  padding: 7px 0;
-  margin: 0 auto;
-  margin-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 3px;
+
+
+  margin-top: 43px;
+  margin-bottom: 8px;
+  margin-left: 41px;
 
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
@@ -1676,6 +1681,39 @@ img {
   color: #ffffff;
   background-color: #63a63e;
 }
+
+.product .actions .bookmark,
+.product-index .actions .bookmark {
+  display: block;
+
+  width: 135px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 3px;
+
+
+  margin-top: 5px;
+
+  margin-left: 41px;
+
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
 
 .product .actions .bookmark,
 .product-index .actions .bookmark {
@@ -1740,8 +1778,8 @@ img {
 
   position: absolute;
 
-  top: 7px;
-  left: 12px;
+  top: 8px;
+  left: 11px;
 
   width: 15px;
   height: 15px;
@@ -2292,11 +2330,11 @@ img {
 }
 
 .company-container {
-  width: 387px;
+  width: 391px;
   margin-top: 20px;
 }
 
-.company p  {
+.company p {
   font-size: 13px;
   line-height: 24px;
 
@@ -2307,6 +2345,7 @@ img {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
+  letter-spacing: 0.1px;
 
   color: #000000;
 }
@@ -2582,7 +2621,6 @@ img {
 .footer-description-container {
   width: 228px;
 
-  margin-top: 34px;
   margin-bottom: 35px;
   margin-left: 2px;
 }
@@ -2590,6 +2628,8 @@ img {
 .footer-description {
   font-size: 16px;
   line-height: 18px;
+
+  margin-top: 35px;
 
   font-weight: normal;
   text-transform: none;
@@ -2977,7 +3017,7 @@ img {
   width: 358px;
 
   padding: 0;
-  margin-top: 13px;
+  margin-top: 21px;
   margin-bottom: 13px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -2986,7 +3026,8 @@ img {
   list-style: none;
 }
 
-.tabs a {
+.tabs a,
+.tabs li {
   position: relative;
 
   font-size: 13px;
@@ -3002,8 +3043,8 @@ img {
   width: 14px;
   height: 18px;
 
-  margin-top: 9px;
-  margin-left: -1px;
+  margin-top: 1px;
+  margin-left: -2px;
 
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
@@ -3373,7 +3414,7 @@ img {
   width: 140px;
 
   padding: 12px 39px 10px 39px;
-  margin-top: 56px;
+  margin-top: 63px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -3400,7 +3441,7 @@ img {
 .perforators-header {
   width: 940px;
 
-  padding-top: 27px;
+  padding-top: 37px;
   padding-right: 742px;
   padding-bottom: 34px;
   padding-left: 28px;
@@ -3448,8 +3489,8 @@ img {
   color: #000000;
 }
 
-.filter-manufacturers {
-  margin-top: 15px;
+.manufacturers-filters {
+  margin-top: 18px;
 }
 
 .filter-manufacturers-container {
@@ -3605,16 +3646,18 @@ img {
 .description-perforators h2 {
   font-size: 30px;
   line-height: 30px;
-
+  letter-spacing: 0.2px;
   font-weight: normal;
 }
 
 .description-perforators p {
   font-size: 13px;
-  line-height: 30px;
+  /*line-height: 30px;*/
+  line-height: 1.95em;
+  letter-spacing: 0.1px;
 
-  padding-bottom: 73px;
-  margin-top: 39px;
+  padding-bottom: 67px;
+  margin-top: 23px;
 
   text-transform: none;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -3749,7 +3792,7 @@ img {
 .filter {
   padding: 0;
   margin: 0;
-  margin-top: 13px;
+  margin-top: 12px;
 
   font-family: "PT Sans", Arial, sans-serif;
 
@@ -3759,13 +3802,16 @@ img {
   color: #000000;
 }
 
+
 .filter-bottom { /*сделал второй класс, что бы убрать border-bottom которого нет в фильтре "Питание'*/
   padding: 0;
   margin: 0;
-  margin-top: 13px;
+  margin-top: 16px;
 
   font-family: "PT Sans", Arial, sans-serif;
   border: none;
+  font-weight: 700;
+  letter-spacing: 0.05px;
 
   color: #000000;
 }
@@ -3869,6 +3915,7 @@ img {
 
   background-color: #444444;
 }
+
 
 .filter ul,
 .filter-bottom ul {
