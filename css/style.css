@@ -59,17 +59,6 @@ img {
   overflow: hidden;
 }
 
-
-.site-navigation a {
-  display: block;
-
-  padding: 25px 20px;
-  vertical-align: middle;
-
-  color: #ffffff;
-}
-
-
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -179,7 +168,6 @@ img {
   opacity: 0.3;
 }
 
-
 .bookmarks-background:focus::before,
 .bookmarks-background:hover::before,
 .basket-background:focus::before,
@@ -233,11 +221,9 @@ img {
   background-color: #ffffff;
 }
 
-
 .input{
   position: relative;
 }
-
 
 .icon-search {
   content: "";
@@ -344,7 +330,6 @@ img {
   background-color: #161d29;
 }
 
-
 .basket-background-red {
   position: relative;
 
@@ -433,7 +418,7 @@ img {
 }
 
 .description {
-  width: 191px;
+  width: 196px;
 
   margin-top: 49px;
   margin-left: 52px;
@@ -461,7 +446,7 @@ img {
   padding-top: 10px;
   padding-right: 52px;
   padding-bottom: 11px;
-  padding-left: 74px;
+  padding-left: 69px;
 
   margin-top: 45px;
   margin-bottom: 3px;
@@ -479,8 +464,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 12px;
+  left: 11px;
 
   width: 19px;
   height: 19px;
@@ -491,12 +476,11 @@ img {
 }
 
 .description-address {
-
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
 
-  margin-left: 86px;
+  margin-left: 82px;
   margin-top: 0;
 
   color: #32425c;
@@ -531,7 +515,6 @@ img {
   color: #000000;
   background-color: #ffffff;
 }
-
 
 .login-link:focus,
 .login-link:hover,
@@ -614,7 +597,10 @@ img {
   display: flex;
   flex-direction: row;
 
-  margin-top: 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  margin-top: 38px;
   margin-bottom: 60px;
 
   background-color: #32425c;
@@ -624,14 +610,38 @@ img {
   font-size: 17px;
   line-height: 17px;
 
+
+  padding-left: 52px;
+
   font-weight: normal;
   list-style: none;
   text-transform: none;
 
-  margin-left: 38px;
-  padding-top: px;
-
   color: #ffffff;
+}
+
+.site-navigation li:nth-child(2n) {
+  padding-left: 12px;
+}
+
+.site-navigation li:nth-child(3n) {
+  padding-left: 7px;
+}
+
+.site-navigation li:nth-child(4n) {
+  padding-left: 8px;
+}
+
+.site-navigation li:nth-child(5n) {
+  padding-left: 7px;
+}
+
+.site-navigation li:nth-child(6n) {
+  padding-left: 10px;
+}
+
+.site-navigation li:nth-child(7n) {
+  padding-left: 11px;
 }
 
 .assortment h3{
@@ -642,8 +652,8 @@ img {
   font-weight: 700;
 
   margin-top: 20px;
-  margin-left: 23px;
   margin-bottom: 15px;
+  margin-left: 23px;
 
   color: #ffffff;
 }
@@ -667,7 +677,7 @@ img {
   list-style: none;
   font-weight: normal;
 
-  margin-top: 52px;
+  margin-top: 59px;
 }
 
 .container {
@@ -2020,7 +2030,8 @@ img {
 }
 
 .service-title {
-  margin: 0;
+  margin-left: 1px;
+  margin-top: 1px;
   padding: 0;
 
   font-size: 36px;
