@@ -96,12 +96,12 @@
           <li class="slider-item">
             <h3>ПЕРФОРАТОРЫ</h3>
             <p>Настоящие мужские игрушки</p>
-            <a class="slider-item-button button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+            <a class="slider-item-button button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           </li>
           <li class="slider-item">
             <h3>ДРЕЛИ</h3>
             <p>Соседям на радость!</p>
-            <a class="slider-item-button button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+            <a class="slider-item-button button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           </li>
         </ul>
       </div>
@@ -260,7 +260,7 @@
       <h2>КОНТАКТЫ</h2>
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
-      <p><a href=""><img src="img/map.png" alt="Map" width="300" height="158"></a></p>
+      <p><a href="https://www.google.com/maps"><img src="img/map.png" alt="Map" width="300" height="158"></a></p>
       <div class="contacts-map-link-container"><a class="contacts-map-link" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a></div>
     </div>
   </section>
@@ -331,24 +331,46 @@
   <button class="modal-close" type="button">Закрыть</button>
 </section>
 
-<div>
-  <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-    <p class="contacts-item">
-      <label for="contacts-name">Ваше имя:</label>
-      <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+
+<section class=" modal modal-feedback">
+  <div class="modal-border"></div>
+  <div class="modal-conteiner-top">
+   <div class="name-container">
+  <p class="modal-description">Ваше имя:</p>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="modal-name">Имя Фамилия</label>
+      <input class="modal-name" id="modal-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
-    <p class="contacts-item">
-      <label for="contacts-email">Ваш e-mail:</label>
-      <input id="contacts-email" type="text" name="email" value="" placeholder="e-mail@example.com">
-    </p>
-    <p class="contacts-item">
-      <label for="contacts-text">Текст письма:</label>
-      <input id="contacts-text" type="text" name="text" value="" placeholder="В свободно форме">
-    </p>
-    <button class="button" type="submit">Отправить</button>
-    <button class="modal-close" type="button">Закрыть</button>
   </form>
-</div>
+   </div>
+   <div class="mail-container">
+    <p class="modal-description">Ваш e-mail:</p>
+   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="modal-mail">E-mail</label>
+      <input class="modal-mail" id="modal-mail" type="text" name="e-mail" placeholder="email@example.com">
+    </p>
+   </form>
+   </div>
+ </div>
+ <div class="text-container">
+   <p class="modal-description">Текст письма:</p>
+   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+     <p>
+       <label class="visually-hidden" for="modal-text">Текст</label>
+       <input class="modal-text" id="modal-text" type="text" name="text" placeholder="В свободной форме">
+     </p>
+   </form>
+ </div>
+  <div class="modal-conteiner-buttom">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <button class="modal-button" type="submit">Отправить</button>
+  </div>
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
 </body>
 </html>
 
