@@ -325,7 +325,7 @@
   </section>
 </footer>
 
-<section class="visually-hidden modal modal-map">
+<section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <p><img src="img/modal-map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
   <button class="modal-close" type="button">
@@ -334,7 +334,7 @@
 </section>
 
 
-<section class="visually-hidden modal modal-feedback">
+<section class="modal modal-feedback">
   <h2 class="visually-hidden">Обратная связь</h2>
   <div class="modal-border"></div>
   <div class="modal-conteiner-top">
@@ -352,7 +352,7 @@
    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="visually-hidden" for="modal-mail">E-mail</label>
-      <input class="modal-mail" id="modal-mail" type="text" name="e-mail" placeholder="email@example.com">
+      <input class="modal-mail" id="modal-mail" type="text" name="mail" placeholder="email@example.com">
     </p>
    </form>
    </div>
@@ -374,6 +374,76 @@
     <span class="visually-hidden">Закрыть</span>
   </button>
 </section>
+
+
+<script>
+    var link = document.querySelector(".contacts-map-link");
+
+    var popup = document.querySelector(".modal-feedback");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector("form");
+    var name = popup.querySelector("[name=name]");
+    var mail = popup.querySelector("[name=mail]");
+    var text = popup.querySelector("[name=text]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+        storage = localStorage.getItem("name");
+    } catch (err) {
+        isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+
+        if (storage) {
+            name.value = storage;
+            mail.focus();
+
+            if (storage) {
+                mail.value = storage;
+                text.focus();
+
+        } else {
+            name.focus();
+        }
+    });
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (evt) {
+        if (!name.value || !mail.value) || !text.value) {
+            evt.preventDefault();
+            popup.classList.add("modal-error");
+            console.log("Нужно ввести имя и почту");
+    } else {
+        localStorage.setItem("name", name.value);
+    }
+    if (isStorageSupport) {
+        localStorage.setItem("name", name.value);
+    }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+            }
+        }
+    });
+</script>
+
+
 </body>
 </html>
 
