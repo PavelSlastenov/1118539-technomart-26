@@ -333,7 +333,6 @@
   </button>
 </section>
 
-
 <section class="modal modal-feedback">
   <h2 class="visually-hidden">Обратная связь</h2>
   <div class="modal-border"></div>
@@ -375,7 +374,6 @@
   </button>
 </section>
 
-
 <script>
     var link = document.querySelector(".contacts-map-link");
 
@@ -392,6 +390,8 @@
 
     try {
         storage = localStorage.getItem("name");
+        storage = localStorage.getItem("mail");
+        storage = localStorage.getItem("text");
     } catch (err) {
         isStorageSupport = false;
     }
@@ -404,9 +404,8 @@
             name.value = storage;
             mail.focus();
 
-            if (storage) {
-                mail.value = storage;
-                text.focus();
+            mail.value = storage;
+            text.focus();
 
         } else {
             name.focus();
@@ -420,16 +419,14 @@
     });
 
     form.addEventListener("submit", function (evt) {
-        if (!name.value || !mail.value) || !text.value) {
+        if (!name.value || !mail.value) {
             evt.preventDefault();
             popup.classList.add("modal-error");
-            console.log("Нужно ввести имя и почту");
-    } else {
-        localStorage.setItem("name", name.value);
-    }
-    if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-    }
+        } else {
+            if (isStorageSupport) {
+                localStorage.setItem("login", name.value);
+            }
+        }
     });
 
     window.addEventListener("keydown", function (evt) {
@@ -443,7 +440,11 @@
     });
 </script>
 
-
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <p><img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
 </body>
 </html>
 
