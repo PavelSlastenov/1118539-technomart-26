@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
-  min-width: 940px;
+  min-width: 960px;
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
@@ -410,7 +410,7 @@ img {
 }
 
 .description {
-  width: 196px;
+  width: 197px;
 
   margin-top: 49px;
   margin-left: 52px;
@@ -427,6 +427,10 @@ img {
   /*letter-spacing: 0.1px;*/
 
   color: #ee3643;
+}
+
+.adress-container {
+  margin-top: 55px;
 }
 
 .description-phone {
@@ -513,7 +517,7 @@ img {
   text-transform: none;
 
   margin-left: 82px;
-  margin-top: 0;
+  margin-top: 5px;
 
   color: #32425c;
 }
@@ -3770,7 +3774,6 @@ img {
   color: #000000;
 }
 
-
 .filter-bottom { /*сделал второй класс, что бы убрать border-bottom которого нет в фильтре "Питание'*/
   padding: 0;
   margin: 0;
@@ -3778,7 +3781,6 @@ img {
 
   font-family: "PT Sans", Arial, sans-serif;
   border: none;
-  font-weight: 700;
   letter-spacing: 0.05px;
 
   color: #000000;
@@ -3991,7 +3993,7 @@ img {
   left: 50%;
 
   width: 620px;
-  margin-left: -230px;
+  margin-left: -310px;
   padding: 50px 80px;
 }
 
@@ -4008,7 +4010,7 @@ img {
 
   cursor: pointer;
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .modal-close::before,
@@ -4023,25 +4025,18 @@ img {
   height: 3px;
 
   background-color: #d0d0d0;
-
-  z-index: 1;
 }
 
 .modal-close::before {
   transform: rotate(45deg);
   background-color: #ee3643;
   width: 21px;
-
-  z-index: 1;
-
 }
 
 .modal-close::after {
   transform: rotate(-45deg);
   background-color: #ee3643;
   width: 21px;
-
-  z-index: 1;
 }
 
 .modal-feedback h2 {
@@ -4189,7 +4184,7 @@ img {
 
 .modal-map iframe {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   border: none;
 }
@@ -4252,10 +4247,13 @@ img {
   line-height: 18px;
   color: #ffffff;
 
+  padding-top: 12px;
+
   margin-top: 37px;
   margin-right: auto;
   margin-left: auto;
 
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;

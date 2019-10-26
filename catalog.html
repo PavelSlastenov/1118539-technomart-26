@@ -31,10 +31,10 @@
     <div class="container">
       <div class="user-navigation-container">
         <div class="description">
-          <p><em>Интернет-магазин строительных материалов и инструментов для ремонта</em></p>
+          <p><em>Интернет-магазин строительных материалов и&nbspинструментов для ремонта</em></p>
         </div>
         <div class="adress-container">
-          <p class="description-phone-catalog">+7 (812) 555-05-55</p>
+          <a class="description-phone-catalog" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="description-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="account-user">
@@ -190,7 +190,7 @@
     </div>
   </section>
   </div>
-
+    <form method="get" action="https://echo.htmlacademy.ru">
     <section class="filters">
       <div class="price-filters">
         <h2>Фильтр:</h2>
@@ -207,9 +207,7 @@
               <input type="text" name="min-price" value="0" aria-label="Минимальная цена">
               <input type="text" name="max-price" value="30000" aria-label="Максимальная цена">
             </div>
-      </div>
-
-      <form method="get" action="https://echo.htmlacademy.ru">
+        </div>
         <div class="manufacturers-filters">
           <fieldset class="filter filter-manufacturers">
             <legend>Производители:</legend>
@@ -254,8 +252,8 @@
             </div>
           </fieldset>
           <button class="submit filter-btn" type="submit">Показать</button>
-      </form>
     </section>
+      </form>
   </div>
   </div>
 
@@ -341,14 +339,10 @@
   </div>
   <div class="modal-conteiner-buttom">
     <div class="modal-bottom-conteiner-left">
-    <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <button class="modal-button-catalog" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-    </form>
+      <a class="modal-button-catalog" href="">ОФОРМИТЬ ЗАКАЗ</a>
     </div>
     <div class="modal-bottom-conteiner-right">
-    <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <button class="modal-button-catalog" type="submit">ПРОДОЛЖИТЬ ПОКУПКИь</button>
-    </form>
+      <a class="modal-button-catalog" href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     </div>
   </div>
   <button class="modal-close" type="button">
