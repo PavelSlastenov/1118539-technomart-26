@@ -64,8 +64,6 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
 
-  /*max-height: 42px;*/
-
   background-color: #293449;
 }
 
@@ -80,7 +78,7 @@ img {
 
 .main-header-logo {
   width: 220px;
-  height: 42px; /*Оставил пока высоту, иначе логотип сильно рыстягивается вниз*/
+  height: 42px;
 
   padding-top: 8px;
   padding-right: 56px;
@@ -407,6 +405,7 @@ img {
 .user-navigation-container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .description {
@@ -418,13 +417,12 @@ img {
   font-style: italic;
 }
 
-.description p {  /*Не могу перенести букву "и" вмпесте с ней переносится последнее слово.*/
+.description p {
   font-size: 16px;
   line-height: 23px;
 
   text-transform: none;
   list-style: none;
-  /*letter-spacing: 0.1px;*/
 
   color: #ee3643;
 }
@@ -533,7 +531,6 @@ img {
   position: relative;
 
   width: 121px;
-  height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
 
   font-size: 21px;
   line-height: 21px;
@@ -543,7 +540,7 @@ img {
   padding-top: 14px;
   padding-right: 27px;
   padding-left: 48px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   margin-top: 44px;
   margin-left: 66px;
@@ -602,7 +599,6 @@ img {
 
 .login-link-registration {
   width: 148px;
-  height: 45px; /*Оставил высоту, без нее сильно вытягивается вниз*/
 
   font-size: 21px;
   line-height: 21px;
@@ -929,7 +925,6 @@ img {
 
 .materials-link {
   width: 135px;
-  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -941,7 +936,6 @@ img {
 
 .tooling-link {
   width: 135px;
-  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -953,7 +947,6 @@ img {
 
 .technique-link {
   width: 135px;
-  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -976,7 +969,6 @@ img {
 
 .delivery-link {
   width: 135px;
-  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -1261,16 +1253,17 @@ img {
   flex-wrap: wrap;
 
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
 
 .goods h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
 
-  margin-top: 33px;
-  margin-bottom: 32px;
+  margin-top: 30px;
+  margin-bottom: 28px;
   margin-left: 29px;
 
   color: #32425c;
@@ -1279,19 +1272,18 @@ img {
 .goods-header {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 
-  height: 88px;
   margin-bottom: 24px;
   background-color: #f9f5f0;
 }
 
 .goods-link {
   width: 253px;
-  height: 38px; /*Временно оставил, пока без этого значения становится шире чем в макете*/
 
   font-weight: normal;
-  margin-top: 28px;
 
+  margin-top: 28px;
   margin-left: 371px;
   padding-top: 2px;
   padding-left: 55px;
@@ -1496,18 +1488,6 @@ img {
 
   background-color: #ee3643;
 }
-/*
-.link-price:focus,
-.link-price-right:focus,
-.link-price:hover,
-.link-price-right:hover {
-  background-color: #ca2c37;
-}
-.link-price:active,
-.link-price-right:active {
-  background-color: #ba2732;
-}
-*/
 
 .product {
   position: relative;
@@ -1528,7 +1508,7 @@ img {
   border-color: #eaeaea;
 }
 
-.product-index {  /*сделал отдельный класс, поскольку в каталоге задано что у каждого 3 элемента нет margin-right*/
+.product-index {
   position: relative;
 
   display: inline-block;
@@ -1609,7 +1589,6 @@ img {
 
   width: 218px;
   height: 170px;
-
 
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
@@ -1701,23 +1680,13 @@ img {
   display: block;
 }
 
-/* Скрыть картинку перфоратора в карточке товаров, работает не очень, только при наведении в область картинки.
-.producs img:focus,
-.product img:hover,
-.product-index img:focus,
-.product-index img:hover {
- opacity: 0;
-}
-*/
-
-.product:nth-child(3n) {  /*Лишний отступ у 3 элемента*/
+.product:nth-child(3n) {
   margin-right: 0;
 }
 
 .product image,
 .product-index image {
   width: 218px;
-  /*height: 168px;*/
 }
 
 
@@ -1844,8 +1813,7 @@ img {
 .manufacturers-header {
   display: flex;
   flex-direction: row;
-
-  height: 88px;
+  align-items: flex-start;
 
   margin-bottom: 20px;
 
@@ -1867,7 +1835,6 @@ img {
 
 .manufacturers-link {
   width: 253px;
-  height: 38px; /*Временно оставил, пока без этого значения становится шире чем в макете*/
 
   padding-top: 2px;
   padding-left: 69px;
