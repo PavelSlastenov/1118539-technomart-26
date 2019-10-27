@@ -812,7 +812,7 @@ img {
   background-position: 0 0;
 }
 
-.materials .flag{
+.materials .flag {
   position: absolute;
   top: 0;
   right: 0;
@@ -1311,7 +1311,7 @@ img {
   background-color: #ba2732;
 }
 
-.goods ul{
+.goods ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
