@@ -1211,7 +1211,7 @@ img {
   display: none;
 
   width: 620px;
-  padding: 23px;
+  padding: 24px;
 }
 
 .slider-item:nth-child(1) {
@@ -2584,7 +2584,21 @@ img {
   padding-left: 41px;
 
   -webkit-box-shadow: 0 5px 0 0 #b62931;
+  box-shadow: 0 5px 0 0 #b62931;
 
+  background-color: #ee3643;
+}
+
+.logo-footer-catalog {
+  width: 220px;
+  height: 64px;
+
+  padding-top: 20px;
+  padding-right: 41px;
+  padding-bottom: 25px;
+  padding-left: 41px;
+
+  -webkit-box-shadow: 0 5px 0 0 #b62931;
   box-shadow: 0 5px 0 0 #b62931;
 
   background-color: #ee3643;
@@ -2753,7 +2767,7 @@ img {
   font-size: 16px;
   line-height: 18px;
 
-  margin-top: 35px;
+  margin-top: 34px;
 
   font-weight: normal;
   text-transform: none;
@@ -2765,12 +2779,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 
-  margin-top: 35px;
+  margin-top: 31px;
   margin-left: 161px;
 }
 
@@ -2780,13 +2795,13 @@ img {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
+
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2861,13 +2876,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 
   margin-left: 115px;
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .social-network li {
@@ -3369,10 +3385,8 @@ img {
 
   position: absolute;
 
-  top: 0;
+  top: 6px;
   left: 46px;
-
-  margin-top: 6px;
 
   width: 11px;
   height: 10px;
@@ -3388,10 +3402,8 @@ img {
 
   position: absolute;
 
-  top: 0;
+  top: 6px;
   left: 46px;
-
-  margin-top: 6px;
 
   width: 11px;
   height: 10px;
