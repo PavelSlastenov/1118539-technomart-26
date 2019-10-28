@@ -178,7 +178,7 @@ img {
   opacity: 0.5;
 }
 
-.search-form{
+.search-form {
   margin-left: 49px;
 }
 
@@ -240,7 +240,7 @@ img {
   background-color: #ffffff;
 }
 
-.input{
+.input {
   position: relative;
 }
 
@@ -522,8 +522,7 @@ img {
 
 .login-link a,
 .login-link-registration a {
-  text-decoration: none; /*Не отключает подчеркивание у ссылок*/
-
+  text-decoration: none;
   color: #000000;
 }
 
@@ -694,7 +693,7 @@ img {
   margin-left: 1px;
 }
 
-.assortment h3{
+.assortment h3 {
   font-size: 24px;
   line-height: 30px;
 
@@ -756,14 +755,14 @@ img {
   color: #ffffff;
 }
 
-.container-right a{
+.container-right a {
   font-size: 14px;
   line-height: 18px;
 
   margin-left: 24px;
 }
 
-.container-right ul{
+.container-right ul {
   display: flex;
   flex-direction: column;
 
@@ -978,7 +977,6 @@ img {
   background-color: rgba(0,0,0,.1);
 }
 
-
 /*-----------------------Слайдер-----------------------------*/
 
 .slider-container {
@@ -1037,7 +1035,6 @@ img {
   width: 28px;
   height: 28px;
 
-
   vertical-align: top;
 
   border-left: 3px solid #fff;
@@ -1069,7 +1066,6 @@ img {
 
   left: 307px;
   bottom: 76px;
-
 
   width: 160px;
   height: 18px;
@@ -1185,7 +1181,6 @@ img {
   margin-left: 2px;
 
   text-transform: uppercase;
-
   text-decoration: none;
 
   border-radius: 3px;
@@ -1203,8 +1198,7 @@ img {
   background-color: #ba2732;
 }
 
-/*----------------------------------------------------------------------------------*/
-
+/*-----------------------------------конец слайдеоа-----------------------------------*/
 
 .materials-link,
 .tooling-link,
@@ -1255,7 +1249,6 @@ img {
   margin-top: 30px;
   margin-bottom: 0;
 }
-
 
 .goods h2 {
   font-size: 30px;
@@ -1315,7 +1308,6 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
   list-style: none;
 }
 
@@ -1364,7 +1356,6 @@ img {
   font-weight: 700;
 
   margin-top: 8px;
-  margin-bottom: px;
   margin-left: 4px;
 
   color: #aaaaaa;
@@ -1456,7 +1447,6 @@ img {
   padding: 10px 30px;
 
   margin-top: 36px;
-  margin-right: px;
   margin-bottom: 21px;
   margin-left: 42px;
 
@@ -1478,7 +1468,6 @@ img {
   padding: 10px 30px;
 
   margin-top: 36px;
-  margin-right: px;
   margin-bottom: 21px;
   margin-left: 42px;
 
@@ -1491,11 +1480,9 @@ img {
 
 .product {
   position: relative;
-
   display: inline-block;
 
   width: 220px;
-  /*height: 318px;*/
 
   font-weight: bold;
   text-align: center;
@@ -1639,7 +1626,6 @@ img {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 3px;
-
 
   margin-top: 5px;
 
@@ -1799,7 +1785,7 @@ img {
   background-color: #ffffff;
 }
 
-.manufacturers ul{
+.manufacturers ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1850,13 +1836,13 @@ img {
 
 .manufacturers-container a,
 .manufacturers-container-right a,
-.manufacturers-container-right-bottom a{
+.manufacturers-container-right-bottom a {
   width: 220px;
 
   border-width: 1px;
   border-color: #eaeaea;
-
 }
+
 .manufacturers-container a:focus,
 .manufacturers-container a:hover,
 .manufacturers-container-right a:focus,
@@ -2054,7 +2040,6 @@ img {
 
 .service-information {
   display: flex;
-
   margin-top: 67px;
 }
 
@@ -2341,8 +2326,6 @@ img {
 }
 
 .company-link {
-
-
   font-size: 14px;
   line-height: 18px;
 
@@ -2370,7 +2353,7 @@ img {
   margin-top: 9px;
 }
 
-.contacts-map h2{
+.contacts-map h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -2466,7 +2449,7 @@ img {
   margin-left: 20px;
 }
 
-.navigation-footer-top ul{
+.navigation-footer-top ul {
   display: flex;
   flex-direction: row;
 
@@ -2499,7 +2482,7 @@ img {
   margin-left: 59px;
 }
 
-.navigation-footer-bottom ul{
+.navigation-footer-bottom ul {
   display: flex;
   flex-direction: row;
 
@@ -2522,7 +2505,7 @@ img {
   margin-left: 60px;
 }
 
-.navigation-footer-bottom a{
+.navigation-footer-bottom a {
   color: #ffd180;
 }
 
@@ -2535,13 +2518,11 @@ img {
 
 .navigation-footer-top a:active {
   text-decoration: none;
-
   color: #929caa;
 }
 
 .navigation-footer-bottom a:active {
   text-decoration: none;
-
   color: #998a6e;
 }
 
@@ -2571,9 +2552,9 @@ img {
   color: #ffffff;
 }
 
-.social-network ul{
+.social-network ul {
   display: flex;
-  flex-direction: top;
+  flex-direction: row;
 
   margin-top: 35px;
   margin-left: 161px;
@@ -2749,7 +2730,6 @@ img {
   background-color: #63a63e;
 }
 
-
 .account-user {
   display: flex;
   flex-direction: column;
@@ -2894,7 +2874,6 @@ img {
 .user-orders {
   margin-right: 32px;
   margin-left: 2px;
-
 }
 
 .user-orders {
@@ -2953,7 +2932,6 @@ img {
 
   padding: 0;
   margin-top: 21px;
-  /*margin-bottom: 13px;*/
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2998,7 +2976,6 @@ img {
   margin-left: 43px;
 }
 
-
 .tabs a::after {
   content: "";
 
@@ -3013,12 +2990,11 @@ img {
   background-position: 0 0;
 }
 
-
 .tabs .tabs-current::after {
   display: none;
 }
 
-.sort h3{
+.sort h3 {
   font-size: 13px;
   line-height: 18px;
 
@@ -3104,7 +3080,6 @@ img {
 .sort-type a:hover,
 .sort-functional a:focus,
 .sort-functional a:hover {
-
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: #ee3643;
@@ -3181,7 +3156,6 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .icon-down::before {
   content: "";
@@ -3399,7 +3373,7 @@ img {
   margin-bottom: 60px;
 }
 
-.perforators ul{
+.perforators ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3460,7 +3434,6 @@ img {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .filter-manufacturers-checkbox:hover + label::before,
@@ -3587,7 +3560,6 @@ img {
 
 .description-perforators p {
   font-size: 13px;
-  /*line-height: 30px;*/
   line-height: 1.95em;
   letter-spacing: 0.1px;
 
@@ -3739,7 +3711,7 @@ img {
   color: #000000;
 }
 
-.filter-bottom { /*сделал второй класс, что бы убрать border-bottom которого нет в фильтре "Питание'*/
+.filter-bottom {
   padding: 0;
   margin: 0;
   margin-top: 16px;
@@ -3937,7 +3909,7 @@ img {
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -4012,7 +3984,6 @@ img {
   line-height: 42px;
 }
 
-
 .modal-description {
   font-size: 18px;
   line-height: 18px;
@@ -4034,7 +4005,7 @@ img {
 
 .modal-conteiner-top {
   display: flex;
-  flex-direction row;
+  flex-direction: row;
   flex-wrap: wrap;
 
   margin-top: 48px;
@@ -4126,7 +4097,6 @@ img {
   animation: bounce 0.6s;
 }
 
-
 /*--------------------------------------modal-index-map------------------------------*/
 
 .modal-map {
@@ -4154,9 +4124,7 @@ img {
   border: none;
 }
 
-
 /*--------------------------------------modal-catalog-cart---------------------------*/
-
 
 .modal-cart {
   top: 120px;
@@ -4166,7 +4134,6 @@ img {
   margin-left: -230px;
   padding: 50px 80px;
 }
-
 
 .modal-conteiner-buttom {
   display: flex;
