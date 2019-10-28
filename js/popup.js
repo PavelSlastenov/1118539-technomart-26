@@ -1,10 +1,9 @@
 var link = document.querySelector(".contacts-map-link");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
+
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
-var mail = popup.querySelector("[name=mail]");
-var text = popup.querySelector("[name=text]");
+var name = popup.querySelector("[name=name]"); /*не работает фокус наполе имени при открытии*/
 var isStorageSupport = true;
 var storage = "";
 try {
@@ -17,6 +16,7 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  name.focus();  /*не работает фокус наполе имени при открытии*/
   if (storage) {
     name.value = storage;
     mail.focus();
