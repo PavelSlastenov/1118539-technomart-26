@@ -2521,7 +2521,7 @@ img {
 }
 
 .contacts-map {
-  margin-left: 121px;
+  margin-left: 120px;
   margin-top: 79px;
 }
 
@@ -2547,6 +2547,7 @@ img {
   text-transform: none;
   list-style: none;
   font-family: "PT Sans", "Arial", sans-serif;
+  letter-spacing: -0.5px;
 
   color: #000000;
 }
@@ -2570,7 +2571,7 @@ img {
 }
 
 .contacts-map-link-container {
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .logo-footer {
