@@ -222,7 +222,6 @@ img {
   background-position: 16px 12px;
 }
 
-
 .search input::placeholder {
   color: #ffffff;
 }
@@ -295,7 +294,7 @@ img {
 .site-navigation a:focus,
 .site-navigation a:hover,
 .site-navigation-catalog a:focus,
-.site-navigation-catalog a:focus {
+.site-navigation-catalog a:hover {
   background-color: #293449;
 }
 
@@ -2740,7 +2739,7 @@ img {
   margin-left: 51px;
 }
 
-.user-name {
+.user-conteiner {
   position: relative;
 
   font-size: 21px;
@@ -2752,42 +2751,22 @@ img {
 
   text-transform: none;
 
-  color: #000000;
   background-color: #ffffff;
 }
 
-.user-name::before {
-  content: "";
+.account-user ul {
+  display: flex;
 
-  position: absolute;
-  top: 13px;
-  left: 13px;
+  padding: 0;
 
-  width: 20px;
-  height: 18px;
+  margin: 0;
+  margin-left: 17px;
 
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  text-transform: none;
+  list-style: none;
 }
 
-.user-name:focus::before,
-.user-name:hover::before {
-  content: "";
-
-  position: absolute;
-  top: 13px;
-  left: 13px;
-
-  width: 20px;
-  height: 18px;
-
-  background-image: url("../img/icon-user-2.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.user-name:active::before {
+.icon-user::before {
   content: "";
 
   position: absolute;
@@ -2818,8 +2797,12 @@ img {
   background-position: 0 0;
 }
 
-.exit:focus::before,
-.exit:hover::before {
+.user-name {
+  color: #000000;
+}
+
+.user-name:focus ~ .exit::before,
+.user-name:hover ~ .exit::before {
   content: "";
 
   position: absolute;
@@ -2835,7 +2818,23 @@ img {
   background-position: 0 0;
 }
 
-.exit:active::before {
+.user-name:focus ~ .icon-user::before,
+.user-name:hover ~ .icon-user::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+
+  background-image: url("../img/icon-user-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-name:active ~ .exit::before {
   content: "";
 
   position: absolute;
@@ -2849,19 +2848,25 @@ img {
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.3;
 }
 
-.account-user ul {
-  display: flex;
+.user-name:active ~ .icon-user::before {
+  content: "";
 
-  padding: 0;
+  position: absolute;
+  top: 13px;
+  left: 13px;
 
-  margin: 0;
-  margin-left: 17px;
+  width: 20px;
+  height: 18px;
 
-  text-transform: none;
-  list-style: none;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-name:active {
+  opacity: 0.3;
 }
 
 .user-orders,
@@ -4042,7 +4047,7 @@ img {
   display: block;
 
   width: 460px;
-  min-height: 38px;
+  height: 38px;
 
   font-size: 14px;
   line-height: 18px;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -40,8 +40,10 @@
           <p class="description-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="account-user">
-          <div class="user-name">Равшан Джамшутович
-          <a class="exit" href="" aria-label="Выйти"></a>
+          <div class="user-conteiner">
+            <a class="user-name" href="">Равшан Джамшутович</a>
+            <a class="icon-user" aria-label="Иконка пользователя"></a>
+            <a class="exit" href="" aria-label="Выйти"></a>
           </div>
           <ul>
             <li><a class="user-orders" href="#">Мои заказы</a><li>
@@ -261,7 +263,6 @@
       </form>
   </div>
   </div>
-
   <div class="description-perforators">
     <div class="container-description-perforators">
     <h2>Пара слов о перфораторах</h2>
@@ -332,7 +333,6 @@
     </div>
   </section>
 </footer>
-
 
 <section class="modal modal-cart">
   <h2 class="visually-hidden">Корзина с товаром</h2>
