@@ -3405,8 +3405,8 @@ img {
 
   position: absolute;
 
-  top: 6px;
-  left: 46px;
+  margin-top: 6px;
+  margin-left: 46px;
 
   width: 11px;
   height: 10px;
@@ -3422,8 +3422,9 @@ img {
 
   position: absolute;
 
-  top: 6px;
-  left: 46px;
+
+  margin-top: 6px;
+  margin-left: 46px;
 
   width: 11px;
   height: 10px;
@@ -3438,10 +3439,8 @@ img {
 
   position: absolute;
 
-  top: 0;
-  left: 46px;
-
   margin-top: 6px;
+  margin-left: 46px;
 
   width: 11px;
   height: 10px;
@@ -3456,10 +3455,8 @@ img {
 
   position: absolute;
 
-  top: 0;
-  left: 78px;
-
   margin-top: 6px;
+  left: 78px;
 
   width: 11px;
   height: 10px;
@@ -3475,9 +3472,9 @@ img {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 78px;
+
   margin-top: 6px;
+  left: 78px;
 
   width: 11px;
   height: 10px;
@@ -3492,10 +3489,8 @@ img {
 
   position: absolute;
 
-  top: 0;
-  left: 78px;
-
   margin-top: 6px;
+  left: 78px;
 
   width: 11px;
   height: 10px;
