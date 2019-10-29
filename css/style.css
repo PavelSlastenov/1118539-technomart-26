@@ -1356,7 +1356,6 @@ img {
   flex-wrap: wrap;
 
   margin-top: 30px;
-  margin-bottom: 0;
 }
 
 .goods h2 {
@@ -1384,6 +1383,9 @@ img {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
   margin-bottom: 24px;
   background-color: #f9f5f0;
