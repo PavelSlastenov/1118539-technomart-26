@@ -3139,6 +3139,24 @@ img {
   background-position: 0 0;
 }
 
+/* уточнить как реализовать правильно
+.exit:hover {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  left: 269px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+*/
+
 .user-name:active {
   opacity: 0.3;
 }
@@ -4128,6 +4146,9 @@ img {
 .price-controls input {
   width: 95px;
 
+  font-size: 17px;
+  line-height: 18px;
+
   padding-top: 9px;
   padding-bottom: 11px;
 
@@ -4145,7 +4166,7 @@ img {
   position: absolute;
 
   top: 19px;
-  right: 105px;
+  right: 106px;
 
   width: 10px;
   height: 1px;
@@ -4153,6 +4174,13 @@ img {
   background-color: #444444;
 }
 
+.price-controls input:nth-child(2n) {
+  margin-left: 27px;
+}
+
+.price-controls input:nth-child(1n) {
+  padding-left: 4px;
+}
 
 .filter ul,
 .filter-bottom ul {
