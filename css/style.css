@@ -3055,39 +3055,33 @@ img {
   background-position: 0 0;
 }
 
-.exit::before {
+.icon-user:focus::before,
+.icon-user:hover::before {
   content: "";
 
   position: absolute;
-
-  top: 14px;
-  left: 269px;
+  top: 13px;
+  left: 13px;
 
   width: 20px;
-  height: 17px;
+  height: 18px;
 
-  background-image: url("../img/icon-logout.svg");
+  background-image: url("../img/icon-user-2.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.user-name {
-  color: #000000;
-}
-
-.user-name:focus ~ .exit::before,
-.user-name:hover ~ .exit::before {
+.icon-user:active::before {
   content: "";
 
   position: absolute;
-
-  top: 14px;
-  left: 269px;
+  top: 13px;
+  left: 13px;
 
   width: 20px;
-  height: 17px;
+  height: 18px;
 
-  background-image: url("../img/icon-logout-2.svg");
+  background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -3108,22 +3102,6 @@ img {
   background-position: 0 0;
 }
 
-.user-name:active ~ .exit::before {
-  content: "";
-
-  position: absolute;
-
-  top: 14px;
-  left: 269px;
-
-  width: 20px;
-  height: 17px;
-
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .user-name:active ~ .icon-user::before {
   content: "";
 
@@ -3139,8 +3117,24 @@ img {
   background-position: 0 0;
 }
 
-/* уточнить как реализовать правильно
-.exit:hover {
+.exit::before {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  left: 269px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.exit:focus::before,
+.exit:hover::before {
   content: "";
 
   position: absolute;
@@ -3155,7 +3149,26 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-*/
+
+.exit:active::before {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  left: 269px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-name {
+  color: #000000;
+}
 
 .user-name:active {
   opacity: 0.3;
@@ -3762,18 +3775,44 @@ img {
   background-position: 0 0;
 }
 
-.filter-manufacturers-checkbox:hover + label::before,
-.filter-manufacturers-checkbox:focus + label::before {
+.filter-manufacturers-checkbox:focus + label::before,
+.filter-manufacturers-checkbox:hover + label::before {
   border-color: #b5b5b5;
 }
 
-.filter-manufacturers-checkbox:disabled + label::before,
-.filter-manufacturers-checkbox:disabled + label::after {
+.filter-manufacturers-checkbox:active + label::before {
   opacity: 0.3;
 }
 
-.filter-manufacturers-checkbox:active + label::before {
-  opacity: 1;
+.filter-manufacturers-checkbox:checked:focus + label::after,
+.filter-manufacturers-checkbox:checked:hover + label::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on-guidance.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-manufacturers-checkbox:checked:active + label::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on-guidance.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
 }
 
 .filter-power {
@@ -4089,7 +4128,7 @@ img {
 .scale {
   position: absolute;
 
-  top: 37px;
+  top: 38px;
   left: 20px;
 
   width: 180px;
@@ -4116,7 +4155,6 @@ img {
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-
   background-color: #ababab;
 }
 
