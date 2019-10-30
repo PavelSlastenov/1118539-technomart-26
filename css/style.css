@@ -239,7 +239,7 @@ img {
 
 .search input:focus {
   outline: none;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
   background-image: url(../img/icon-search-red.png);
   background-repeat: no-repeat;
@@ -719,6 +719,7 @@ img {
 
   margin-top: 38px;
   margin-bottom: 60px;
+
   -webkit-box-shadow: inset 0 -5px 0 #293449;
   box-shadow: inset 0 -5px 0 #293449;
 
@@ -744,6 +745,7 @@ img {
 
   margin-top: 32px;
   margin-bottom: 60px;
+
   -webkit-box-shadow: inset 0 -5px 0 #293449;
   box-shadow: inset 0 -5px 0 #293449;
 
@@ -827,7 +829,6 @@ img {
 }
 
 .technique a {
-
   margin-left: 23px;
 }
 
@@ -842,7 +843,6 @@ img {
   flex-direction: row;
 
   -ms-flex-wrap: wrap;
-
   flex-wrap: wrap;
 
   list-style: none;
@@ -1180,6 +1180,7 @@ img {
 
 .switch-prev i {
   left: 31px;
+
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1294,8 +1295,6 @@ img {
   border-radius: 6px;
 }
 
-
-
 .slider-list h3 {
   margin: 0;
 
@@ -1323,6 +1322,7 @@ img {
   padding-top: 10px;
   padding-bottom: 7px;
   padding-left: 50px;
+
   margin-top: 123px;
   margin-left: 2px;
 
@@ -1476,13 +1476,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+
   list-style: none;
 }
 
@@ -1841,7 +1844,6 @@ img {
 .product .actions .bookmark,
 .product-index .actions .bookmark {
   border-bottom-color: #63a63e;
-
   color: #32425c;
   background: #ffffff;
 }
@@ -2010,7 +2012,6 @@ img {
   align-items: flex-start;
 
   -ms-flex-wrap: wrap;
-
   flex-wrap: wrap;
 
   margin-bottom: 20px;
@@ -3372,11 +3373,6 @@ img {
   margin-left: 43px;
 }
 
-/*
-.tabs li:last-child {
-  margin-left: 43px;
-}
-*/
 .tabs a::after {
   content: "";
 
@@ -4732,6 +4728,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
