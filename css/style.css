@@ -91,7 +91,6 @@ img {
   flex-direction: row;
 
   -ms-flex-wrap: wrap;
-
   flex-wrap: wrap;
 }
 
@@ -3322,9 +3321,7 @@ img {
   display: flex;
 
   -ms-flex-wrap: wrap;
-
   flex-wrap: wrap;
-
   width: 358px;
 
   padding: 0;

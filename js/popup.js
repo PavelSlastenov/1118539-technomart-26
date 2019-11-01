@@ -1,4 +1,4 @@
-/*-------------------------------modal-feedback------------------------------------------*/
+//-------------------------------modal-feedback------------------------------------------//
 
 var link = document.querySelector(".contacts-map-link");
 var popup = document.querySelector(".modal-feedback");
@@ -58,7 +58,7 @@ if (link) {
 
 }
 
-/*--------------------------------------modal-map------------------------------*/
+//--------------------------------------modal-map------------------------------//
 
 var mapLink = document.querySelector(".link-map");
 
@@ -85,7 +85,7 @@ if (mapLink) {
 
 }
 
-/*--------------------------------------modal-catalog-cart---------------------------*/
+//--------------------------------------modal-catalog-cart---------------------------//
 
 var cartLink = document.querySelectorAll(".buy");
 
